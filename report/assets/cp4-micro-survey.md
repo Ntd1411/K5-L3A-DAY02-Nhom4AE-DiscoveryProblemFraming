@@ -1,5 +1,9 @@
 # CP4 — Khảo sát nhanh về báo cáo tiến độ nhóm
 
+## Nhập kết quả bằng giao diện
+
+Mở [`src/cp4-survey/index.html`](../../src/cp4-survey/index.html) bằng Edge/Chrome để nhập từng phiếu, sửa/xóa, xem tỷ lệ và xuất CSV/Markdown. Không cần cài thư viện hoặc chạy server. Xem [hướng dẫn sử dụng](../../src/cp4-survey/README.md). Giao diện không gửi dữ liệu lên mạng; sau khi nhập, xuất JSON để sao lưu và chuyển CSV/Markdown vào `report/assets/` trước khi cập nhật báo cáo nhóm.
+
 ## Lời giới thiệu
 
 Khảo sát 2–3 phút dành cho sinh viên từng trực tiếp viết hoặc gom báo cáo tiến độ nhóm. Mục đích là tìm hiểu quy trình đã xảy ra, không đánh giá người trả lời và không thu thông tin nhận dạng.

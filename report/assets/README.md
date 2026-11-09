@@ -5,6 +5,7 @@
 | File | Vai trò |
 |---|---|
 | [Khảo sát CP4](cp4-micro-survey.md) | Bộ câu hỏi và hướng dẫn bổ sung nguồn phản hồi |
+| [Giao diện nhập CP4](../../src/cp4-survey/README.md) | Nhập từng phiếu ngoại tuyến, tự tổng hợp, xuất CSV/Markdown và sao lưu JSON |
 | [Quy trình CP5](cp5-lesongthao-workflow-draft.md) | Bản chi tiết đã tích hợp trong báo cáo nhóm |
 | [Đối chiếu CP6](cp6-lesongthao-metric-boundary-review.md) | Metric, boundary, tiêu chí và ngưỡng dừng |
 | [Kế hoạch đo pilot](cp6-pilot-measurement-plan.md) | Quy ước đo, đối chiếu task và so sánh No AI/Rule |
