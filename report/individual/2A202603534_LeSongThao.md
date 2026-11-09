@@ -1,7 +1,7 @@
 # Báo cáo cá nhân — 2A202603534_LeSongThao
 
-> **Trạng thái: Bản cập nhật đến CP2.** Nhóm đang tập hợp báo cáo cá nhân để so sánh các Problem Card; **chưa chốt card/bài toán chung**.
-> Thứ tự ưu tiên, card muốn pitch và cảm nhận về mức can thiệp dưới đây là đề xuất cá nhân để thảo luận ở CP3.
+> **Trạng thái cập nhật ngày 09/11/2026:** Nhóm đã chọn **Card #1 của Trần Hoàng Phát — tổng hợp báo cáo tiến độ hai tuần**. Phân công chính thức được ghi trong [TEAM.md](../../TEAM.md).
+> Mục 2–3 giữ phần khám phá và ba card cá nhân của Lê Sông Thao. Phần quy trình CP5 đã được tích hợp vào bản báo cáo nhóm trong thư mục làm việc; đã có tài liệu góp ý metric/boundary cho CP6. Nhật ký chỉ ghi hoạt động có bằng chứng; CP7 còn cần câu trả lời cá nhân.
 > Hướng dẫn và template: [docs/01-worksheet.md](../../docs/01-worksheet.md).
 
 ## 1. Thông tin học viên
@@ -11,6 +11,8 @@
 - Email trường (không bắt buộc, repo có thể để public): songthao2412@gmail.com
 - Tên nhóm: Nhom4AE
 - Link repo nhóm: https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming
+- Vai trò theo TEAM.md: ghi chép; chủ trì quy trình trước/sau, bảng before/after và assets; hỗ trợ Phát kiểm chứng CP4 và Giang ở CP6.
+- Candidate nhóm đã chọn: gom việc cả nhóm đã làm trong hai tuần để viết báo cáo tiến độ cho giảng viên, theo Card #1 của Phát. Mức can thiệp và quyết định cuối cần được giải thích thống nhất trong báo cáo nhóm CP6.
 
 ---
 
@@ -18,10 +20,12 @@
 
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
+**Cách đọc bằng chứng:** Các số phút/tần suất trong bản CP1–CP2 là tự báo cáo của cá nhân; khi chưa kèm log bấm giờ, chúng được xem là ước lượng hồi tưởng. Các thông số kỹ thuật có tài liệu đối chiếu ở [mục 7](#7-tài-liệu-tham-khảo). README dự án xác nhận bối cảnh và kết quả kỹ thuật, không xác nhận thời gian thao tác hoặc trải nghiệm của người khác. Target là mục tiêu thử nghiệm, chưa phải kết quả đã đạt.
+
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 | Tốn thời gian | Khi chạy xong nhiều cấu hình thử nghiệm mô hình trên Jupyter Notebook (như 5 mốc PCA hoặc 4 hướng xử lý văn bản ở bài lab), tôi muốn gom toàn bộ bảng chỉ số, ma trận nhầm lẫn và các mẫu dự đoán sai về một chỗ rồi rút ra nhận định so sánh, để hoàn thành báo cáo đánh giá trước giờ nộp mà không bị sót trường hợp lỗi. | Học viên kỹ thuật, sinh viên làm đồ án/lab học máy (cá nhân tôi và các bạn cùng lớp K5-L3A) | Mất 75–90 phút (trung bình ước lượng hồi tưởng ~80 phút/bài) cho mỗi bài thực nghiệm khi làm repo `vehicle-hog-svm-rbf-pca` (baseline + 5 cấu hình PCA `10, 20, 50, 100, 200` trên 400 ảnh) và bài lab `Day-01` (4 nhánh thử nghiệm); trung bình 1–2 lần/tuần. |
-| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi kiểm tra kết quả nhận diện biển số trên tập 200 ảnh thực nghiệm, tôi muốn đối chiếu nhanh ảnh gốc, ảnh qua 3 bước tiền xử lý (gốc, CLAHE, Otsu) và chuỗi ký tự đầu ra bị sai vị trí, để tìm đúng quy luật nhầm ký tự và cập nhật hàm hậu xử lý. | Người phát triển hệ thống thị giác máy tính (cá nhân tôi khi làm đồ án `smart-parking-lpr-system`) | Mở từng ảnh và đối chiếu file kết quả trong thư mục `ket_qua_danh_gia_200/` mất ~55 phút/lần mỗi khi chỉnh sửa luật hậu xử lý; đã lặp lại 4 đợt lớn trong quá trình làm đồ án tốt nghiệp. |
+| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi kiểm tra kết quả nhận diện biển số trên tập 200 ảnh thực nghiệm, tôi muốn đối chiếu nhanh ba biến thể ảnh (gốc, CLAHE, Otsu) và chuỗi ký tự đầu ra bị sai vị trí, để tìm đúng quy luật nhầm ký tự và cập nhật hàm hậu xử lý. | Người phát triển hệ thống thị giác máy tính (cá nhân tôi khi làm đồ án `smart-parking-lpr-system`) | Mở từng ảnh và đối chiếu file kết quả trong thư mục `ket_qua_danh_gia_200/` mất ~55 phút/lần mỗi khi chỉnh sửa luật hậu xử lý; đã lặp lại 4 đợt lớn trong quá trình làm đồ án tốt nghiệp. |
 | 3 | Lặp lại | Khi nạp lại chương trình cho vi điều khiển ESP32 hoặc Arduino để kiểm thử cảm biến và relay, tôi muốn đối chiếu ngay chuỗi log trên Serial Monitor (`115200` baud) với trạng thái các chân tín hiệu ảo trên bảng điều khiển từ xa, để biết ngay lỗi nằm ở phần nối dây, logic chương trình hay cấu hình kết nối. | Sinh viên/kỹ sư nhúng làm dự án IoT (cá nhân tôi khi làm `esp32-motion-relay-blynk` và `esp32-smart-light-blynk`) | Mỗi buổi debug phần cứng/Wokwi lặp lại 8–9 lần nạp-thử; mỗi vòng dò lỗi mất ~10 phút (trong đó riêng bước đọc Serial + dò chéo sơ đồ dây `diagram.json` và 4–5 chân `V0–V4` mất ~7 phút; tổng 80–90 phút/buổi). |
 | 4 | Lặp lại | Khi hoàn thiện một dự án phần cứng kết hợp phần mềm để đưa lên hồ sơ năng lực GitHub, tôi muốn trích xuất nhất quán sơ đồ chân linh kiện, thông số cấu hình, bảng kết quả đo kiểm và hướng dẫn xử lý sự cố từ code cùng báo cáo sang tài liệu `README.md`, để người xem hoặc nhà tuyển dụng chạy lại được ngay mà không lệch thông tin. | Sinh viên mới ra trường chuẩn bị hồ sơ ứng tuyển (cá nhân tôi trên 4 repo dự án GitHub) | Đã tự làm cho 4 repo (`smart-parking-lpr-system`, `vehicle-hog-svm-rbf-pca`, `esp32-motion-relay-blynk`, `esp32-smart-light-blynk`), mỗi repo mất 90–120 phút rà soát lại chân GPIO, thông số và ảnh minh họa. |
 | 5 | Cần đọc, tổng hợp nhiều thông tin | Khi chọn linh kiện cảm biến và module chấp hành (như PIR HC-SR501, LDR, RTC DS1307, LM393, servo SG90) cho một mạch điều khiển mới, tôi muốn tra cứu nhanh điện áp hoạt động, dòng tiêu thụ và các chân giao tiếp I2C/UART bị xung đột trên board ESP32/Arduino, để không đấu nhầm chân hoặc sụt áp khi chạy thực tế. | Sinh viên ngành Điện tử - Tin học công nghiệp (cá nhân tôi và nhóm làm đồ án môn học 3–4 người) | Mỗi dự án mới mất 45–60 phút mở 4–5 datasheet và sơ đồ pinout ESP32 DevKit; từng bị lỗi sụt nguồn servo SG90 và nối nhầm chân GND của RTC vào `GPIO23` trong bản mô phỏng Wokwi. |
@@ -47,7 +51,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 ### Bảng chọn top 3
 
-Đây là top 3 của cá nhân tôi để đưa ra so sánh với các card của những thành viên khác; chưa phải shortlist hay quyết định của nhóm.
+Đây là top 3 cá nhân đã chuẩn bị cho CP2. Nhóm đã chọn card báo cáo tiến độ của Phát; ba card dưới đây được giữ để thể hiện quá trình khám phá của tôi.
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
@@ -65,15 +69,15 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Quy trình hiện tại (3–7 bước) | 1. Cuộn lại từng ô (cell) trong Notebook để tìm các con số `Accuracy`, `Precision`, `Recall`, `F1-score`, thời gian chạy (10') · 2. Copy thủ công từng con số sang bảng Markdown và định dạng lại (15') · 3. Mở xem các biểu đồ `Confusion Matrix` và lọc các mẫu dự đoán sai (10') · 4. Đối chiếu tham số cấu hình (ví dụ `C=10, gamma='scale'`, số chiều PCA hoặc loại model) với các mẫu sai để tìm quy luật (10') · 5. Viết phần nhận định so sánh (narrative: phương pháp nào tốt nhất, vì sao sai ở lớp nào, đánh đổi giữa tốc độ và độ chính xác) (25') · 6. Kiểm tra lại số liệu giữa bảng và đoạn nhận định rồi commit nộp bài (10'). |
 | Bottleneck (bước nào, mất bao nhiêu phút) | **Bước 5 — Viết phần nhận định so sánh và phân tích nguyên nhân sai (narrative & error analysis): mất khoảng 25 phút/bài** (cộng hưởng với Bước 2 + Bước 4 mất thêm 25 phút copy bảng và đối chiếu mẫu sai rải rác ở nhiều cell; tổng 6 bước là 80 phút/bài). |
 | Impact (nếu không giải thì sao) | Mất ~80 phút (75–90 phút) cho mỗi bài báo cáo thực nghiệm; khi sát giờ nộp dễ copy nhầm chỉ số giữa các lần chạy (ví dụ nhầm F1 của lớp `Truck: 0.52` và `Bus: 0.63` hoặc nhầm kết quả giữa các mốc PCA), phần nhận định viết vội bị nông và mất điểm rubric. |
-| Success metric (baseline → target) | Giảm tổng thời gian tổng hợp và viết báo cáo thực nghiệm từ **~80 phút/bài** (baseline ước lượng hồi tưởng từ 6 bước `10'+15'+10'+10'+25'+10'` khi làm báo cáo `vehicle-hog-svm-rbf-pca` và `Day-01`) xuống **dưới 30 phút/bài**, đồng thời **0 lỗi lệch số liệu** giữa bảng kết quả và đoạn phân tích. |
+| Success metric (baseline → target) | Baseline: **~80 phút/bài**, ước lượng hồi tưởng từ 6 bước `10'+15'+10'+10'+25'+10'`. Target thử nghiệm: **dưới 30 phút/bài**, đồng thời **0 lỗi lệch số liệu** giữa output Notebook, bảng và đoạn phân tích. Cách đo dự kiến: bấm giờ 3 báo cáo thực nghiệm tiếp theo, từ lúc bắt đầu tìm output đã chạy xong đến khi kiểm tra và hoàn thiện báo cáo; không tính huấn luyện mô hình. Ghi riêng thời gian từng bước, tính cả kiểm tra/sửa nháp; đối chiếu tất cả chỉ số với output gốc. Chưa có kết quả đo sau cải tiến. |
 | Phương án không dùng AI | Viết sẵn một hàm Python cuối Notebook tự động xuất toàn bộ metrics (`classification_report`, độ lệch `delta`, thời gian chạy, top mẫu sai) ra đúng định dạng bảng Markdown + dùng khung câu hỏi mẫu (template) cho phần nhận định. Cách này giảm mạnh thời gian copy số liệu nhưng người làm vẫn phải tự đọc các mẫu sai để viết phần giải thích và nhận định. |
 | Giả thuyết về AI (nếu có) | Sau khi script Python đã gom bảng metrics chuẩn (kèm số dẫn xuất) và danh sách 5–10 mẫu dự đoán sai tiêu biểu, dùng AI để soạn bản nháp phần nhận định so sánh (chỉ ra sự đánh đổi và gợi ý giả thuyết nguyên nhân sai từ dữ liệu đầu vào); học viên kiểm tra lại và chỉnh sửa trước khi đưa vào báo cáo. |
-| Cảm nhận nhanh | Workflow (Rule/Script xuất bảng số liệu chính xác + AI hỗ trợ soạn nháp nhận định từ dữ liệu đã gom + Con người kiểm duyệt) |
+| Cảm nhận nhanh | Thử **Rule + template** trước. Workflow là giả thuyết nếu sau khi xuất bảng tự động, bước đọc mẫu sai và viết nhận định vẫn không đạt mục tiêu; khi đó AI chỉ soạn nháp, con người đối chiếu nguồn và kiểm duyệt. Chưa có bằng chứng phương án đơn giản hơn không đủ. |
 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — 80 phút/bài thực nghiệm (10' + 15' + 10' + 10' + 25' + 10')
+HIỆN TẠI — ước lượng 80 phút/bài (10' + 15' + 10' + 10' + 25' + 10')
 
 [1. Cuộn Notebook tìm output các lần chạy: 10']
   → [2. Copy tay metrics sang bảng Markdown: 15']
@@ -87,26 +91,26 @@ HIỆN TẠI — 80 phút/bài thực nghiệm (10' + 15' + 10' + 10' + 25' + 10
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi kiểm tra kết quả nhận diện biển số trên tập 200 ảnh thực nghiệm, tôi muốn đối chiếu nhanh ảnh gốc, ảnh qua 3 bước tiền xử lý (gốc, CLAHE, Otsu) và chuỗi ký tự đầu ra bị sai vị trí, để tìm đúng quy luật nhầm ký tự và cập nhật hàm hậu xử lý. |
+| Job Story | Khi kiểm tra kết quả nhận diện biển số trên tập 200 ảnh thực nghiệm, tôi muốn đối chiếu nhanh ba biến thể ảnh (gốc, CLAHE, Otsu) và chuỗi ký tự đầu ra bị sai vị trí, để tìm đúng quy luật nhầm ký tự và cập nhật hàm hậu xử lý. |
 | Actor | Sinh viên / kỹ sư phát triển pipeline Nhận diện biển số xe (OCR & Computer Vision) trong dự án `smart-parking-lpr-system`. |
-| Thời điểm / bối cảnh | Sau mỗi lần chạy đánh giá tập kiểm thử 200 ảnh biển số Việt Nam hoặc khi phát hiện biển số thực tế tại cổng bãi xe bị đọc sai ký tự. |
-| Quy trình hiện tại (3–7 bước) | 1. Chạy script đánh giá trên 200 ảnh đã gán nhãn để xuất file kết quả (3') · 2. Lọc ra các ảnh có kết quả dự đoán khác nhãn thật (`5/200` ảnh sai toàn biển hoặc các trường hợp CER > 0) (5') · 3. Mở từng ảnh gốc và 3 ảnh biến thể (`original`, `CLAHE`, `Otsu`) lên xem bằng mắt (15') · 4. Đối chiếu chuỗi ký tự PaddleOCR đọc được trên từng biến thể với định dạng biển số Việt Nam theo vị trí ký tự (15') · 5. Ghi chú quy luật nhầm (ví dụ `8` ↔ `B`, `0` ↔ `D`, mất dấu gạch) và sửa hàm hậu xử lý trong `nhan_dien_bien_so.py` (12') · 6. Chạy kiểm tra lại để đảm bảo không lỗi hồi quy (5'). |
-| Bottleneck (bước nào, mất bao nhiêu phút) | **Bước 3 & 4 — Mở từng cụm ảnh biến thể và đối chiếu thủ công chuỗi ký tự OCR + độ tự tin (confidence) theo từng vị trí ký tự: mất 30 phút/lần rà soát** (`15' + 15'`, trên tổng 55 phút/vòng). |
+| Thời điểm / bối cảnh | Sau mỗi lần chạy đánh giá 200 ảnh biển số Việt Nam đã gán nhãn trong đồ án, trước khi chấp nhận thay đổi luật hậu xử lý. Số liệu này mô tả tập đánh giá, chưa chứng minh thời gian xử lý tại bãi xe đang vận hành. |
+| Quy trình hiện tại (3–7 bước) | 1. Chạy script đánh giá trên 200 ảnh đã gán nhãn để xuất file kết quả (3') · 2. Lọc ra các ảnh có kết quả dự đoán khác nhãn thật (`5/200` ảnh sai toàn biển hoặc các trường hợp CER > 0) (5') · 3. Mở ba biến thể của mỗi ảnh (`original`, `CLAHE`, `Otsu`) lên xem bằng mắt (15') · 4. Đối chiếu chuỗi ký tự PaddleOCR đọc được trên từng biến thể với định dạng biển số Việt Nam theo vị trí ký tự (15') · 5. Ghi chú quy luật nhầm (ví dụ `8` ↔ `B`, `0` ↔ `D`, mất dấu gạch) và sửa hàm hậu xử lý trong `nhan_dien_bien_so.py` (12') · 6. Chạy kiểm tra lại để đảm bảo không lỗi hồi quy (5'). |
+| Bottleneck (bước nào, mất bao nhiêu phút) | **Bước 4 — Đối chiếu chuỗi OCR và confidence theo vị trí ký tự: khoảng 15 phút/vòng**, do phải dò giữa các biến thể. Bước 3 mở ảnh cũng tốn 15 phút; hai bước liên tiếp chiếm 30/55 phút. Chọn bước 4 làm điểm nghẽn chính cần giảm thao tác đối chiếu. |
 | Impact (nếu không giải thì sao) | Mỗi vòng tinh chỉnh luật hậu xử lý mất ~55 phút; dễ sửa được lỗi ở ảnh này nhưng lại làm hỏng kết quả của ảnh khác đã đúng trước đó (regression) nếu không đối chiếu hết các biến thể. |
-| Success metric (baseline → target) | Giảm thời gian phân tích lỗi sau mỗi lần chạy đánh giá 200 ảnh từ **55 phút/lần** xuống **dưới 15 phút/lần**, giữ độ chính xác toàn biển `>= 97.50%` và không phát sinh ca sai mới trên tập đã đúng. |
-| Phương án không dùng AI | Viết script Python tự động ghép ảnh gốc + 3 biến thể `original/CLAHE/Otsu` + chuỗi OCR từng biến thể vào chung 1 ảnh tổng hợp (visual error sheet) chỉ cho những ca dự đoán sai, kèm bảng thống kê cặp ký tự hay nhầm nhất (`confusion pairs`). |
+| Success metric (baseline → target) | Baseline thời gian: **~55 phút/vòng**, ước lượng hồi tưởng. Target thử nghiệm: **dưới 15 phút/vòng** cho cùng phạm vi 6 bước; giữ độ chính xác toàn biển **ít nhất 195/200 = 97.50%** và không làm sai thêm ảnh thuộc 195 ảnh đã đúng. Cách đo dự kiến: ghi thời gian từng bước trong 3 vòng rà soát tiếp theo, từ chạy đánh giá đến kiểm tra hồi quy; lưu danh sách ảnh đúng/sai trước và sau để đối chiếu từng ảnh, không chỉ so accuracy tổng. Kết quả trên 200 ảnh không được suy rộng thành chất lượng ngoài thực tế. |
+| Phương án không dùng AI | Viết script Python ghép ba biến thể `original/CLAHE/Otsu` và chuỗi OCR tương ứng vào chung 1 ảnh tổng hợp (visual error sheet) cho những ca dự đoán sai, kèm bảng thống kê cặp ký tự hay nhầm nhất (`confusion pairs`). |
 | Giả thuyết về AI (nếu có) | Với bài toán đã có nhãn chuẩn và cấu trúc biển số Việt Nam cố định theo vị trí, script thống kê + luật (Rule) đã giải quyết được phần lớn; AI chỉ hữu ích nếu cần phân loại tự động điều kiện gây lỗi của ảnh (mờ chuyển động, chói sáng, góc nghiêng, bẩn biển số) để gợi ý hướng thu thập thêm dữ liệu. |
-| Cảm nhận nhanh | Rule (hoặc Workflow nhẹ nếu cần phân nhóm điều kiện ảnh lỗi) |
+| Cảm nhận nhanh | **Rule**: ghép ảnh, lọc sai lệch và thống kê theo nhãn chuẩn. Phân nhóm điều kiện ảnh lỗi bằng AI chỉ là giả thuyết mở rộng, chưa có bằng chứng cần đưa vào phạm vi card. |
 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — 55 phút/vòng đánh giá 200 ảnh (3' + 5' + 15' + 15' + 12' + 5')
+HIỆN TẠI — ước lượng 55 phút/vòng (3' + 5' + 15' + 15' + 12' + 5')
 
-[1. Chạy đánh giá 200 ảnh (~619ms/ảnh): 3']
+[1. Chạy đánh giá 200 ảnh: 3' gồm xử lý và chuẩn bị/xuất kết quả]
   → [2. Lọc danh sách các ca sai lệch so với nhãn thật: 5']
-  → [3. Mở từng ảnh gốc + 3 biến thể (gốc/CLAHE/Otsu): 15']     ← BOTTLENECK (kết hợp Bước 4 = 30')
-  → [4. So chuỗi OCR & confidence theo vị trí ký tự: 15']       ← BOTTLENECK
+  → [3. Mở ba biến thể gốc/CLAHE/Otsu: 15']                  ← BƯỚC TỐN THỜI GIAN
+  → [4. So chuỗi OCR & confidence theo vị trí ký tự: 15']   ← BOTTLENECK CHÍNH
   → [5. Ghi quy luật nhầm ký tự & sửa hàm hậu xử lý: 12']
   → [6. Chạy test lại để kiểm tra hồi quy (regression): 5']
 ```
@@ -119,22 +123,22 @@ HIỆN TẠI — 55 phút/vòng đánh giá 200 ảnh (3' + 5' + 15' + 15' + 12'
 | Actor | Sinh viên / kỹ sư lập trình nhúng & IoT làm việc với ESP32, cảm biến (PIR, LDR, RTC) và bảng điều khiển Blynk / mô phỏng Wokwi. |
 | Thời điểm / bối cảnh | Trong lúc lắp mạch hoặc chạy mô phỏng Wokwi kết nối Blynk Cloud mà thiết bị hoạt động ngược hoặc không phản hồi (ví dụ nhấn nút không nhảy relay, PIR có chuyển động nhưng còi không kêu, hoặc trạng thái trên app Blynk không khớp mạch). |
 | Quy trình hiện tại (3–7 bước) | 1. Kích hoạt thử tác nhân trên mạch (bấm nút vật lý / đổi độ sáng LDR / tạo chuyển động PIR) (1') · 2. Đọc dòng log trôi liên tục trên Serial Monitor (`115200` baud) (3') · 3. Chuyển cửa sổ sang kiểm tra trạng thái các chân `V0–V4` trên Blynk Web/Mobile (1') · 4. Mở lại code `.ino` và file sơ đồ dây `diagram.json` để dò từng chân `GPIO` và mức tích cực (`HIGH/LOW`) (4') · 5. Khoanh vùng nguyên nhân, sửa code hoặc dây nối và nạp lại (1'). |
-| Bottleneck (bước nào, mất bao nhiêu phút) | **Bước 2 & 4 — Đọc dòng log Serial tự do (unstructured text) đang trôi nhanh (3') và dò chéo thủ công với bảng chân GPIO / Virtual Pin trong code và `diagram.json` (4'): mất 7 phút trên tổng 10 phút của mỗi vòng dò lỗi** (lặp lại 8–9 lần mỗi buổi làm mạch = 80–90 phút/buổi). |
+| Bottleneck (bước nào, mất bao nhiêu phút) | **Bước 4 — Dò chéo GPIO/mức tích cực giữa code và `diagram.json`: khoảng 4 phút/vòng**, là bước lâu nhất. Bước 2 đọc log tốn thêm 3 phút; hai bước cộng lại chiếm 7/10 phút mỗi vòng. |
 | Impact (nếu không giải thì sao) | Mất 80–90 phút mỗi buổi chỉ để tìm những lỗi cấu hình nhỏ (như relay kích mức thấp `LOW` thay vì `HIGH`, quên bật `alarmMode` ở `V3`, hoặc nối nhầm chân `GND` của RTC sang `GPIO23`). |
-| Success metric (baseline → target) | Giảm thời gian khoanh vùng 1 lỗi cấu hình/logic từ trung bình **10 phút/vòng** (trong đó 7 phút ở Bước 2 & 4) xuống **dưới 3 phút/vòng**; giảm số lần nạp-thử lặp lại trong một buổi từ 8–9 lần xuống dưới 4 lần. |
+| Success metric (baseline → target) | Baseline: **~10 phút/vòng dò lỗi**, ước lượng hồi tưởng; 8–9 vòng/buổi. Target thử nghiệm: **dưới 3 phút/vòng** và dưới 4 vòng/buổi có phạm vi thử tương đương. Cách đo dự kiến: ghi lại lỗi, thời điểm kích hoạt thử, thời điểm sửa và kiểm tra lại trong 3 buổi tiếp theo; tính cả đọc log, dò dây và nạp lại. Chỉ so các buổi có nhóm lỗi cấu hình tương tự; không giảm kiểm thử để làm đẹp số vòng. Kiểm tra lại cả điều khiển tại chỗ và trạng thái Blynk sau mỗi lần sửa. |
 | Phương án không dùng AI | Chuẩn hóa định dạng in log Serial theo bảng trạng thái cố định mỗi khi có sự kiện (`[TIME] [GPIO] [VIRTUAL_PIN] [MODE] [STATE]`) + tạo bảng checklist kiểm tra nhanh 5 lỗi phổ biến (như bảng Troubleshooting tôi đã lập trong `README.md` của 2 repo ESP32). |
 | Giả thuyết về AI (nếu có) | Đưa đoạn log Serial bất thường + file `diagram.json` + đoạn code cấu hình pin cho công cụ phân tích để chỉ ra ngay điểm mâu thuẫn giữa sơ đồ nối dây và code điều khiển. |
-| Cảm nhận nhanh | No AI hoặc Rule (Checklist + chuẩn hóa log Serial giải quyết được hầu hết; chỉ cần AI khi kiểm tra chéo tự động giữa `diagram.json` và file `.ino`). |
+| Cảm nhận nhanh | **No AI** với checklist và chuẩn hóa log; **Rule** nếu thêm script kiểm tra pin/kết nối có logic cố định. Kiểm tra chéo tự động giữa `diagram.json` và `.ino` chưa phải lý do đủ để cần AI. |
 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — 10 phút/vòng dò lỗi (1' + 3' + 1' + 4' + 1') × 8–9 lần/buổi = 80–90 phút/buổi
+HIỆN TẠI — ước lượng 10 phút/vòng (1' + 3' + 1' + 4' + 1') × 8–9 vòng = 80–90 phút/buổi
 
 [1. Kích hoạt cảm biến/nút nhấn trên mạch/Wokwi: 1']
-  → [2. Đọc log Serial Monitor 115200 baud đang trôi: 3']      ← BOTTLENECK (kết hợp Bước 4 = 7')
+  → [2. Đọc log Serial Monitor 115200 baud đang trôi: 3']      ← BƯỚC TỐN THỜI GIAN
   → [3. Kiểm tra trạng thái V0-V4 trên Blynk Dashboard: 1']
-  → [4. Dò chéo GPIO trong code .ino và diagram.json: 4']      ← BOTTLENECK
+  → [4. Dò chéo GPIO trong code .ino và diagram.json: 4']      ← BOTTLENECK CHÍNH
   → [5. Sửa dây/code và biên dịch nạp lại: 1']
 ```
 
@@ -144,7 +148,7 @@ HIỆN TẠI — 10 phút/vòng dò lỗi (1' + 3' + 1' + 4' + 1') × 8–9 lầ
 - Vì sao:
   1. Đây là vấn đề xuất phát từ trải nghiệm thực tế của cá nhân tôi (khi làm báo cáo thực nghiệm cho `vehicle-hog-svm-rbf-pca`, `smart-parking-lpr-system` và bài lab `Day-01`), có thể cũng xuất hiện ở các bạn làm thực nghiệm tương tự. **Mức độ phổ biến ngoài trải nghiệm của tôi chưa được kiểm chứng**.
   2. Quy trình có ranh giới rất rõ giữa phần **không nên dùng AI** (lấy số liệu metrics chính xác và tính sẵn độ lệch từ code — phải dùng Rule/Script để không bịa số) và phần **có thể thử AI hỗ trợ** (soạn nháp nhận định so sánh và gợi ý giả thuyết lỗi từ danh sách mẫu sai để con người kiểm duyệt).
-  3. Rất thuận lợi để nhóm kiểm chứng trực tiếp tại lớp ở CP4 bằng cả phỏng vấn nhanh (The Mom Test) lẫn khảo sát nhanh các học viên nhóm khác.
+  3. Nếu được chọn, có thể tìm người ngoài nhóm đã làm thực nghiệm tương tự để kiểm chứng; chưa khẳng định đã tìm được người phù hợp hay đã phỏng vấn.
 - Câu hỏi muốn nhóm phản biện:
   > *"Nếu chúng ta viết sẵn một đoạn script Python ở cuối Notebook để tự xuất bảng Markdown các chỉ số (Accuracy, Precision, Recall, F1, thời gian chạy) cùng danh sách mẫu sai, thì phần việc còn lại (đọc mẫu sai và viết nhận định so sánh) có thực sự còn đủ nặng để cần tới một Workflow có AI hỗ trợ không, hay chỉ cần một khung câu hỏi mẫu (template No AI) là đủ?"*
 
@@ -157,42 +161,50 @@ Tôi đã đưa cả 3 Problem Cards vào prompt đóng vai **"Product Manager h
 | **Ở Card #1:** Ban đầu tôi gộp chung "gom số liệu từ các cell và viết nhận định" thành 1 bước nghẽn 50 phút. AI chỉ ra đây là 2 bản chất khác nhau: gom số liệu là việc cơ học (Rule/script giải được ngay), còn viết nhận định & phân tích mẫu sai mới là việc cần tư duy tổng hợp. | Đồng ý hoàn toàn | Tách rõ quy trình Card #1 thành **Bước 2** (copy số liệu: 15'), **Bước 4** (đối chiếu tham số với mẫu sai: 10') và **Bước 5** (viết nhận định so sánh & phân tích lỗi: 25' — đánh dấu là Bottleneck chính). Đồng thời cập nhật "Phương án không dùng AI" là dùng script xuất bảng Markdown trước. |
 | **Ở Card #1:** Metric ban đầu tôi chỉ viết "giảm thời gian từ 80 phút xuống 30 phút". AI phản biện: nếu làm nhanh hơn mà copy sai số hoặc nhận định hời hợt thì báo cáo vẫn mất điểm. | Đồng ý | Bổ sung điều kiện chất lượng vào **Success metric**: *"đồng thời 0 lỗi lệch số liệu giữa bảng kết quả và đoạn phân tích"*. |
 | **Ở Card #3:** Ban đầu tôi đặt cảm nhận nhanh là "Workflow (AI đọc log Serial)". AI phản biện rằng log do chính mình lập trình trong file `.ino`, tại sao không sửa hàm `Serial.println()` cho có cấu trúc rõ ràng ngay từ đầu mà lại dùng AI đi đọc log lộn xộn? | Đồng ý | Đổi cảm nhận nhanh của Card #3 về **No AI hoặc Rule** (chuẩn hóa định dạng in log Serial + bảng checklist 5 lỗi phổ biến), giúp tôi không rơi vào bẫy "AI-first" cho bài toán phần cứng cơ bản. |
+| **Rà soát bổ sung ngày 09/11/2026:** Các target chưa nêu cách đo; Card #2 đếm ảnh gốc lặp; Card #2–3 gộp nhiều bước vào bottleneck; Card #1 chọn Workflow khi chưa chứng minh Rule + template không đủ. | Bản sửa theo phản biện, cần cá nhân kiểm tra lại | Bổ sung kế hoạch đo cho cả 3 card; sửa Card #2 thành 3 biến thể; chỉ rõ bước nghẽn chính và bước tốn thời gian liên quan; giữ Rule + template là phương án thử trước ở Card #1. |
+| **Tính khả thi của target:** Ở Card #2, kể cả bỏ toàn bộ 30 phút của bước 3–4 thì vẫn còn 25 phút, chưa đạt dưới 15; ở Card #3, chỉ sửa log chưa chứng minh giảm được cả thao tác nạp/kiểm tra. | Cần kiểm chứng thêm | Giữ target là giả thuyết thử nghiệm, không coi phương án đề xuất đã bảo đảm đạt. Khi đo cần chỉ rõ bước nào giảm bao nhiêu; nếu không đủ phải điều chỉnh target có lý do. |
 
 ---
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-Nhóm đang tập hợp các Problem Card ở CP2 để so sánh, chưa chốt candidate chung. Mục này sẽ được cập nhật bằng các hoạt động và phản biện thực tế khi nhóm thực hiện CP3–CP6.
+Nhóm đã chọn Card #1 của Phát theo TEAM.md trên `main`. Bảng dưới phân biệt phần đã có trong tài liệu với phân công cần thực hiện. Các dòng chờ xác nhận không phải bằng chứng đã hoàn thành hoạt động.
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Đã chuẩn bị Card #1 cá nhân về báo cáo thực nghiệm và câu hỏi phản biện ở mục 3. GitHub chưa có biên bản xác nhận phần pitch trực tiếp. | Giữ phần chuẩn bị CP2; chờ ghi nhận pitch thực tế cho C3. |
+| Phản biện bài của bạn khác | Chờ Thao ghi câu hỏi đã thực sự đặt, người nhận và bối cảnh. | Chờ câu trả lời của bạn và ảnh hưởng cụ thể tới card/bài nhóm. |
+| Nhận phản biện | Chờ Thao ghi câu hỏi nhận từ thành viên nào trong CP3. Phản biện AI ở mục 3 là bằng chứng CP2. | Chờ mô tả trước/sau và lý do sửa hoặc giữ ý kiến. |
+| Gom cluster / cây OST | Được phân công ghi chép, hỗ trợ Dũng cùng cả nhóm. | Chờ kết quả CP3 tại báo cáo nhóm mục 2. |
+| Chọn candidate problem | Đã chọn triển khai Card #1 của Phát; lựa chọn này được xác nhận trong TEAM.md trên main. | Bài chung chuyển sang tổng hợp báo cáo tiến độ hai tuần; ba card cá nhân ở mục 3 vẫn được giữ. |
+| Kiểm chứng / research | Theo TEAM.md, hỗ trợ Phát kiểm chứng CP4. | Chưa có snapshot hoặc nhật ký kiểm chứng của Thao trong báo cáo nhóm trên main tại lần rà soát này. |
+| Quy trình nhóm | Đã soạn thiết kế [CP5 có AI hỗ trợ](../assets/cp5-lesongthao-workflow-draft.md) và tích hợp vào [báo cáo nhóm mục 4](../team/group_report.md#4-quy-trình-trướcsau-cp5): 2 sơ đồ Mermaid, bảng actor/input/output/thời gian, before/after, kiểm tra và quay về. | Phân biệt baseline khoảng 55 phút với ước tính No AI 36 phút. Đã chuyển hỏi bổ sung lên trước kiểm tra cuối, tính cả sửa/quay về và công sức cập nhật của cả nhóm. Nội dung hiện ở máy; chưa có kết quả pilot. |
+| Problem Statement | Đã chuẩn bị [bảng đối chiếu metric và boundary](../assets/cp6-lesongthao-metric-boundary-review.md), nêu rõ target theo mức, dữ liệu chất lượng còn thiếu và nguồn trạng thái công việc. | Là đầu vào góp ý cho Dũng/Giang; chưa khai đã viết hoặc chốt PS v0/v1. |
+| Mức can thiệp AI | Đã chuẩn bị góp ý so sánh No AI/Rule/Workflow/Agent từ góc nhìn quy trình, kèm 5 tiêu chí đề xuất cho phương án No AI trong [tài liệu hỗ trợ CP6](../assets/cp6-lesongthao-metric-boundary-review.md). | Có căn cứ No AI trước; cần chốt trường hợp đúng 40 phút và kiểm tra phần nghẽn còn lại trước khi tăng mức. Giang và nhóm vẫn chủ trì kết luận CP6. |
+| Quyết định | TEAM.md hiện ghi Go; báo cáo nhóm mục 8 chưa có lập luận và ngưỡng dừng tại lần rà soát này. | Chờ cập nhật quyết định có phạm vi, bằng chứng và vai trò thực tế của tôi. |
+
+**Bằng chứng còn cần cho C3:** câu hỏi thực sự đã đặt cho người khác; câu hỏi thực sự nhận được; và thay đổi cụ thể sau trao đổi. Câu hỏi chuẩn bị ở CP2 hoặc do AI gợi ý không được ghi thành đối thoại đã xảy ra.
 
 ---
 
 ## 5. Dùng AI
 
-Bảng hiện ghi các lần dùng AI ở CP1–CP2. Các hoạt động sau CP2 sẽ được bổ sung khi thực sự diễn ra.
+Bảng ghi các lần dùng AI ở CP1–CP2 và lần rà soát tài liệu này. Những hoạt động CP4–CP6 chưa có sản phẩm không được khai là đã thực hiện.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
 | **CP1 Scan** | Sau khi tự liệt kê 8 vấn đề từ các dự án GitHub cá nhân (`smart-parking-lpr-system`, `vehicle-hog-svm-rbf-pca`, 2 dự án `ESP32 Blynk` và lab `Day-01`), tôi hỏi AI gợi ý thêm góc nhìn theo 4 lăng kính cho sinh viên mới tốt nghiệp ngành Điện tử - Tin học công nghiệp. | Gợi ý thêm góc nhìn về phối hợp làm lab nhóm trên Git trong thời gian ngắn (#9) và rà soát JD ứng tuyển Fresher Embedded/CV (#10). | Đưa ra 2 gợi ý mang tính "solution trá hình" và viễn tưởng: *"AI tự chẩn đoán lỗi mạch điện từ ảnh chụp breadboard"* và *"trợ lý tự làm bài tập"*. | Loại bỏ hoàn toàn 2 ý viễn tưởng/solution trá hình; viết lại ý #9 và #10 theo đúng cấu trúc Job Story không chứa từ khóa giải pháp và gắn số phút thực tế của bản thân. |
 | **CP2 Problem Card** | Dùng prompt "Product Manager hoài nghi" để phản biện 3 Problem Cards của tôi. | Chỉ ra rất trúng việc tôi đang gộp bước "copy bảng chỉ số" và bước "viết nhận định phân tích lỗi" ở Card #1, và chỉ ra Card #3 có thể giải quyết bằng việc sửa câu lệnh `Serial.println()` thay vì dùng AI. | Khi phản biện Card #2 (nhận diện biển số), AI khuyên thay toàn bộ pipeline YOLOv8n + PaddleOCR bằng một mô hình VLM lớn chạy trên cloud mà không tính đến độ trễ nhận diện cục bộ (`619 ms/ảnh`) và yêu cầu chạy offline ở cổng bãi xe. | Giữ nguyên kiến trúc cục bộ ở Card #2, chỉ tập trung vào bài toán công cụ hỗ trợ rà soát tập ảnh lỗi trong giai đoạn phát triển; tách bạch bước Rule (script xuất bảng) và bước AI (nháp nhận định) ở Card #1. |
+| **Rà soát báo cáo cá nhân — 09/11/2026** | Dùng Codex đối chiếu rubric, TEAM.md trên main và README của 4 dự án; sửa tính nhất quán, cách đo và nguồn tham chiếu. | Phân biệt card cá nhân với candidate nhóm; phát hiện thiếu cách đo, đếm lặp biến thể ảnh và lựa chọn Workflow quá sớm. | Giới hạn: AI không quan sát buổi pitch/phỏng vấn và không xác minh được số phút hồi tưởng chỉ từ README. | Bản sửa ghi rõ nguồn và mức chắc chắn; nhật ký hỏi–đáp chưa có bằng chứng được để chờ tự ghi. Cần cá nhân kiểm tra bản sửa trước khi nộp. |
+| **CP5 — quy trình và rà soát** | Nhờ Codex chuyển Card #1 của Phát thành Mermaid, bảng quy trình và tích hợp vào mục 4 báo cáo nhóm. | Làm rõ actor/input/output, baseline, ước tính tương lai, kiểm tra và quay về. | Bản nháp AI ban đầu có nhánh hỏi bổ sung rồi gửi thẳng, bỏ qua kiểm tra nội dung mới; chưa tính công sức cập nhật bảng của Phát. | Sơ đồ đã được sửa thành hỏi bổ sung → viết/kiểm tra cuối → gửi; theo dõi cập nhật của cả 4 người, ghi đủ sửa/quay về. 36 phút vẫn là ước tính cần đo. |
+| **CP6 — góp ý từ quy trình** | Dùng Codex rà metric/boundary và chuẩn bị tài liệu góp ý để Giang/Dũng/Phát đối chiếu. | Phát hiện chưa rõ target cho từng kỳ hay trung bình, trường hợp đúng 40 phút và baseline câu hỏi lại còn thiếu. | Tiêu chí đề xuất từ tài liệu chưa chứng minh người dùng chấp nhận, chưa thay thế kiểm chứng hoặc quyết định của nhóm. | Ghi đúng là góp ý; dữ liệu thiếu không đổi thành 0; không tự chốt PS hoặc quyết định thay người chủ trì. |
+| **CP7 — bản nháp tham khảo** | Theo yêu cầu cá nhân, Codex soạn bản nháp reflection riêng từ tài liệu GitHub, có ghi nguồn AI. | Gợi ý cách liên hệ card cá nhân, card nhóm, metric và giới hạn bằng chứng. | Bản nháp không xác nhận trải nghiệm hay lời phát biểu thực tế của Thao; theo rubric, dùng AI viết thay reflection không đáp ứng C4. | Không dùng bản nháp làm lời tự thuật đã xác nhận; phần trả lời chính thức ở mục 6 còn chờ cá nhân tự viết. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Chưa điền ở bản CP2. Sau khi hoàn tất phần nhóm, tôi sẽ tự viết reflection bằng trải nghiệm thực tế của mình, tối thiểu 200 từ cho các câu 6.1–6.6; mục 6.7 được trả lời riêng bằng 5–8 câu.
+**Chưa hoàn thành CP7.** Phần trả lời chính thức cần do Thao tự viết theo trải nghiệm thật, tối thiểu 200 từ cho các câu 6.1–6.6; mục 6.7 trả lời riêng bằng 5–8 câu. [Bản nháp tham khảo do AI soạn](../assets/cp7-lesongthao-reflection-draft.md) được tách riêng và không được tính là reflection tự viết.
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
@@ -212,9 +224,18 @@ Chưa điền ở bản CP2. Sau khi hoàn tất phần nhóm, tôi sẽ tự vi
 
 ## 7. Tài liệu tham khảo
 
-Nguồn tham khảo cho bối cảnh và kết quả kỹ thuật trong CP1–CP2:
+Các README dưới đây được mở đối chiếu ngày **09/11/2026**. Nguồn kỹ thuật và tự báo cáo thời gian được phân biệt để tránh coi kết quả mô hình là bằng chứng tiết kiệm thời gian.
 
-- `smart-parking-lpr-system`: https://github.com/lesongthao/smart-parking-lpr-system
-- `vehicle-hog-svm-rbf-pca`: https://github.com/lesongthao/vehicle-hog-svm-rbf-pca
-- `esp32-motion-relay-blynk`: https://github.com/lesongthao/esp32-motion-relay-blynk
-- `esp32-smart-light-blynk`: https://github.com/lesongthao/esp32-smart-light-blynk
+| Nguồn | Dùng đối chiếu nội dung nào? | Giới hạn |
+|---|---|---|
+| [Vehicle HOG + SVM + PCA — README](https://github.com/lesongthao/vehicle-hog-svm-rbf-pca/blob/main/README.md) | 400 ảnh, 4 lớp; các mốc PCA 10/20/50/100/200; F1 Truck 0.52 và Bus 0.63. | Không có log xác nhận thời gian viết báo cáo 75–90 phút. |
+| [Smart Parking — kết quả nhận diện](https://github.com/lesongthao/smart-parking-lpr-system/blob/main/README.md#results) | 200 ảnh, đúng 195/200, accuracy 97.50%, CER 1.44%, thời gian xử lý 619 ms/ảnh; dữ liệu huấn luyện 8.357 ảnh. | 619 ms là xử lý ảnh, không phải thời gian rà soát của con người. Kết quả tập đánh giá không xác nhận vận hành thực tế. |
+| [ESP32 Motion Relay — README](https://github.com/lesongthao/esp32-motion-relay-blynk/blob/main/README.md) | Serial 115200 baud; 4 Virtual Pin V1–V4; alarmMode và bảng troubleshooting. | Không có log xác nhận 8–9 vòng debug/buổi hoặc 10 phút/vòng. |
+| [ESP32 Smart Light — README](https://github.com/lesongthao/esp32-smart-light-blynk/blob/main/README.md) | Virtual Pin V0–V4; RTC/LDR; ghi chú GND của RTC nối vào GPIO23 trong mô phỏng. | Lỗi dây trong mô phỏng không chứng minh tất cả lỗi debug đều có cùng nguyên nhân. |
+| [TEAM.md — phân công chính thức trên main](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/TEAM.md) | Candidate đã chọn và vai trò của Lê Sông Thao. | Phân công là trách nhiệm được giao; cần sản phẩm để chứng minh hoàn thành. |
+| [Card #1 của Trần Hoàng Phát](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md) | Baseline tự báo cáo 38/71/55 phút; mục tiêu No AI dưới 40 phút, Workflow dưới 25 phút nếu cần. | Số câu giảng viên hỏi lại còn thiếu baseline; chưa có kết quả pilot. |
+| [Thiết kế quy trình CP5 của Thao, có AI hỗ trợ](../assets/cp5-lesongthao-workflow-draft.md) | Quy trình hiện tại, phương án bảng chung, before/after, boundary và cách quay về; đã tích hợp vào bản nhóm ở máy. | Chưa được đẩy lên main và chưa có kết quả pilot. |
+| [Góp ý metric/boundary CP6](../assets/cp6-lesongthao-metric-boundary-review.md) | Các điểm cần chủ trì PS/mức can thiệp/quyết định đối chiếu với quy trình; 5 tiêu chí đề xuất. | Là đầu vào góp ý, chưa phải kết luận CP6 đã chốt. |
+| [Rubric](../../RUBRIC.md), [Rules](../../RULES.md), [báo cáo nhóm](../team/group_report.md) | Điều kiện C1–C5 và nơi đối chiếu phần tham gia nhóm. | Main tại commit 6270651 còn là mẫu; bản ở máy đã có phần CP5 của Thao. |
+
+Các mốc thời gian thao tác và tần suất ở CP1–CP2 còn cần được cá nhân đối chiếu với ghi chép gốc. Tài liệu Day-01 đang được nhắc theo trải nghiệm cá nhân, chưa kèm link bài nộp trong bản này.
