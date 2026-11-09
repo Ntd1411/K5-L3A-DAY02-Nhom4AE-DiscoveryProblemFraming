@@ -162,7 +162,15 @@ Baseline nội bộ trung bình khoảng **55 phút/kỳ**, lặp lại mỗi ha
 | Time log nội bộ | 3 kỳ báo cáo của 1 người phụ trách | Cả ba kỳ đều phải kiểm tra GitHub, Zalo, ghi chú họp và Google Docs; thời gian dao động 38–71 phút, trung bình khoảng 55 phút | Tần suất chỉ hai tuần/lần; kỳ nhanh nhất mất 38 phút nên giải pháp phức tạp có thể không tương xứng |
 | Câu trả lời mở về cách xử lý hiện tại | 7 phản hồi hợp lệ | 3/7 người vẫn xem lại chat và tự tổng hợp; 3/7 cho biết thành viên không cập nhật đều; 3/7 gặp vấn đề vì thông tin nằm ở nhiều kênh | 2/7 người đã dùng task board hoặc bảng chung và đánh giá quy trình hiện tại tương đối hiệu quả |
 
-**Nguyên tắc điều chỉnh bài toán sau kiểm chứng:** nếu khảo sát xác nhận vấn đề, actor được chốt là **người phụ trách báo cáo tiến độ định kỳ cho nhóm sinh viên có công việc nằm ở GitHub, tin nhắn và ghi chú họp**. Nếu đa số đã dùng bảng quản lý công việc và hoàn thành dưới 15 phút, nhóm chuyển trọng tâm từ thu thập dữ liệu sang bước viết nhận định/kế hoạch hoặc chọn No AI. Nếu vấn đề chủ yếu đến từ việc thành viên không cập nhật, giải pháp đầu tiên là biểu mẫu và quy ước cập nhật thay vì tự động đọc lịch sử trò chuyện.
+**Nhóm đã điều chỉnh bài toán thế nào theo kết quả được tổng hợp:**
+
+| Điểm điều chỉnh | Căn cứ trong bảng tổng hợp | Hệ quả đối với bài làm |
+|---|---|---|
+| Thu hẹp đối tượng | 4/7 người mất trên 30 phút, nhưng 2/7 người đã thấy task board đủ dùng | Tập trung vào người tổng hợp của nhóm có thông tin phân tán và còn phải hỏi lại; không khẳng định mọi nhóm sinh viên đều cần giải pháp mới. |
+| Sửa cách thu dữ liệu trước khi tăng mức can thiệp | 3/7 cho biết thành viên không cập nhật đều; 3/7 gặp thông tin ở nhiều kênh | Yêu cầu cập nhật có cấu trúc và xác nhận trạng thái; Rule lọc/gom, không tự đọc Zalo hoặc suy tiến độ từ commit. |
+| Đo cả chất lượng và phần việc chuyển sang thành viên | 5/7 từng thiếu việc hoặc phải hỏi lại; bảng chung đã đủ với một số người | Giữ kiểm tra nguồn, không bỏ sót và đo cập nhật của cả nhóm. Target dưới 25 phút và giới hạn 10 phút/người/kỳ là mục tiêu thiết kế do nhóm chọn, chưa phải kết quả khảo sát chứng minh đạt. |
+
+Những điều chỉnh trên dựa trên số liệu do nhóm đã tổng hợp; cần phản hồi gốc đã ẩn danh và thời điểm thu thập để xác minh từng kết luận. Không tạo lại các phiếu riêng lẻ từ tỷ lệ tổng hợp.
 
 ### 3.3. Research giải pháp đã có
 
@@ -353,11 +361,13 @@ Vì sao: báo cáo phải tổng hợp từ ít nhất ba nguồn, có hơn ba b
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | Đầy đủ | 100% task/issue/PR trạng thái Done trong kỳ xuất hiện trong dữ liệu tổng hợp | Bỏ sót ít nhất một mục hợp lệ |
+| 1 | Đầy đủ | 100% task đủ điều kiện trong kỳ sau loại trùng theo task_id xuất hiện trong tổng hợp; trạng thái Done được xác nhận và có nguồn issue/PR/task board | Bỏ sót ít nhất một mục hợp lệ hoặc đếm một việc thành nhiều việc theo số PR |
 | 2 | Chính xác | Người phụ trách, trạng thái, hạng mục và khoảng ngày khớp nguồn | Có trường sai, trùng hoặc lấy nhầm ngoài kỳ |
 | 3 | Truy vết được | Mỗi mục có liên kết tới task, issue hoặc pull request gốc | Có mục không thể đối chiếu nguồn |
 | 4 | Hiệu quả thời gian | Toàn bộ quy trình người phụ trách dưới 25 phút; hai pha Rule tổng không quá 3 phút (lọc 2 + gom 1) | Tổng từ 25 phút hoặc Rule quá 3 phút là chưa đạt; riêng tổng thời gian từ 25 phút ở hai kỳ liên tiếp thì dừng theo mục 8 |
 | 5 | An toàn dữ liệu | Chỉ đọc nguồn được cho phép, không sửa dữ liệu và không gửi tự động | Truy cập chat riêng tư, thay đổi dữ liệu gốc hoặc tự gửi báo cáo |
+
+**Ca đánh giá cụ thể:** [10 cặp input/đầu ra mong đợi cho Rule](../assets/cp6-rule-evaluation-cases.md), gồm dữ liệu đúng, chưa xác nhận, sai kỳ, trùng, thiếu/mâu thuẫn trường, ngoài quyền và lỗi nguồn. Đây là ví dụ tổng hợp chưa chạy trên triển khai, không phải kết quả pilot hoặc bộ eval AI để nhận bonus B3. Tiêu chí thời gian phải được đo riêng trên triển khai và trong các kỳ báo cáo thật.
 
 ---
 

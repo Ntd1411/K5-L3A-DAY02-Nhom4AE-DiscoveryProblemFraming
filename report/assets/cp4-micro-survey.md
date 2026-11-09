@@ -65,3 +65,15 @@ Xuất bảng phản hồi từ công cụ khảo sát, bỏ mọi cột nhận 
 - Tỷ lệ từng thiếu việc hoặc phải hỏi lại.
 - Hai đến bốn workaround phổ biến.
 - Ít nhất một tín hiệu phản bác.
+
+## Nguồn cần bổ sung để đối chiếu bảng tổng hợp
+
+Hiện repo có bộ câu hỏi và bảng tổng hợp trong báo cáo nhóm. Chưa có phản hồi gốc đã ẩn danh, thời điểm và kênh thực hiện thực tế; thời điểm commit không thay thế thời điểm khảo sát.
+
+Người thực hiện khảo sát cần bổ sung:
+
+- Bản xuất phản hồi thật đã bỏ họ tên, email, số điện thoại; có thể đặt tại `report/assets/cp4-survey-responses.csv`.
+- Thời điểm hoặc khoảng thời gian thu thập và kênh đã dùng, ghi đúng thực tế thay vì để lựa chọn “trực tiếp hoặc Forms”.
+- Mã người trả lời ẩn danh, vai trò và xác nhận thuộc nhóm khác; câu trả lời câu 1–7, kèm lý do loại phản hồi không hợp lệ.
+
+Đối chiếu từ dữ liệu gốc: 8 phản hồi, 7 hợp lệ; 4/7 mất trên 30 phút; 5/7 từng thiếu việc/hỏi lại; các tỷ lệ nguồn và tín hiệu phản bác. Nếu bản gốc khác bảng hiện tại thì sửa bảng theo bản gốc. Không tạo tám dòng phản hồi từ các tỷ lệ đã có hoặc xem các ô thiếu là 0.

@@ -1,7 +1,7 @@
 # Báo cáo cá nhân — 2A202603534_LeSongThao
 
 > **Trạng thái cập nhật ngày 09/11/2026:** Nhóm đã chọn **Card #1 của Trần Hoàng Phát — tổng hợp báo cáo tiến độ hai tuần**. Phân công chính thức được ghi trong [TEAM.md](../../TEAM.md).
-> Mục 2–3 giữ phần khám phá và ba card cá nhân của Lê Sông Thao. CP5 đã đồng bộ với quyết định nhóm **Go — pilot phạm vi nhỏ với Rule**: khoảng 21 phút, target dưới 25 phút/kỳ. Nhật ký chỉ ghi hoạt động có nguồn; CP7 còn cần câu trả lời cá nhân.
+> Mục 2–3 giữ phần khám phá và ba card cá nhân của Lê Sông Thao. CP5 đã đồng bộ với quyết định nhóm **Go — pilot phạm vi nhỏ với Rule**: khoảng 21 phút, target dưới 25 phút/kỳ. Có 10 ca đánh giá thiết kế Rule; mục 6 có bản nháp AI, chưa thay thế reflection tự viết được tính C4.
 > Hướng dẫn và template: [docs/01-worksheet.md](../../docs/01-worksheet.md).
 
 ## 1. Thông tin học viên
@@ -180,7 +180,7 @@ Nhóm đã chọn Card #1 của Phát theo TEAM.md. Nhật ký dưới đây đ�
 | Kiểm chứng / research | Theo TEAM.md, hỗ trợ Phát CP4. Báo cáo nhóm ghi 8 phản hồi, 7 hợp lệ, 4/7 mất trên 30 phút và 2/7 đã thấy task board đủ dùng; bộ câu hỏi ở assets. | Dùng tín hiệu phản bác của nhóm để giữ phương án bảng chung No AI thử trước trong CP5. Đây là kết quả do báo cáo nhóm tổng hợp, không khai tôi trực tiếp thu cả 8 phản hồi; chưa có bảng phản hồi gốc để đối chiếu từng người. |
 | Quy trình nhóm | Đã hoàn thiện [CP5 có AI hỗ trợ](../assets/cp5-lesongthao-workflow-draft.md) trong [báo cáo nhóm mục 4](../team/group_report.md#4-quy-trình-trướcsau-cp5), đồng bộ quyết định Rule ở bản nhóm 53f9eb6: 2 sơ đồ, actor/input/output/thời gian, before/after, kiểm tra và quay về. | Baseline khoảng 55 phút; Rule dự kiến 21 phút, target dưới 25. Tách 6 bước lập báo cáo (2 Rule + 4 con người) với cập nhật task trong kỳ. No AI khoảng 36 phút chỉ còn là đối chiếu; chưa có kết quả pilot. |
 | Problem Statement | Đối chiếu PS v0/v1 của nhóm với quy trình trong [tài liệu hỗ trợ CP6](../assets/cp6-lesongthao-metric-boundary-review.md): metric, phạm vi thời gian, nguồn trạng thái và boundary. | PS v1 chọn Rule, không có AI intervention point, thêm giới hạn cập nhật 10 phút/người/kỳ. Vai trò của tôi là đối chiếu quy trình, không nhận là người chủ trì viết PS. |
-| Mức can thiệp AI | Đồng bộ mức nhóm đã chọn là Rule; rà 5 tiêu chí đánh giá với phần CP5. | Sửa mâu thuẫn tổng Rule: lọc 2 + gom 1 = 3 phút; giữ No AI làm phương án quay về và Workflow là điều kiện sau pilot nếu còn nghẽn viết nhận định. |
+| Mức can thiệp AI | Đồng bộ mức Rule; rà 5 tiêu chí với CP5 và chuẩn bị [10 ca input/đầu ra mong đợi](../assets/cp6-rule-evaluation-cases.md) có AI hỗ trợ. | Sửa tổng Rule 2 + 1 = 3 phút; ca đánh giá bao phủ sai kỳ, trùng, thiếu/mâu thuẫn dữ liệu, ngoài quyền và lỗi nguồn. Chưa chạy trên triển khai; không nhận bonus eval AI B3. |
 | Quyết định | Đối chiếu mục 8: Go — pilot nhỏ với Rule, thử 2 kỳ rồi tiếp tục đủ 4 kỳ nếu đạt. | Làm rõ trường hợp đúng 25 phút: target dưới 25 nên 25 là chưa đạt; ngưỡng dừng cũng kiểm tra task bị bỏ sót và cập nhật quá 10 phút/người/kỳ. Không khai pilot đã chạy. |
 
 **Nguồn nhật ký C3:** bảng pitch của nhóm, mục 2.1 dòng 3/6/9 và 10–12; đối chiếu bản card hiện tại ở mục 3 và bảng phản biện. Phản biện AI ở CP2 được ghi riêng; những câu trả lời hoặc thay đổi của người khác chưa có trong biên bản không được suy diễn thêm.
@@ -198,27 +198,42 @@ Bảng ghi các lần dùng AI ở CP1–CP2 và lần rà soát tài liệu nà
 | **Rà soát báo cáo cá nhân — 09/11/2026** | Dùng Codex đối chiếu rubric, TEAM.md, README của 4 dự án và biên bản CP3–CP4 khi gộp nhánh chung. | Phân biệt card cá nhân với candidate nhóm; phát hiện thiếu cách đo, đếm lặp biến thể ảnh và lựa chọn Workflow quá sớm. | Giới hạn: AI không quan sát buổi pitch/phỏng vấn và không xác minh được số phút hồi tưởng chỉ từ README. | Ghi nguồn cho nhật ký hỏi–đáp theo biên bản CP3; không tự thêm câu trả lời chưa có hoặc nhận mình đã thu dữ liệu khảo sát. |
 | **CP5 — quy trình và rà soát** | Nhờ Codex vẽ Mermaid và tích hợp CP5; sau đó đồng bộ quyết định Rule ở bản nhóm mới nhất. | Làm rõ input/output, tổng thời gian 21 phút, kiểm tra và quay về. | Bản nháp AI ban đầu hỏi bổ sung rồi gửi thẳng; phương án No AI 36 phút cũng không còn là mức cuối khi nhóm đã chốt Rule. | Giữ kiểm tra sau mọi bổ sung; dùng Rule 21 phút là ước tính thiết kế chính, đo cập nhật task của cả 4 người riêng; không khai kết quả pilot. |
 | **CP6 — góp ý từ quy trình** | Dùng Codex đối chiếu metric/boundary và 5 tiêu chí Rule của nhóm với sơ đồ CP5. | Phát hiện tổng Rule 3 phút mâu thuẫn tiêu chí dưới 2 phút, và ngưỡng trên 25 bỏ trống trường hợp đúng 25. | Rà soát tài liệu không chứng minh target khả thi hoặc dữ liệu khảo sát đúng; không thay thế pilot. | Đồng bộ phép cộng và ngưỡng; tách target với kết quả đã đo, dữ liệu thiếu không đổi thành 0. |
-| **CP7 — bản nháp tham khảo** | Theo yêu cầu cá nhân, Codex soạn bản nháp reflection riêng từ tài liệu GitHub, có ghi nguồn AI. | Gợi ý cách liên hệ card cá nhân, card nhóm, metric và giới hạn bằng chứng. | Bản nháp không xác nhận trải nghiệm hay lời phát biểu thực tế của Thao; theo rubric, dùng AI viết thay reflection không đáp ứng C4. | Không dùng bản nháp làm lời tự thuật đã xác nhận; phần trả lời chính thức ở mục 6 còn chờ cá nhân tự viết. |
+| **CP6 — ca đánh giá** | Nhờ Codex soạn 10 cặp dữ liệu tổng hợp/đầu ra mong đợi cho Rule. | Cụ thể hóa các lỗi cần phát hiện theo tiêu chí 1, 2, 3, 5. | Ca tổng hợp không chứng minh thời gian, chất lượng pilot hoặc kết quả triển khai; Rule không đủ điều kiện bonus eval AI. | Ghi rõ chưa chạy; tiêu chí thời gian và bốn kỳ liên tiếp cần đo trên dữ liệu thật. |
+| **CP7 — bản nháp tham khảo** | Theo yêu cầu cá nhân, Codex soạn bản nháp reflection từ tài liệu GitHub, giữ bản riêng và đưa vào mục 6, có ghi nguồn AI. | Gợi ý cách liên hệ card cá nhân, card nhóm, metric và giới hạn bằng chứng. | Bản nháp không xác nhận trải nghiệm hay lời phát biểu thực tế của Thao; theo rubric, dùng AI viết thay reflection không đáp ứng C4. | Phần nháp được nhận diện rõ; câu trả lời chính thức vẫn cần cá nhân tự viết từ trải nghiệm thật. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-**Chưa hoàn thành CP7.** Phần trả lời chính thức cần do Thao tự viết theo trải nghiệm thật, tối thiểu 200 từ cho các câu 6.1–6.6; mục 6.7 trả lời riêng bằng 5–8 câu. [Bản nháp tham khảo do AI soạn](../assets/cp7-lesongthao-reflection-draft.md) được tách riêng và không được tính là reflection tự viết.
+> **Bản nháp do AI soạn theo yêu cầu của Thao, chưa phải reflection tự viết được tính C4.** Nội dung dựa trên tài liệu và sản phẩm trong repo; Thao cần tự viết câu trả lời từ trải nghiệm của mình trước khi nộp. Không tự nhận đã phỏng vấn hoặc có cảm xúc/lời phát biểu chưa được xác nhận. [Nguồn bản nháp](../assets/cp7-lesongthao-reflection-draft.md).
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+### 6.1. Học được gì từ các card khác?
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Từ các card của nhóm, tôi có thể so sánh cách xác định một pain đáng đào sâu. Card của Phát về báo cáo tiến độ có actor cụ thể, chu kỳ hai tuần và ba mốc thời gian 38, 71, 55 phút. Card của tôi về báo cáo thực nghiệm có quy trình rõ nhưng baseline khoảng 80 phút vẫn là ước lượng hồi tưởng. Điểm cần học là phân biệt vấn đề quen thuộc với vấn đề đã có bằng chứng đủ rõ để nhóm cùng kiểm chứng.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+### 6.2. Dấu hiệu nghĩ giải pháp quá sớm
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Trong bản card cá nhân, tôi từng nghiêng về Workflow để soạn nháp nhận định. Tuy nhiên, thao tác lấy chỉ số và xuất bảng có thể giải bằng script, còn phần viết có thể thử một template trước. Với card của Phát, cần giải quyết thông tin phân tán và cách cập nhật việc chung trước khi thêm AI. Dấu hiệu cần tự kiểm tra là chọn công nghệ khi chưa biết phương án đơn giản hơn còn thiếu ở bước nào.
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+### 6.3. Một thay đổi có trong tài liệu
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Biên bản CP3 ghi Giang hỏi nếu script đã xuất metrics và mẫu sai thì có nhất thiết cần AI không. Bản card cập nhật ưu tiên Rule cùng template trước, sau đó mới cân nhắc Workflow nếu phần nhận định vẫn còn nghẽn. Câu hỏi của Phát về mục tiêu OCR cũng giúp làm rõ: chỉ giảm 30 phút đối chiếu trong tổng 55 phút thì vẫn còn 25 phút, chưa đủ để tuyên bố đạt dưới 15 phút. Đây là các điểm có thể đối chiếu giữa biên bản và bản card, còn cảm nhận về quá trình đổi ý cần chính tôi tự kể.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+### 6.4. Điều rút ra từ bằng chứng hiện có
+
+Báo cáo nhóm tổng hợp 8 phản hồi khảo sát, 7 hợp lệ; 4/7 người mất trên 30 phút nhưng 2/7 người đã thấy task board đủ dùng. Tín hiệu phản bác này phù hợp với hướng thử bảng chung trước khi thêm AI. Tôi cần phân biệt số liệu do nhóm tổng hợp với điều mình trực tiếp quan sát; tài liệu hiện chưa kèm phản hồi gốc để đối chiếu từng người. Baseline số câu giảng viên hỏi lại còn thiếu, nên tốc độ tổng hợp chưa đủ để kết luận chất lượng đã cải thiện.
+
+### 6.5. Khó khăn khi làm rõ Problem Statement
+
+Khó khăn trong phần quy trình là giữ cùng phạm vi đo khi nhóm cập nhật quyết định. Card Phát ban đầu có phương án No AI khoảng 36 phút, nhưng CP6 đã chọn Rule dự kiến 21 phút với mục tiêu dưới 25. Sáu bước lập báo cáo cần được tách khỏi hoạt động cập nhật task trong kỳ. Tổng thời gian phải tính cả kiểm tra và sửa; hai pha Rule là 2 cộng 1 bằng 3 phút. Số commit không đủ để xác nhận một công việc đã hoàn thành.
+
+### 6.6. Nếu làm lại
+
+Tôi sẽ ghi thời gian từng bước ngay khi làm thay vì chỉ nhớ tổng thời gian sau đó. Trong thảo luận, tôi cần ghi nguyên câu hỏi, người hỏi và phần card được sửa để nhật ký CP3 có bằng chứng rõ. Với nhiệm vụ CP5 được giao, tôi sẽ đối chiếu cùng Phát về input, output và thời gian, rồi trao đổi với Giang để sơ đồ, metric và mức can thiệp dùng cùng giả định. Điều tôi cần phản biện kỹ hơn là phần thời gian tiết kiệm có thực sự giảm tổng công việc của cả nhóm hay chỉ chuyển việc sang thành viên khác.
+
+### 6.7. Khung giải thích hiểu bài — bản nháp 7 câu
+
+Bài của nhóm là giúp Phát tổng hợp công việc hai tuần của nhóm bốn người để gửi báo cáo cho giảng viên. Baseline gồm 38, 71 và 55 phút, trung bình khoảng 55 phút; bước đọc Zalo khoảng 15 phút là nghẽn hiện tại. Nhóm chọn Rule lọc và gom dữ liệu, còn con người bổ sung, viết, kiểm tra và gửi, với ước tính 21 phút và target dưới 25 phút/kỳ. Metric yêu cầu bốn kỳ liên tiếp đạt thời gian, không bỏ sót task hợp lệ, có nguồn đối chiếu và cập nhật không quá 10 phút/người/kỳ. Boundary là chỉ đọc nguồn được phép, không suy Done từ commit, không sửa dữ liệu hoặc tự gửi, và luôn kiểm tra lại sau bổ sung. Nhóm giữ No AI làm phương án quay về, chưa chọn Workflow/Agent vì chưa có bằng chứng cần AI. Quyết định là Go pilot hai kỳ với Rule, sau đó tiếp tục đủ bốn kỳ nếu đạt; dừng nếu hai kỳ đều từ 25 phút trở lên, có task hợp lệ bị bỏ sót hoặc có người tốn quá 10 phút/kỳ để cập nhật.
 
 ---
 
@@ -236,6 +251,7 @@ Các README dưới đây được mở đối chiếu ngày **09/11/2026**. Ngu
 | [Card #1 của Trần Hoàng Phát](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md) | Baseline tự báo cáo 38/71/55 phút; mục tiêu No AI dưới 40 phút, Workflow dưới 25 phút nếu cần. | Số câu giảng viên hỏi lại còn thiếu baseline; chưa có kết quả pilot. |
 | [Thiết kế quy trình CP5 của Thao, có AI hỗ trợ](../assets/cp5-lesongthao-workflow-draft.md) | Quy trình hiện tại, phương án bảng chung, before/after, boundary và cách quay về; đã tích hợp vào báo cáo nhóm. | Thời gian tương lai chưa có kết quả pilot. |
 | [Góp ý metric/boundary CP6](../assets/cp6-lesongthao-metric-boundary-review.md) | Các điểm cần chủ trì PS/mức can thiệp/quyết định đối chiếu với quy trình; 5 tiêu chí đề xuất. | Là đầu vào góp ý, chưa phải kết luận CP6 đã chốt. |
+| [10 ca đánh giá Rule](../assets/cp6-rule-evaluation-cases.md) | Input/đầu ra mong đợi cho biên thời gian, trạng thái, loại trùng, nguồn và quay về. | Ví dụ tổng hợp chưa chạy trên triển khai; không phải bằng chứng khảo sát hoặc kết quả pilot. |
 | [Biên bản CP3–CP4 từ nhánh chung](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/492b7f7e35330605948cfc580506892cbf1cdd63/report/team/group_report.md) | Câu hỏi đặt/nhận ở bảng pitch, shortlist và số liệu khảo sát do nhóm tổng hợp. | Chỉ dẫn theo biên bản; chưa kèm bản phản hồi gốc để xác minh từng dòng khảo sát. |
 | [CP5–CP6 của nhóm tại 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md) | Quyết định Rule, PS v0/v1, pilot 2 → 4 kỳ và target dưới 25 phút. | Các mốc thời gian tương lai là ước tính, chưa phải kết quả pilot. |
 | [Rubric](../../RUBRIC.md), [Rules](../../RULES.md), [báo cáo nhóm](../team/group_report.md) | Điều kiện C1–C5 và nơi đối chiếu phần tham gia nhóm. | Báo cáo chung có CP3–CP6; phản hồi khảo sát gốc và reflection cá nhân còn cần bổ sung. |
