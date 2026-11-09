@@ -1,8 +1,8 @@
 # Báo cáo cá nhân — 2A202603534_LeSongThao
 
-> Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
-> Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
-> Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
+> **Trạng thái: Bản cập nhật đến CP2.** Nhóm đang tập hợp báo cáo cá nhân để so sánh các Problem Card; **chưa chốt card/bài toán chung**.
+> Thứ tự ưu tiên, card muốn pitch và cảm nhận về mức can thiệp dưới đây là đề xuất cá nhân để thảo luận ở CP3.
+> Hướng dẫn và template: [docs/01-worksheet.md](../../docs/01-worksheet.md).
 
 ## 1. Thông tin học viên
 
@@ -47,9 +47,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 ### Bảng chọn top 3
 
+Đây là top 3 của cá nhân tôi để đưa ra so sánh với các card của những thành viên khác; chưa phải shortlist hay quyết định của nhóm.
+
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Tổng hợp kết quả từ nhiều lần chạy thử nghiệm mô hình/notebook và viết nhận định phân tích lỗi cho báo cáo (#1) | Actor rõ, quy trình lặp lại ở mọi bài lab và đồ án thực nghiệm; vừa là trải nghiệm thật của tôi (`vehicle-hog-svm-rbf-pca`, `Day-01`), vừa là pain chung của các bạn học viên trong lớp nên kiểm chứng trực tiếp được ngay tại CP4. | Các bạn nhóm khác mất nhiều thời gian ở bước gom bảng số liệu hơn hay ở bước viết phần nhận định so sánh & phân tích nguyên nhân sai (error analysis)? |
+| 1 | Tổng hợp kết quả từ nhiều lần chạy thử nghiệm mô hình/notebook và viết nhận định phân tích lỗi cho báo cáo (#1) | Actor rõ, quy trình lặp lại ở mọi bài lab và đồ án thực nghiệm; vừa là trải nghiệm thật của tôi (`vehicle-hog-svm-rbf-pca`, `Day-01`), có thể là pain của các học viên khác; cần kiểm chứng mức độ phổ biến nếu nhóm chọn đào sâu ở CP4. | Các bạn nhóm khác mất nhiều thời gian ở bước gom bảng số liệu hơn hay ở bước viết phần nhận định so sánh & phân tích nguyên nhân sai (error analysis)? |
 | 2 | Đối chiếu ảnh gốc, ảnh tiền xử lý và kết quả nhận diện sai trên tập kiểm thử biển số để tinh chỉnh luật hậu xử lý (#2) | Có baseline số liệu đo đạc rất rõ từ đồ án tốt nghiệp (`200` ảnh, accuracy `97.50%`, CER `1.44%`, 3 biến thể ảnh `original/CLAHE/Otsu`), dễ so sánh giữa Rule và Workflow. | Pain này đặc thù cho người làm bài toán OCR/biển số nên khó tìm được nhiều bạn ở nhóm khác trong lớp đang làm cùng bài toán để phỏng vấn ở CP4. |
 | 3 | Đối chiếu log Serial Monitor, sơ đồ chân GPIO và trạng thái Virtual Pin trên Blynk khi debug mạch ESP32/Wokwi (#3) | Nỗi đau rất thật với dân làm nhúng/IoT (`esp32-motion-relay-blynk`, `esp32-smart-light-blynk`), từng bước thao tác cụ thể và đếm được số phút. | Nhiều lỗi phần cứng/nối dây thực chất chỉ cần checklist + hàm in log có cấu trúc (Rule) là giải quyết được phần lớn, chưa chắc cần đến mức can thiệp phức tạp hơn. |
 
@@ -136,12 +138,12 @@ HIỆN TẠI — 10 phút/vòng dò lỗi (1' + 3' + 1' + 4' + 1') × 8–9 lầ
   → [5. Sửa dây/code và biên dịch nạp lại: 1']
 ```
 
-### Card muốn pitch nhất
+### Card muốn pitch nhất (ưu tiên cá nhân)
 
 - Card số: **Card #1** (*Tổng hợp kết quả từ nhiều lần chạy thử nghiệm mô hình/notebook và viết nhận định phân tích lỗi cho báo cáo*).
 - Vì sao:
-  1. Đây là vấn đề vừa xuất phát từ trải nghiệm thực tế của cá nhân tôi (khi làm báo cáo thực nghiệm cho `vehicle-hog-svm-rbf-pca`, `smart-parking-lpr-system` và bài lab `Day-01`), vừa là vấn đề mà **hầu như mọi thành viên trong nhóm và các bạn nhóm khác trong lớp K5-L3A đều đang gặp trực tiếp**.
-  2. Quy trình có ranh giới rất rõ giữa phần **không nên dùng AI** (lấy số liệu metrics chính xác và tính sẵn độ lệch từ code — phải dùng Rule/Script để không bịa số) và phần **AI hỗ trợ tốt** (soạn nháp nhận định so sánh và gợi ý giả thuyết lỗi từ danh sách mẫu sai để con người kiểm duyệt).
+  1. Đây là vấn đề xuất phát từ trải nghiệm thực tế của cá nhân tôi (khi làm báo cáo thực nghiệm cho `vehicle-hog-svm-rbf-pca`, `smart-parking-lpr-system` và bài lab `Day-01`), có thể cũng xuất hiện ở các bạn làm thực nghiệm tương tự. **Mức độ phổ biến ngoài trải nghiệm của tôi chưa được kiểm chứng**.
+  2. Quy trình có ranh giới rất rõ giữa phần **không nên dùng AI** (lấy số liệu metrics chính xác và tính sẵn độ lệch từ code — phải dùng Rule/Script để không bịa số) và phần **có thể thử AI hỗ trợ** (soạn nháp nhận định so sánh và gợi ý giả thuyết lỗi từ danh sách mẫu sai để con người kiểm duyệt).
   3. Rất thuận lợi để nhóm kiểm chứng trực tiếp tại lớp ở CP4 bằng cả phỏng vấn nhanh (The Mom Test) lẫn khảo sát nhanh các học viên nhóm khác.
 - Câu hỏi muốn nhóm phản biện:
   > *"Nếu chúng ta viết sẵn một đoạn script Python ở cuối Notebook để tự xuất bảng Markdown các chỉ số (Accuracy, Precision, Recall, F1, thời gian chạy) cùng danh sách mẫu sai, thì phần việc còn lại (đọc mẫu sai và viết nhận định so sánh) có thực sự còn đủ nặng để cần tới một Workflow có AI hỗ trợ không, hay chỉ cần một khung câu hỏi mẫu (template No AI) là đủ?"*
@@ -160,74 +162,59 @@ Tôi đã đưa cả 3 Problem Cards vào prompt đóng vai **"Product Manager h
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
+Nhóm đang tập hợp các Problem Card ở CP2 để so sánh, chưa chốt candidate chung. Mục này sẽ được cập nhật bằng các hoạt động và phản biện thực tế khi nhóm thực hiện CP3–CP6.
+
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| **Pitch Problem Card** | Trình bày 3 Problem Cards (#1 Tổng hợp kết quả thực nghiệm & phân tích lỗi trên Notebook; #2 Rà soát lỗi OCR biển số trên 200 ảnh; #3 Debug log Serial ESP32 & Blynk) với số liệu thực tế từ GitHub cá nhân. | Card #1 của tôi trùng khớp với nỗi đau của cả 3 thành viên còn lại (#4 của Phát, #7 của Dũng, #12 của Giang), được gom thành **Cluster A** và được chọn làm Candidate chính thức của cả nhóm (đạt 35/35 điểm). |
-| **Phản biện bài của bạn khác** | **Câu hỏi tôi đã đặt:**<br>1. Hỏi Trần Hoàng Phát (Candidate #4 — `dermascan`): *"Pain nặng nhất của Phát nằm ở khâu gom bảng OOF của 9 mô hình hay khâu giải thích vì sao tiền xử lý `DullRazor/CLAHE` làm tăng lớp này nhưng giảm lớp kia?"*<br>2. Hỏi Nguyễn Tuấn Dũng (Candidate #9 — `RealtimeChatApp`): *"Nếu thêm mã thứ tự gói tin (`sequence_id`) và ghi chung vào 1 file log tập trung bằng Rule thì đã giải quyết được chưa?"*<br>3. Hỏi Nguyễn Huy Giang (Candidate #12 — `Day-01`): *"Giang mất nhiều thời gian ở bước kẻ bảng Markdown hay ở bước đọc mẫu sai để giải thích vì sao phương pháp này tốt hơn phương pháp kia?"* | 1. Giúp Phát và Giang nhận ra điểm nghẽn chung của cả 4 anh em đều nằm ở bước **đối chiếu mẫu sai để viết nhận định so sánh**, từ đó hợp nhất thành Cluster A.<br>2. Giúp nhóm loại bỏ các bài toán log mạng/hệ thống (#9) khỏi shortlist vì chỉ cần sửa cách ghi log bằng Rule là đủ. |
-| **Nhận phản biện** | **Câu hỏi tôi nhận được:**<br>1. Nguyễn Tuấn Dũng hỏi ở Card #1: *"Nếu viết sẵn 1 hàm Python cuối Notebook tự in bảng Markdown các chỉ số thì phần viết nhận định còn mất bao lâu, và có thực sự cần tới AI không?"*<br>2. Trần Hoàng Phát hỏi ở Card #2: *"Cấu trúc biển số Việt Nam đã cố định theo vị trí ký tự, vậy viết script thống kê cặp ký tự nhầm bằng Rule có giải quyết được phần lớn chưa?"*<br>3. Nguyễn Huy Giang hỏi ở Card #3: *"Log Serial do chính bạn viết lệnh `Serial.println()`, sao không chuẩn hóa format in bảng trạng thái ngay trong firmware C++?"* | **Tôi đã sửa gì:**<br>1. Đưa chính câu hỏi của Dũng thành **Giả định #2** trong Assumption Map để đem đi hỏi người thật ở CP4; đồng thời thiết kế quy trình tương lai tách bạch **Bước 1 (Rule: hàm Python xuất bảng + số dẫn xuất + mẫu sai)** và **Bước 3 (AI: chỉ soạn nháp nhận định)**.<br>2. Đồng ý rút lại ý định chọn Card #2 (biển số xe) làm bài nhóm vì mang tính đặc thù và phần lớn giải được bằng Rule, thay vào đó đưa số liệu 200 ảnh biển số vào làm **Case #03 & #04** trong Bộ thiết kế Eval mẫu ở CP6. |
-| **Gom cluster / cây OST** | Cùng Nguyễn Huy Giang gom 12 candidates thành 4 Clusters (A, B, C, D) và rà soát cây OST để gạch bỏ 3 ý tưởng bị "solution đội lốt opportunity" (như ý tưởng làm chatbot tự đọc `.ipynb` viết hộ toàn bộ báo cáo). | Cây OST của nhóm giữ đúng 1 Outcome đo được ở gốc và 3 nhánh Opportunity thuần túy là pain của người làm thực nghiệm. |
-| **Chọn candidate problem** | Chấm điểm 3 candidates trong shortlist và thống nhất phương án giải quyết bất đồng: chọn bài toán chung Cluster A để dễ kiểm chứng ở CP4, nhưng dùng chính dữ liệu dự án của 4 thành viên làm đầu vào thiết kế bộ kiểm thử. | Nhóm đạt đồng thuận 100% mà không cần bỏ phiếu cảm tính. |
-| **Kiểm chứng / research** | Tham gia phỏng vấn học viên ở các nhóm khác trong lớp K5-L3A theo đúng 3 luật *The Mom Test* và tổng hợp thành các bảng Interview Snapshot tại `report/assets/cp4-interview-snapshots.md`. | Thu được cả tín hiệu xác nhận (mất 50–90 phút, kẹt ở bước phân tích mẫu sai) lẫn tín hiệu phản bác quý giá (bài dưới 3 mô hình chỉ mất 10–15 phút; chỉ đưa bảng số chay khiến AI bịa lý do "mất cân bằng dữ liệu"), giúp nhóm sửa lại Actor và Boundary ở CP5–CP6. |
-| **Quy trình nhóm** | Phụ trách chính vẽ sơ đồ Mermaid & ASCII cho **Quy trình hiện tại (6 bước, ~80 phút)**, **Quy trình tương lai (5 bước, kỳ vọng ~25 phút)** và lập bảng **Before/After** trong `group_report.md` (Mục 4). | Chỉ rõ vị trí can thiệp của Rule (Bước 1), Con người (Bước 2 & 4), AI (Bước 3), Bán tự động Rule + Người (Bước 5), Boundary và Phương án quay về (Fallback) khi bản nháp không đạt. |
-| **Problem Statement** | Cùng Trần Hoàng Phát rà soát Problem Statement v0 (Mục 5) và nâng cấp lên Problem Statement v1 (Mục 7), bổ sung điều kiện chất lượng Hard Gate (`E1` & `E2` bắt buộc) vào Success Metric. | Problem Statement v1 khác biệt rõ rệt với v0 ở 3 trường (`Actor`, `Success Metric`, `Boundary`) kèm lý do dựa trên bằng chứng từ CP4 và rà soát CP6. |
-| **Mức can thiệp AI** | Xây dựng 4 tiêu chí đánh giá (`E1–E4`) và trực tiếp biên soạn **Bộ thiết kế Eval mẫu 10 cặp Input / Expected Output** tại `report/assets/cp6-eval-benchmark-10-cases.md`. | Chuẩn hóa gói Input có sẵn số dẫn xuất (`delta`, `ratio`), tách rõ quan sát dữ liệu với `[Giả thuyết cần kiểm tra]`, và thiết lập điều kiện bắt buộc `E1 & E2` cho đợt pilot 2 tuần. |
-| **Quyết định** | Cùng Nguyễn Tuấn Dũng đánh giá 4 rủi ro (Value, Usability, Feasibility, Viability) và thiết lập 2 ngưỡng dừng định lượng cho đợt pilot 2 tuần. | Chốt quyết định **Go (phạm vi nhỏ)** nhất quán với bằng chứng thực tế, không tốn công xây Agent thừa thãi. |
+| Pitch Problem Card | | |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
+| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Gom cluster / cây OST | | |
+| Chọn candidate problem | | |
+| Kiểm chứng / research | | |
+| Quy trình nhóm | | |
+| Problem Statement | | |
+| Mức can thiệp AI | | |
+| Quyết định | | |
 
 ---
 
 ## 5. Dùng AI
 
+Bảng hiện ghi các lần dùng AI ở CP1–CP2. Các hoạt động sau CP2 sẽ được bổ sung khi thực sự diễn ra.
+
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
 | **CP1 Scan** | Sau khi tự liệt kê 8 vấn đề từ các dự án GitHub cá nhân (`smart-parking-lpr-system`, `vehicle-hog-svm-rbf-pca`, 2 dự án `ESP32 Blynk` và lab `Day-01`), tôi hỏi AI gợi ý thêm góc nhìn theo 4 lăng kính cho sinh viên mới tốt nghiệp ngành Điện tử - Tin học công nghiệp. | Gợi ý thêm góc nhìn về phối hợp làm lab nhóm trên Git trong thời gian ngắn (#9) và rà soát JD ứng tuyển Fresher Embedded/CV (#10). | Đưa ra 2 gợi ý mang tính "solution trá hình" và viễn tưởng: *"AI tự chẩn đoán lỗi mạch điện từ ảnh chụp breadboard"* và *"trợ lý tự làm bài tập"*. | Loại bỏ hoàn toàn 2 ý viễn tưởng/solution trá hình; viết lại ý #9 và #10 theo đúng cấu trúc Job Story không chứa từ khóa giải pháp và gắn số phút thực tế của bản thân. |
 | **CP2 Problem Card** | Dùng prompt "Product Manager hoài nghi" để phản biện 3 Problem Cards của tôi. | Chỉ ra rất trúng việc tôi đang gộp bước "copy bảng chỉ số" và bước "viết nhận định phân tích lỗi" ở Card #1, và chỉ ra Card #3 có thể giải quyết bằng việc sửa câu lệnh `Serial.println()` thay vì dùng AI. | Khi phản biện Card #2 (nhận diện biển số), AI khuyên thay toàn bộ pipeline YOLOv8n + PaddleOCR bằng một mô hình VLM lớn chạy trên cloud mà không tính đến độ trễ nhận diện cục bộ (`619 ms/ảnh`) và yêu cầu chạy offline ở cổng bãi xe. | Giữ nguyên kiến trúc cục bộ ở Card #2, chỉ tập trung vào bài toán công cụ hỗ trợ rà soát tập ảnh lỗi trong giai đoạn phát triển; tách bạch bước Rule (script xuất bảng) và bước AI (nháp nhận định) ở Card #1. |
-| **CP4 Research** | Nhờ AI gợi ý các công cụ/thư viện chuẩn đang giải quyết bài toán gom kết quả thực nghiệm và tạo báo cáo đánh giá mô hình. | Giúp nhóm liệt kê nhanh `scikit-learn classification_report`, `Weights & Biases Reports`, `MLflow Tracking/Evaluation` và `Jupyter nbconvert`. | AI mô tả phiến diện rằng `nbconvert` chỉ xuất được toàn bộ code/log mà bỏ qua `TagRemovePreprocessor`, nói `MLflow` bắt buộc phải mở UI server mới lấy được số liệu, và đưa link cũ của W&B bị chuyển hướng `308`. | Tôi kiểm tra lại tài liệu chính thức của `nbconvert` (`removing_cells.html`) và `MLflow Tracking API`, sửa lại bảng Research cho chính xác và công bằng với từng công cụ, đồng thời bỏ các từ khẳng định tuyệt đối "100% mọi môi trường". |
-| **CP5 Quy trình** | Nhờ AI chuyển mô tả quy trình hiện tại và tương lai sang cú pháp biểu đồ Mermaid `flowchart TD`. | Tạo nhanh khung mã Mermaid và gợi ý cách tô màu (`style`) phân biệt bước Bottleneck, bước Rule, bước AI và bước Con người. | Bản Mermaid đầu tiên do AI sinh ra đã gộp Bước 4 (*Con người kiểm duyệt mẫu lỗi thật*) và Bước 5 (*Kiểm khớp số & commit báo cáo*) làm một, đồng thời quên vẽ nhánh **Phương án quay về (Fallback)** khi bản nháp AI bị sai. | Tôi tách riêng Bước 4 làm chốt chặn `HITL & BOUNDARY` (15 phút) và Bước 5 làm bước bán tự động (Rule kiểm số + Người commit: 3 phút), đồng thời vẽ thêm mũi tên nét đứt `-.->` thể hiện rõ luồng Fallback. |
-| **CP5–6 Problem Statement** | Đưa Problem Statement v0 vào prompt nhờ AI chỉ ra lỗ hổng (không viết lại thay). | Đặt câu hỏi rất sát: *"Nếu người dùng hoàn thành trong 20 phút nhưng phải xóa đi viết lại 80% bản nháp thì có coi là thành công không?"* | AI tiếp tục gợi ý mở rộng phạm vi thành một công cụ tự động đọc mọi file `.ipynb` trong thư mục và tự động cập nhật `report.md`. | Tôi bác bỏ gợi ý tự động ghi đè file báo cáo vì trái với kết quả khảo sát CP4 (`0/8` người muốn giao trắng); bổ sung điều kiện chất lượng vào Success Metric ở v1 (*0 lỗi lệch số liệu, bắt buộc đạt E1 & E2* và *tỷ lệ viết lại < 40%*). |
-| **CP6 Mức can thiệp / quyết định** | Dùng AI hỗ trợ soạn thảo cấu trúc 10 cặp Input / Expected Output trong bộ Eval mẫu (`cp6-eval-benchmark-10-cases.md`). | Giúp định hình nhanh cấu trúc 3 phần cho 10 cases đa dạng từ các dự án của nhóm. | Bản nháp đầu tiên do AI tạo ra mắc 4 lỗi kỹ thuật nghiêm trọng: (1) Ghi sai mốc `PCA 100` và `PCA 200` thành `68.75%` (trong khi `README.md` repo `vehicle-hog-svm-rbf-pca` của tôi là `65.00%` và `70.00%`); (2) Tự tính các số dẫn xuất trong Expected Output dù Boundary cấm AI tự tính số; (3) Khẳng định nguyên nhân nhân quả vượt quá dữ liệu Input ở Case #01, #02; (4) Tính sai `Precision = 1.00` ở Case #09 khi có `38` ca chặn nhầm (`FP = 38`). | Tôi đối chiếu trực tiếp với `README.md` của repo để sửa lại đúng `PCA 100 = 65.00%`, `PCA 200 = 70.00%`; chuyển việc tính mọi số dẫn xuất (`delta`, `ratio`, `Precision = 50/88 = 0.568`) về Bước 1 (Rule) đưa sẵn vào Input; gắn nhãn `[Giả thuyết cần kiểm tra]` cho các suy luận cơ chế; và ghi rõ đâu là chỉ số thật từ repo, đâu là mẫu lỗi mô phỏng để thiết kế test. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Chưa điền ở bản CP2. Sau khi hoàn tất phần nhóm, tôi sẽ tự viết reflection bằng trải nghiệm thực tế của mình, tối thiểu 200 từ cho các câu 6.1–6.6; mục 6.7 được trả lời riêng bằng 5–8 câu.
 
-Khi nghe Nguyễn Tuấn Dũng, Nguyễn Huy Giang và Trần Hoàng Phát trình bày Top 3 Problem Cards ở CP3, tôi nhận ra hai điều rất rõ. Thứ nhất, dù 4 anh em làm ở các mảng khác nhau — tôi làm Nhúng/IoT và Computer Vision (`ESP32`, `YOLOv8n + PaddleOCR`, `HOG + SVM`), Phát làm phân loại ảnh y sinh (`dermascan`) và Web, Dũng làm hệ thống MCP (`aki-mcp-sv`) và Java, còn Giang làm Mobile Flutter (`FlexiSport`) — nhưng cả 4 người đều gặp chung một điểm nghẽn y hệt nhau khi làm thực nghiệm mô hình: mất hơn một tiếng đồng hồ để gom kết quả từ nhiều lần chạy và đối chiếu các mẫu dự đoán sai để viết phần nhận định báo cáo. Thứ hai, khi nghe các bài toán về kiểm tra log hoặc giao diện của các bạn (như kiểm tra tràn khung `RenderFlex` trên Flutter của Giang hay đồng bộ gói tin chat của Dũng), tôi soi lại chính Card #3 của mình (debug log Serial ESP32 `115200` baud) và nhận ra rằng rất nhiều nỗi đau kỹ thuật thực chất xuất phát từ việc chúng ta chưa đặt quy tắc ghi log hoặc viết test chuẩn ngay từ đầu, chứ không phải vì thiếu AI.
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
-Có, tình huống đó xảy ra ngay đầu CP3 khi nhóm bắt đầu vẽ cây Opportunity Solution Tree (OST) và thảo luận về hướng giải quyết cho Cluster A. Lúc đó, có ý kiến trong nhóm buột miệng đề xuất: *"Hay mình làm luôn một con Agent hoặc Chatbot tự đọc thẳng file `.ipynb` rồi tự viết hoàn chỉnh file `report.md` luôn cho nhanh!"*. Ngay lập tức, Trần Hoàng Phát và tôi đã chỉ ra đây là tư duy "solution-first" điển hình: chúng ta đang nhảy thẳng vào một giải pháp tự động hóa toàn phần trước khi biết người học thực sự kẹt ở bước nào và họ có dám tin vào một báo cáo do máy tự viết từ đầu đến cuối hay không. Nhóm đã gạch bỏ ngay ý tưởng "Chatbot tự viết báo cáo" khỏi tầng Opportunity của cây OST, quay lại tách nhỏ quy trình thành 6 bước cụ thể để đem đi hỏi các bạn nhóm khác ở CP4.
-
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
-Tôi đã đổi ý ở hai điểm quan trọng sau khi nhận phản biện. Lần thứ nhất là khi chọn Candidate cho nhóm ở CP3: ban đầu tôi rất muốn bảo vệ Card #2 của mình (đối chiếu 3 biến thể ảnh `original, CLAHE, Otsu` và kết quả OCR trên 200 ảnh biển số từ đồ án tốt nghiệp `smart-parking-lpr-system`) vì tôi đã có sẵn bộ số liệu rất rõ (`97.50%` accuracy, `619 ms/ảnh`). Tuy nhiên, Dũng và Phát phản biện rất đúng rằng bài toán biển số xe quá đặc thù, các bạn nhóm khác trong lớp không làm đúng đề tài đó nên ở CP4 sẽ khó phỏng vấn được người thật theo *The Mom Test*, hơn nữa việc thống kê cặp ký tự nhầm (`8` ↔ `B`) chỉ cần một đoạn script Python thuần (Rule) là giải quyết được phần lớn. Tôi hoàn toàn thuyết phục và đồng ý chuyển sang chọn Card #1 (tổng hợp thực nghiệm & phân tích lỗi trên Notebook) làm bài toán chung của nhóm, còn dữ liệu 200 ảnh biển số của tôi được đưa vào làm Case #03 và #04 trong Bộ thiết kế Eval mẫu ở CP6. Lần thứ hai là khi rà soát chéo bộ Eval ở CP6: khi bị chỉ ra rằng việc cấm AI tự tính số ở Boundary mâu thuẫn với việc bắt AI nêu độ chênh lệch `delta` trong Expected Output, tôi đã đổi thiết kế để hàm Python ở Bước 1 (Rule) tính sẵn toàn bộ các số dẫn xuất (`delta`, `ratio`) và đưa thẳng vào gói Input.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
-Kết quả kiểm chứng ở CP4 làm tôi bất ngờ ở hai chi tiết rất thực tế. Bất ngờ đầu tiên đến từ **Interview Snapshot #5**: một bạn ở nhóm khác kể rằng bạn ấy từng dán bảng chỉ số vào công cụ tạo văn bản để nhờ viết nhận xét, và công cụ đó đã viết rất trôi chảy rằng *"mô hình dự đoán sai chủ yếu do tập dữ liệu bị mất cân bằng lớp"*, trong khi tập kiểm thử thực tế của bạn ấy được chia cân bằng 50–50. Điều này trùng khớp với những gì tôi gặp khi thử nghiệm trên tập 400 ảnh xe (`vehicle-hog-svm-rbf-pca`, mỗi lớp đúng 100 ảnh): nếu không truyền kèm thông tin phân bố lớp và danh sách mẫu lỗi cụ thể (`error_samples`), AI sẽ lấy các lý do khuôn mẫu trong sách giáo khoa ra để suy diễn. Bất ngờ thứ hai đến từ **Snapshot #4**: với những bài tập chỉ chạy 1–2 mô hình đơn lẻ, các bạn chỉ mất 10–15 phút điền vào template có sẵn chứ không hề thấy đau. Nhờ tín hiệu phản bác này, nhóm đã không ôm đồm mọi bài tập mà thu hẹp Actor ở Problem Statement v1 về đúng các bài thực nghiệm có **từ 3 cấu hình/mô hình cần so sánh chéo trở lên**.
-
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
-Điều khó nhất khi viết Problem Statement (đặc biệt là từ bản v0 sang bản v1) là **giữ cho câu chữ mô tả đúng bản chất vấn đề, điểm nghẽn và ranh giới kiểm soát chất lượng mà không vô tình cài cắm giải pháp vào trong định nghĩa bài toán ở v0**, đồng thời phải thiết kế được **Success Metric và Boundary** không có kẽ hở logic ở v1. Lúc đầu nhóm chỉ viết metric là *"giảm thời gian từ 80 phút xuống dưới 30 phút và đạt 3/4 tiêu chí đánh giá"*, nhưng khi phản biện sâu mới thấy nếu bản nháp đạt `E3, E4` mà trượt `E1` (sai số liệu) hoặc trượt `E2` (suy diễn nhân quả quá dữ liệu) thì `3/4` vẫn để lọt lỗi nghiêm trọng. Việc đặt **Hard Gate (`E1` và `E2` bắt buộc đạt)** và tách biệt rõ giữa *quan sát trực tiếp từ dữ liệu* với *[Giả thuyết cần kiểm tra]* là bài học đắt giá nhất giúp tôi hiểu thế nào là một Problem Statement chặt chẽ.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-Nếu có thêm thời gian hoặc làm lại từ đầu, tôi sẽ cải thiện hai việc. Thứ nhất, thay vì chỉ dựa vào ước lượng hồi tưởng (~80 phút phân rã thành 6 bước) từ các bài thực nghiệm trước, tôi sẽ bấm giờ trực tiếp từng bước ngay trên một lần làm báo cáo mẫu tại lớp để có log thời gian đo trực tiếp trước khi chốt baseline. Thứ hai, tôi sẽ phản biện nhóm mạnh hơn ở khâu xử lý dữ liệu đầu vào cho **bài toán ảnh (Computer Vision)**: khác với dữ liệu văn bản ở bài lọc spam (có thể in nguyên câu tin nhắn bị đoán sai vào bảng Markdown), với ảnh biển số xe hay ảnh tổn thương da thì hàm Python ở Bước 1 cần trích xuất thêm các thông số định lượng của bức ảnh bị đoán sai (như độ sáng trung bình, độ tương phản, kích thước vùng crop, điểm tự tin `confidence`) thì bước phân tích lỗi ở sau mới có căn cứ vững chắc.
-
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
-Bài toán của nhóm `Nhom4AE` xuất phát từ việc học viên và kỹ sư trẻ sau khi chạy từ 3 cấu hình thử nghiệm mô hình trở lên trên Jupyter Notebook phải mất khoảng 80 phút (ước lượng hồi tưởng từ 6 bước thực hiện, dao động 75–90 phút) để gom chỉ số từ nhiều cell rời rạc, lọc mẫu dự đoán sai và viết phần nhận định phân tích lỗi (error analysis narrative), đồng thời rất dễ gặp lỗi lệch số liệu giữa bảng và chữ khi chạy lại code sát giờ nộp. Trong quy trình hiện tại gồm 6 bước thủ công, điểm nghẽn lớn nhất nằm ở Bước 5 (đối chiếu các mẫu sai giữa các mô hình để viết nhận định so sánh, mất 25 phút) cộng với 25 phút copy bảng và đối chiếu dữ liệu rời rạc ở Bước 2 và Bước 4. Nhóm đặt mục tiêu (Success Metric) giảm tổng thời gian từ ~80 phút xuống dưới 30 phút/bài (kỳ vọng thiết kế ~25 phút), đảm bảo 0 lỗi lệch số liệu giữa bảng và đoạn phân tích, tỷ lệ nội dung bản nháp học viên phải viết lại dưới 40%, và bắt buộc vượt qua cổng kiểm tra chất lượng `E1` (khớp số liệu) và `E2` (truy vết mẫu lỗi, không suy diễn nhân quả quá dữ liệu). Để bảo vệ tính chính xác và liêm chính học thuật, nhóm thiết lập Boundary cứng: hàm Rule ở Bước 1 tính sẵn mọi số gốc và số dẫn xuất (`delta`, `ratio`), AI tuyệt đối không được tự tính hay làm tròn lại số, không được khẳng định nguyên nhân nhân quả ngoài `error_samples` (mọi giải thích cơ chế phải gắn nhãn `[Giả thuyết cần kiểm tra]`), không tự động ghi đè báo cáo, và con người (HITL) bắt buộc phải tự mở kiểm tra tối thiểu 3 mẫu lỗi thật trước khi chốt. Từ ranh giới đó, nhóm không chọn No AI hay chỉ dùng Rule (vì phỏng vấn cho thấy dùng `pandas` xuất bảng xong vẫn mất 35–40 phút viết nhận định), cũng không chọn Agent tự động (vì rủi ro bịa đặt cao và không ai trong khảo sát muốn giao trắng), mà chọn mức **Workflow kết hợp Rule**: Bước 1 dùng hàm Python (Rule) xuất gói dữ liệu chuẩn kèm 10 mẫu lỗi thật, Bước 2 con người kiểm tra nhanh, Bước 3 dùng AI với Prompt chuẩn hóa để soạn nháp nhận định 3 mục, Bước 4 con người kiểm duyệt sâu, và Bước 5 chạy script kiểm khớp số trước khi commit. Đánh giá trên 4 rủi ro (Value, Usability, Feasibility, Viability) đều ở mức Thấp đến Trung bình và đã thiết kế sẵn bộ chuẩn 10 cặp Eval tham chiếu, nhóm quyết định **Go ở phạm vi nhỏ** (triển khai pilot 2 tuần bằng snippet Python + Prompt chuẩn cho 4 thành viên, không xây phần mềm riêng) kèm ngưỡng dừng rõ ràng: nếu sau 2 bài liên tiếp thời gian bấm giờ vẫn trên 40 phút, tỷ lệ phải viết lại trên 50%, tỷ lệ đạt cổng `E1 & E2` dưới 80% hoặc có 1 lần lọt số liệu sai vào báo cáo thì dừng ngay bước AI và quay về phương án Rule + Template thủ công.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
-- Kho mã nguồn đồ án & dự án cá nhân của Lê Sông Thao (dữ liệu baseline thực tế cho CP1, CP2 và chỉ số gốc của Case #01–#03 trong bộ thiết kế Eval mẫu CP6):
-  - `smart-parking-lpr-system`: https://github.com/lesongthao/smart-parking-lpr-system
-  - `vehicle-hog-svm-rbf-pca`: https://github.com/lesongthao/vehicle-hog-svm-rbf-pca
-  - `esp32-motion-relay-blynk`: https://github.com/lesongthao/esp32-motion-relay-blynk
-  - `esp32-smart-light-blynk`: https://github.com/lesongthao/esp32-smart-light-blynk
-- Báo cáo nhóm & hồ sơ kiểm chứng/đánh giá của nhóm `Nhom4AE`:
-  - [report/team/group_report.md](../team/group_report.md)
-  - [report/assets/cp4-interview-snapshots.md](../assets/cp4-interview-snapshots.md)
-  - [report/assets/cp6-eval-benchmark-10-cases.md](../assets/cp6-eval-benchmark-10-cases.md)
+Nguồn tham khảo cho bối cảnh và kết quả kỹ thuật trong CP1–CP2:
+
+- `smart-parking-lpr-system`: https://github.com/lesongthao/smart-parking-lpr-system
+- `vehicle-hog-svm-rbf-pca`: https://github.com/lesongthao/vehicle-hog-svm-rbf-pca
+- `esp32-motion-relay-blynk`: https://github.com/lesongthao/esp32-motion-relay-blynk
+- `esp32-smart-light-blynk`: https://github.com/lesongthao/esp32-smart-light-blynk
