@@ -16,11 +16,15 @@
 | Đầy đủ / đúng nguồn | 0 mục hợp lệ bị bỏ sót; 100% có link nguồn | Đối chiếu tập task đủ điều kiện với kết quả sau loại trùng; không suy Done từ Closed/Merged/commit. |
 | Chất lượng bổ sung | Ghi mục sai, bỏ sót, phải hỏi/sửa và câu hỏi lại của giảng viên | Baseline số câu hỏi lại còn thiếu; không điền 0 thay dữ liệu chưa có. |
 
+Chi tiết cách đo ở [kế hoạch pilot](cp6-pilot-measurement-plan.md): target thời gian bao gồm chờ cần thiết, còn tổng công sức chỉ cộng thời gian thao tác; không dùng chúng thay thế nhau. Tập task để phát hiện bỏ sót được con người lập độc lập với đầu ra Rule. Ghi lỗi bản nháp trước khi sửa và kiểm tra lại bản cuối.
+
 ## 2. Phân biệt ba phương án
 
 - **No AI:** phương án card gốc ước tính khoảng 36 phút, target dưới 40; giữ làm đối chiếu và phương án quay về thủ công. Chưa có pilot chứng minh mọi cách No AI đều không thể đạt 25 phút.
 - **Rule:** mức nhóm đã chọn; lọc/gom theo logic, giữ judgment và hành động gửi ở Phát. 21 phút là ước tính, target dưới 25 cần pilot kiểm chứng.
 - **Workflow/Agent:** chưa chọn. Nếu Rule không đạt, phải xem time log để biết nguyên nhân nằm ở dữ liệu thiếu hay viết narrative; AI không tự giải việc thành viên không cập nhật.
+
+So sánh No AI/Rule phải cùng dữ liệu, phạm vi và checklist. Nếu thủ công đã đạt dưới 25 phút, đủ/đúng nguồn và tổng công sức không cao hơn Rule thì ưu tiên thủ công. Phép so sánh này chưa được thực hiện; không dùng 36/21 phút dự kiến làm bằng chứng Rule đã tốt hơn.
 
 AI intervention point của PS v1 là **Không có**. Các ô AI Canvas/PAIR được ghi không áp dụng theo rubric cho giải pháp Rule; vẫn có tiêu chí đầu ra và đủ bốn rủi ro.
 
@@ -39,5 +43,7 @@ AI intervention point của PS v1 là **Không có**. Các ô AI Canvas/PAIR đ�
 Nhóm chọn thử 2 kỳ, tiếp tục đủ 4 kỳ liên tiếp nếu đạt. Hai và bốn kỳ tương ứng khoảng 4 và 8 tuần với nhịp báo cáo hai tuần; chưa phải kết quả đã thực hiện trong lab.
 
 Ngưỡng dừng trong báo cáo nhóm đã được làm rõ: sau hai kỳ, nếu cả hai đều từ 25 phút trở lên, có ít nhất một task hợp lệ bị bỏ sót hoặc có thành viên cập nhật quá 10 phút/kỳ, dừng Rule và quay về task board + template thủ công. Ghi nguyên nhân trước khi tăng mức can thiệp.
+
+Vi phạm quyền đọc, sửa dữ liệu gốc hoặc tự gửi thì dừng ngay. Hai kỳ đầu đều đạt đủ tiêu chí mới tiếp tục tới bốn kỳ; một kỳ trượt vẫn là chưa đạt, cần sửa nguyên nhân trước vòng tiếp theo. Thay đổi đáng kể thiết kế/cách đo thì bắt đầu lại chuỗi đo. Trước pilot phải chốt quyền dữ liệu, yêu cầu người nhận và khả năng đọc/export; việc chuẩn bị này chưa được đánh dấu hoàn thành.
 
 Cần tiếp tục bổ sung: log baseline gốc, phản hồi khảo sát đã ẩn danh/thời điểm thu thập, log chạy pilot và tổng công sức cả nhóm. Tài liệu tổng hợp khảo sát hiện có không thay thế việc đối chiếu dữ liệu gốc.

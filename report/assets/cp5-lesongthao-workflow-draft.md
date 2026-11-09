@@ -94,6 +94,8 @@ flowchart TD
 
 Đo từng bước mỗi kỳ; ghi thời gian sửa/quay về, thời gian cập nhật task của cả 4 người, mục bị bỏ sót/sai và nguồn đối chiếu. Dùng cùng quy ước tính thời gian với baseline; ghi riêng thời gian chờ nếu có. Dữ liệu chất lượng chưa có ghi “chưa có dữ liệu”, không thay bằng 0.
 
+Quy ước bổ sung tại [báo cáo nhóm mục 4.4](../team/group_report.md#44-quy-ước-kiểm-tra-và-ghi-nhận): tính cả thời gian chờ cần thiết trong target dưới 25 phút, tách công sức thao tác; baseline chưa rõ cách tính chờ nên chưa công bố tỷ lệ tiết kiệm. Tập task hợp lệ phải được con người đối chiếu độc lập trước khi xem đầu ra Rule. Sau hỏi/bổ sung, kiểm lại kỳ, trạng thái và nguồn trước khi gom; mục còn thiếu được giữ riêng. [Kế hoạch đo](cp6-pilot-measurement-plan.md) và hai mẫu CSV quy định chi tiết cách thực hiện.
+
 Pilot theo quyết định nhóm: thử 2 kỳ, nếu đạt tiếp tục tới đủ 4 kỳ liên tiếp. Với chu kỳ hai tuần, tương ứng khoảng 4 và 8 tuần; đây là kế hoạch, chưa chạy xong trong lab. Ngưỡng dừng và tiêu chí chính thức xem mục 7–8 báo cáo nhóm.
 
 
@@ -103,5 +105,6 @@ Pilot theo quyết định nhóm: thử 2 kỳ, nếu đạt tiếp tục tới 
 - [x] Tổng tương lai 21 phút gồm 2 bước Rule và 4 bước con người; cập nhật trong kỳ được đo riêng.
 - [x] Mọi nội dung bổ sung đều đi qua kiểm tra cuối; có nhánh quay về.
 - [x] Mốc dưới 25 phút là target; tổng Rule dự kiến 3 phút được phân biệt với thời gian lọc 2 phút.
+- [x] Có tập đối chiếu độc lập, cách ghi thời gian chờ/công sức và biểu mẫu để thực hiện pilot.
 - [ ] Bổ sung log baseline gốc, thời gian chờ và baseline chất lượng nếu có.
 - [ ] Thu log pilot và chi phí cập nhật thực tế trước khi kết luận đạt.

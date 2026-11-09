@@ -1,5 +1,24 @@
 # Assets
 
+## Tài liệu bài làm
+
+| File | Vai trò |
+|---|---|
+| [Khảo sát CP4](cp4-micro-survey.md) | Bộ câu hỏi và hướng dẫn bổ sung nguồn phản hồi |
+| [Quy trình CP5](cp5-lesongthao-workflow-draft.md) | Bản chi tiết đã tích hợp trong báo cáo nhóm |
+| [Đối chiếu CP6](cp6-lesongthao-metric-boundary-review.md) | Metric, boundary, tiêu chí và ngưỡng dừng |
+| [Kế hoạch đo pilot](cp6-pilot-measurement-plan.md) | Quy ước đo, đối chiếu task và so sánh No AI/Rule |
+| [Mẫu time log](cp6-pilot-time-log-template.csv), [mẫu đối chiếu task](cp6-pilot-task-review-template.csv) | Chỉ có tiêu đề cột, chưa có kết quả đo |
+| [Rà soát bài nộp](cp7-submission-review.md) | Đối chiếu rubric và việc còn lại theo người phụ trách |
+
+## Tài liệu tham khảo thiết kế
+
+- [10 ca Rule](cp6-rule-evaluation-cases.md): đầu vào/đầu ra mong đợi do AI soạn; chưa chạy trên triển khai.
+- [Ví dụ quy trình](cp5-simulated-progress-report.md) và hai CSV đi kèm: dữ liệu tổng hợp do AI tạo, giữ nguồn gốc trong tài liệu; không dùng làm bằng chứng khảo sát hoặc pilot.
+- [Bản nháp reflection](cp7-lesongthao-reflection-draft.md): do AI soạn, không phải reflection tự viết.
+
+## Quy ước lưu file
+
 Đặt ảnh quy trình, ảnh chụp survey, interview snapshot và ghi chú research ở đây.
 
 Tên file bắt đầu bằng số checkpoint:
