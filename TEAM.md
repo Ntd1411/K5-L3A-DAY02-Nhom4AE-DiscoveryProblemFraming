@@ -97,7 +97,7 @@ Phần đóng góp dưới đây được đối chiếu với lịch sử Git v
 
 **Điều mình học được từ phần nhóm:**
 
-- Chưa có phần tự ghi của Giang trong repo; cần bổ sung từ trải nghiệm của mình.
+- Qua quá trình làm việc nhóm, tôi học được rằng một problem đáng giải quyết phải xuất phát từ nỗi đau thực tế đo đếm được (như 55 phút gom báo cáo của Phát) chứ không phải từ công nghệ nghe hấp dẫn. Trong vai trò chủ trì research và phân tích mức can thiệp, tôi nhận thấy việc dùng Rule cho dữ liệu có cấu trúc giải quyết dứt điểm bài toán với độ tin cậy 100% mà không tốn chi phí gọi API hay đối mặt với rủi ro ảo giác từ AI; giải pháp đơn giản nhất giải quyết được trọn vẹn vấn đề luôn là giải pháp tốt nhất.
 
 ### LeSongThao-2A202603534
 

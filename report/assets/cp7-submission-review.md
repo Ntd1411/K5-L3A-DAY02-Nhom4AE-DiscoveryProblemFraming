@@ -21,7 +21,7 @@ Phần thiết kế đã đủ các mục để tiếp tục kiểm chứng. Ch�
 |---|---|---|
 | **Lê Sông Thao** | 10 scan, 3 card/quy trình, nhật ký phản biện dẫn biên bản, AI log, sản phẩm CP5 và hỗ trợ CP6; đã hoàn tất reflection | Đã tự hoàn thiện mục 6 (6.1–6.6 đạt trên 200 từ) và chuỗi 6 mắt xích logic 6.7; sẵn sàng vấn đáp trực tiếp với Coach |
 | **Trần Hoàng Phát** | CP1–CP2 đã điền; TEAM đã tổng hợp đóng góp theo Git/biên bản; mục 4–6 cá nhân còn trống | Kiểm tra ghi nhận TEAM, tự bổ sung điều học được; hoàn tất C3, nhật ký AI và reflection; cung cấp nguồn khảo sát/kênh/ngày thu; làm rõ baseline câu hỏi lại. Card CP2 có thể giữ đề xuất ban đầu, nhật ký giải thích quá trình chốt Rule |
-| **Nguyễn Huy Giang** | 5 scan, 3 card; TEAM đã tổng hợp đóng góp theo Git/biên bản; mục 4–6 cá nhân còn trống | Card #2: bảng ghi 2+3+15+20+5 = 45 phút nhưng sơ đồ ghi 2+3+15+25+10 = 55. Tự xác nhận phạm vi đúng rồi đồng bộ; bổ sung cách đo tỷ lệ sót 15% ở card #1; hoàn tất nhật ký/reflection, kiểm tra TEAM và tự ghi điều học được |
+| **Nguyễn Huy Giang** | 10 scan, 3 card; đã đồng bộ số liệu Card #2 (45 phút) và cách đo Card #1; mục 4–5 đã điền đầy đủ nhật ký phản biện/AI; mục 6 reflection đã hoàn tất (>200 từ/câu, 6.7 đủ 6 mắt xích logic) và đã cập nhật TEAM.md | Đã hoàn thiện toàn bộ theo yêu cầu rubric và review nhóm; sẵn sàng vấn đáp với Coach |
 | **Nguyễn Tuấn Dũng** | 10 scan, 3 card; đã sửa tiêu đề, điền nhật ký tham gia C3 và bảng dùng AI; Card #3 đã đồng bộ baseline hồi tưởng 10 phút/form; mục 6 còn trống | Tự viết Reflection 6.1–6.6 tối thiểu 200 từ và 6.7 bằng 5–8 câu; bổ sung số đo thật cho scan #9 nếu có; kiểm tra nội dung được tổng hợp trong mục 4–5 và tự ghi “Điều mình học được” ở `TEAM.md` trước khi nộp |
 
 Những mâu thuẫn trong báo cáo của người khác được ghi để tác giả xác nhận, không tự chọn một con số thay trải nghiệm của họ. Các mục cá nhân chưa có nội dung không thể suy ra chỉ từ số commit.
@@ -36,7 +36,7 @@ Những mâu thuẫn trong báo cáo của người khác được ghi để tá
 
 ## 4. Bonus và cấu trúc
 
-- B1: Thao/Phát/Dũng có 10 dòng scan; chỉ số lượng chưa đủ, từng dòng cần dấu hiệu thật thuộc đủ bốn lăng kính. Giang hiện có 5 dòng.
+- B1: Thao/Phát/Dũng/Giang đều có 10 dòng scan trải đủ bốn lăng kính với dấu hiệu đo lường thật.
 - B2: số lượng khảo sát đang ghi là 8, chưa đạt mốc 20 survey; không khai đủ bonus từ bảng hiện tại.
 - B3: mười ca của giải pháp Rule hỗ trợ kiểm tra thiết kế, không phải eval cho bước AI.
 - Có đủ bốn file cá nhân, `TEAM.md`, `report/team/group_report.md`; template cá nhân rỗng đã được bỏ. Tên bốn file cá nhân phù hợp mẫu; tên repo ở remote hiện chưa khớp mẫu và cần xử lý theo mục 3.5.
