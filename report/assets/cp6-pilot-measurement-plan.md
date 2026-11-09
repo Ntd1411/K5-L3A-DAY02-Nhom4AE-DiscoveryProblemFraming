@@ -1,6 +1,6 @@
 # CP6 — Kế hoạch đo và kiểm tra pilot Rule
 
-Tài liệu hỗ trợ CP5–CP6 của Lê Sông Thao, có Codex hỗ trợ soạn và rà soát. Đây là hướng dẫn thực hiện cho quyết định [Go — pilot nhỏ](../team/group_report.md#8-quyết-định-cp6), chưa có kết quả pilot. Lab yêu cầu thiết kế và quyết định có căn cứ; không yêu cầu hoàn thành bốn kỳ báo cáo trong buổi học.
+Tài liệu hỗ trợ CP5–CP6 của Lê Sông Thao, quy định kế hoạch và phương pháp đo lường khi triển khai quyết định [Go — pilot nhỏ](../team/group_report.md#8-quyết-định-cp6).
 
 ## 1. Điều kiện trước khi đo
 

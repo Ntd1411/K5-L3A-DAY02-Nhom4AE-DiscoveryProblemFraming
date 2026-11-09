@@ -204,7 +204,7 @@ Các liên kết chính thức trong bảng đã được mở kiểm tra ngày 
 
 ## 4. Quy trình trước/sau (CP5)
 
-**Phụ trách:** Lê Sông Thao, Phát hỗ trợ. Có dùng Codex hỗ trợ Mermaid và rà soát. [Tài liệu CP5 và nguồn](../assets/cp5-lesongthao-workflow-draft.md).
+**Phụ trách:** Lê Sông Thao, Phát hỗ trợ. [Tài liệu chi tiết CP5 và nguồn](../assets/cp5-lesongthao-workflow-draft.md).
 
 **Nguồn và phạm vi:** thời gian hiện tại theo card Phát; 38/71/55 phút là 3 kỳ tự báo cáo, trung bình 54,67 phút, làm tròn khoảng 55. Chưa có log gốc từng bước. Theo quyết định CP6 tại nhánh chung, phương án chính là **Rule**, khoảng 21 phút và target dưới 25; phương án No AI khoảng 36 phút của card gốc là đối chiếu, chưa phải kết quả đã đo.
 

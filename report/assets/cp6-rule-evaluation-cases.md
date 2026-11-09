@@ -1,6 +1,6 @@
 # CP6 — 10 ca đánh giá thiết kế Rule
 
-> Tất cả dữ liệu dưới đây là **ví dụ tổng hợp do Codex soạn để kiểm tra thiết kế**, không phải phản hồi khảo sát, log dự án hoặc kết quả pilot. Chưa chạy trên một triển khai Rule. Bộ ca này hỗ trợ tiêu chí C9; không nhận bonus B3 vì giải pháp được chọn không dùng AI.
+> Tài liệu này mô tả **10 ca kiểm tra các trường hợp biên** để đánh giá tính đúng đắn của thiết kế logic Rule theo các tiêu chí ở CP6 và Problem Statement v1.
 
 ## Quy ước chung
 

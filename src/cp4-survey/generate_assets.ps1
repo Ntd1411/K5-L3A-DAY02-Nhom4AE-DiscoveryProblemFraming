@@ -1,4 +1,4 @@
-﻿param()
+param()
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 $backupPath = Join-Path $PSScriptRoot "cp4-survey-backup.json"

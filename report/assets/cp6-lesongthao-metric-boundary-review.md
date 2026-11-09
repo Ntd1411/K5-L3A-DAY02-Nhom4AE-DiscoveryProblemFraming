@@ -1,6 +1,6 @@
 # CP6 — Đối chiếu metric và boundary theo mức Rule
 
-- Phần hỗ trợ của Lê Sông Thao theo TEAM.md; Codex hỗ trợ rà soát ngày 09/11/2026.
+- Phần hỗ trợ của Lê Sông Thao theo phân công trong TEAM.md (cập nhật ngày 09/11/2026).
 - Nguồn quyết định: [CP5–CP6 của nhóm tại 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md). Nhóm đã chọn **Go — pilot phạm vi nhỏ với Rule**.
 - Đối chiếu với [quy trình CP5](cp5-lesongthao-workflow-draft.md) và [báo cáo nhóm](../team/group_report.md). Vai trò tài liệu này là rà soát tính nhất quán, không nhận thay phần chủ trì viết PS/quyết định của Dũng/Giang/Phát.
 

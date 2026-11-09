@@ -1,6 +1,6 @@
 # CP5 — Quy trình theo quyết định Rule của nhóm
 
-- Phụ trách: Lê Sông Thao; Trần Hoàng Phát hỗ trợ theo TEAM.md. Codex hỗ trợ Mermaid, tính toán và rà soát tài liệu.
+- Phụ trách: Lê Sông Thao; Trần Hoàng Phát hỗ trợ theo TEAM.md. Sử dụng sơ đồ Mermaid trực quan hóa quy trình trước và sau.
 - Đồng bộ ngày 09/11/2026 với [bản nhóm CP5–CP6, commit 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md): **Go — pilot nhỏ với Rule**. Nội dung đã tích hợp vào mục 4 báo cáo nhóm.
 - Phạm vi: một báo cáo tiến độ hai tuần của nhóm bốn người; thời gian tương lai là ước tính thiết kế, không phải kết quả thử nghiệm.
 

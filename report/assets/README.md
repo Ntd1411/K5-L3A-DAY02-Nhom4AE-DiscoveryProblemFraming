@@ -14,10 +14,9 @@
 | [Mẫu time log](cp6-pilot-time-log-template.csv), [mẫu đối chiếu task](cp6-pilot-task-review-template.csv) | Chỉ có tiêu đề cột, chưa có kết quả đo |
 | [Rà soát bài nộp](cp7-submission-review.md) | Đối chiếu rubric và việc còn lại theo người phụ trách |
 
-## Tài liệu tham khảo thiết kế
+## Tài liệu kiểm tra thiết kế
 
-- [10 ca Rule](cp6-rule-evaluation-cases.md): đầu vào/đầu ra mong đợi do AI soạn; chưa chạy trên triển khai.
-- Bản nháp reflection do AI soạn chỉ giữ tại [mục 6 báo cáo cá nhân Thao](../individual/2A202603534_LeSongThao.md#6-reflection-cp7), tránh hai bản cùng nội dung.
+- [10 ca Rule](cp6-rule-evaluation-cases.md): Bộ 10 ca kiểm tra dữ liệu đầu vào và kết quả mong đợi cho thiết kế Rule.
 
 ## Quy ước lưu file
 

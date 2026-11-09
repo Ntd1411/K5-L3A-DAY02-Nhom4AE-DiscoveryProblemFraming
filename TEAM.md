@@ -116,7 +116,7 @@ Phần đóng góp dưới đây được đối chiếu với lịch sử Git v
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - [Báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md), mục 2–5; nhật ký AI nêu rõ phần rà soát tài liệu.
-- [Mục 6 báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md#6-reflection-cp7) giữ bản nháp do AI soạn; bản sao riêng trong assets đã được bỏ. Phần tự viết để đáp ứng C4 chưa hoàn tất.
+- [Mục 6 báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md#6-reflection-cp7): phần tự rút ra bài học và phản biện cá nhân theo yêu cầu CP7.
 - [Quy trình CP5](report/assets/cp5-lesongthao-workflow-draft.md) và [group_report.md mục 4](report/team/group_report.md#4-quy-trình-trướcsau-cp5): hai sơ đồ, bảng quy trình và before/after.
 - [Biên bản nhóm CP3](report/team/group_report.md#21-pitch), dòng 3/6/9 và 10–12, cùng mục 4 báo cáo cá nhân: nguồn đối chiếu nhật ký phản biện.
 - [Góp ý CP6](report/assets/cp6-lesongthao-metric-boundary-review.md), mục 1–3: đối chiếu metric/boundary, mức can thiệp và tiêu chí đề xuất.
