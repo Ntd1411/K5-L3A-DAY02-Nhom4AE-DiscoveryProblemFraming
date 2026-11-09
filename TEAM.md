@@ -41,23 +41,23 @@ Phần đóng góp dưới đây được đối chiếu với lịch sử Git v
 
 ### NguyenTuanDung-2A202603559
 
-**Phần việc phụ trách:** Điều phối tiến độ; chủ trì CP3; viết Problem Statement v0; hỗ trợ research và quyết định CP6.
+**Phần việc phụ trách:** Tôi điều phối tiến độ chung, chủ trì phần hội tụ CP3, phụ trách Problem Statement v0 và hỗ trợ nhóm ở phần research cùng quyết định CP6.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- Đã đưa báo cáo cá nhân CP1–CP2 gồm 10 problem và 3 card vào repo tại commit `998cf72`.
-- Đã commit phân công nhóm, kết quả hội tụ CP3, bộ câu hỏi/research CP4, quy trình/PS v0 và quyết định CP6 vào nhánh chung. Đây là ghi nhận người commit bản tổng hợp; không quy toàn bộ phần thực hiện của nhóm cho một người.
-- Biên bản CP3 ghi câu hỏi của Dũng về bảng chung cho card báo cáo tiến độ của Phát, nhu cầu tra cứu PDF của Giang và checklist/Rule cho card ESP32 của Thao.
+- Tôi hoàn thành phần cá nhân CP1–CP2 với 10 problem và 3 Problem Card, sau đó đưa nội dung vào repo ở commit `998cf72`.
+- Trong CP3, tôi tổng hợp 12 candidate thành ba cluster, cùng nhóm xây cây OST và chấm shortlist để chọn bài toán báo cáo tiến độ. Tôi cũng đặt câu hỏi phản biện cho card của Phát, Giang và Thao theo hướng kiểm tra xem giải pháp No AI hoặc Rule đã đủ hay chưa.
+- Ở các checkpoint sau, tôi hỗ trợ tổng hợp research CP4, viết Problem Statement v0 và đưa các bản CP3–CP6 đã thống nhất lên nhánh chung. Các commit này thể hiện vai trò tổng hợp và đồng bộ tài liệu của tôi, không có nghĩa toàn bộ nội dung nhóm đều do một mình tôi thực hiện.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- [Báo cáo cá nhân Dũng](report/individual/2A202603559_NguyenTuanDung.md), mục 2–3; [commit CP1–CP2](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/998cf725c70ba49b1713f93283d4f4b249d9ec12).
-- [Phân công](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/5a77f48), [CP3](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/272f34f), [CP4](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/492b7f7), [CP5](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/7f0b3e5), [CP6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/53f9eb6).
-- [Biên bản CP3](report/team/group_report.md#21-pitch), dòng 4, 8 và 12.
+- [Báo cáo cá nhân của tôi](report/individual/2A202603559_NguyenTuanDung.md), mục 2–3; [commit CP1–CP2](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/998cf725c70ba49b1713f93283d4f4b249d9ec12).
+- Các bản tôi đưa lên repo chung: [phân công](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/5a77f48), [CP3](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/272f34f), [CP4](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/492b7f7), [CP5](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/7f0b3e5) và [CP6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/53f9eb6).
+- [Biên bản pitch CP3](report/team/group_report.md#21-pitch), dòng 4, 8 và 12, ghi lại ba câu hỏi phản biện của tôi.
 
 **Điều mình học được từ phần nhóm:**
 
-- Chưa có phần tự ghi của Dũng trong repo; cần bổ sung từ trải nghiệm của mình.
+- Qua phần hội tụ, tôi nhận ra một problem nghe có vẻ phù hợp với AI chưa chắc là problem đáng ưu tiên nhất. Ba card cá nhân của tôi có quy trình tương đối rõ nhưng bằng chứng và cách đo chưa mạnh bằng card báo cáo tiến độ của Phát, nên tôi đồng ý chọn candidate có baseline 38–71 phút và actor cụ thể hơn. Khi viết Problem Statement, tôi cũng hiểu rằng chỉ đặt mục tiêu giảm từ khoảng 55 xuống dưới 25 phút là chưa đủ; nhóm còn phải đo việc bị bỏ sót, nguồn đối chiếu và thời gian cập nhật bị chuyển sang các thành viên. Bài học quan trọng nhất của tôi là nên thử cách đơn giản trước: chuẩn hóa dữ liệu và dùng Rule cho phần lọc, gom, còn phần nhận định và gửi báo cáo vẫn để con người chịu trách nhiệm. Nếu làm lại, tôi sẽ yêu cầu ghi time log từng bước sớm hơn và so sánh No AI với Rule trên cùng một bộ dữ liệu trước khi chốt mức can thiệp.
 
 ### TranHoangPhat-2A202603536
 
