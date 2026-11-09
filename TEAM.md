@@ -92,16 +92,17 @@ Mỗi thành viên tự cập nhật đóng góp thực tế, bằng chứng và
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 - Báo cáo cá nhân có 10 problem thuộc 4 lăng kính, 3 Problem Cards và 3 quy trình nháp; đã bổ sung cách đo, nguồn đối chiếu và cập nhật candidate nhóm bằng AI hỗ trợ, chờ cá nhân kiểm tra bản sửa.
-- Đã soạn [thiết kế quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) và tích hợp vào mục 4 báo cáo nhóm ở máy: 2 sơ đồ Mermaid, bảng actor/input/output/thời gian, before/after, người kiểm tra, boundary và phương án quay về. Baseline khoảng 55 phút được tách khỏi ước tính No AI 36 phút; chưa phải kết quả pilot.
+- Đã soạn [thiết kế quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) và tích hợp vào mục 4 báo cáo nhóm: 2 sơ đồ Mermaid, bảng actor/input/output/thời gian, before/after, người kiểm tra, boundary và phương án quay về. Baseline khoảng 55 phút được tách khỏi ước tính No AI 36 phút; chưa phải kết quả pilot.
 - Đã chuẩn bị [góp ý metric và boundary CP6](report/assets/cp6-lesongthao-metric-boundary-review.md): phân biệt target No AI/Workflow, theo dõi công sức cả nhóm, baseline chất lượng còn thiếu và 5 tiêu chí đề xuất. Giang/Dũng/Phát chủ trì chốt PS, mức can thiệp và quyết định.
-- Đã nhận phân công hỗ trợ CP4; chưa có snapshot hoặc dữ liệu phỏng vấn của cá nhân trong lần rà soát ngày 09/11/2026.
-- Nhật ký hỏi–đáp CP3 còn chờ cá nhân ghi lại; chưa khai phần chuẩn bị pitch hoặc phản biện AI là phản biện trực tiếp trong nhóm.
+- Đã nhận phân công hỗ trợ CP4; đối chiếu tín hiệu phản bác trong kết quả khảo sát do nhóm tổng hợp với phương án No AI ở CP5. Không nhận mình trực tiếp thu toàn bộ phản hồi khảo sát.
+- Nhật ký C3 đã đối chiếu bảng pitch của nhóm: câu hỏi về RegEx/validation với Giang; câu hỏi nhận từ Giang/Phát/Dũng cho ba card cá nhân và các điểm được làm rõ trong bản cập nhật.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - [Báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md), mục 2–5; nhật ký AI nêu rõ phần rà soát tài liệu.
 - [Bản nháp reflection do AI soạn](report/assets/cp7-lesongthao-reflection-draft.md) là tài liệu tham khảo, không phải bằng chứng reflection tự viết.
-- [Quy trình CP5](report/assets/cp5-lesongthao-workflow-draft.md) và [group_report.md mục 4](report/team/group_report.md#4-quy-trình-trướcsau-cp5): hai sơ đồ, bảng quy trình và before/after đã có trong thư mục làm việc; chưa đẩy lên main.
+- [Quy trình CP5](report/assets/cp5-lesongthao-workflow-draft.md) và [group_report.md mục 4](report/team/group_report.md#4-quy-trình-trướcsau-cp5): hai sơ đồ, bảng quy trình và before/after.
+- [Biên bản nhóm CP3](report/team/group_report.md#21-pitch), dòng 3/6/9 và 10–12, cùng mục 4 báo cáo cá nhân: nguồn đối chiếu nhật ký phản biện.
 - [Góp ý CP6](report/assets/cp6-lesongthao-metric-boundary-review.md), mục 1–3: đối chiếu metric/boundary, mức can thiệp và tiêu chí đề xuất.
 
 **Điều mình học được từ phần nhóm:**

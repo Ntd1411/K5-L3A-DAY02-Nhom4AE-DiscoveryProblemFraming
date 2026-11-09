@@ -1,7 +1,7 @@
 # CP5 — Thiết kế quy trình cho Card #1 của Phát
 
 - Phần việc của Lê Sông Thao theo TEAM.md: chủ trì quy trình trước/sau, before/after và assets; Phát hỗ trợ.
-- Được Codex hỗ trợ tổng hợp, chuyển sang Mermaid và rà soát ngày 09/11/2026. Nội dung quy trình đã được tích hợp vào mục 4 của bản báo cáo nhóm trong thư mục làm việc; chưa được đẩy lên main.
+- Được Codex hỗ trợ tổng hợp, chuyển sang Mermaid và rà soát ngày 09/11/2026. Nội dung quy trình đã được tích hợp vào mục 4 của báo cáo nhóm.
 - Phạm vi: tổng hợp một báo cáo tiến độ hai tuần của nhóm bốn người cho giảng viên. Đây là thiết kế quy trình, chưa phải kết quả pilot hay quyết định CP6 của nhóm.
 
 ## 1. Nguồn và mức chắc chắn
@@ -108,4 +108,4 @@ Boundary cần giữ: AI không tự xác nhận hoàn thành, đổi owner/dead
 - [x] Trong thiết kế, kiểm tra/sửa nằm trong tổng; dữ liệu thiếu có nhánh quay về; kiểm tra cuối đặt sau bước hỏi bổ sung.
 - [ ] Đo cả công sức cập nhật của thành viên để tránh chuyển gánh nặng.
 - [ ] Bổ sung baseline chất lượng; thống nhất với Giang/Dũng về metric và boundary.
-- [x] Đã tích hợp thiết kế CP5 vào mục 4 của group_report.md trong thư mục làm việc; thời gian tương lai vẫn ghi là ước tính, chưa phải kết quả pilot hoặc PS đã chốt.
+- [x] Đã tích hợp thiết kế CP5 vào mục 4 của group_report.md; thời gian tương lai vẫn ghi là ước tính, chưa phải kết quả pilot hoặc PS đã chốt.

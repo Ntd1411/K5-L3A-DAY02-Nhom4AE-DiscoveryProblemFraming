@@ -1,6 +1,6 @@
 # Gợi ý reflection — Lê Sông Thao, 2A202603534
 
-> **Bản nháp do Codex soạn theo yêu cầu ngày 09/11/2026, chưa phải reflection tự viết của Thao.** Các đoạn xưng “tôi” là cách diễn đạt tham khảo từ tài liệu GitHub, không xác nhận cảm xúc, phát biểu hay trải nghiệm chưa được ghi nhận. Không có dữ liệu để dựng lại đối thoại CP3 hoặc kết quả phỏng vấn CP4.
+> **Bản nháp do Codex soạn theo yêu cầu ngày 09/11/2026, chưa phải reflection tự viết của Thao.** Các đoạn xưng “tôi” là cách diễn đạt tham khảo từ tài liệu GitHub, không xác nhận cảm xúc hoặc trải nghiệm chưa được ghi nhận. Biên bản CP3 và tổng hợp khảo sát CP4 đã được bổ sung từ nhánh chung; không tự tạo thêm lời phát biểu hoặc kết quả ngoài tài liệu đó.
 >
 > Theo [RUBRIC.md](../../RUBRIC.md), reflection do AI viết thay không đáp ứng C4. Phần trả lời chính thức vẫn cần Thao tự viết từ trải nghiệm của mình vào mục 6 [báo cáo cá nhân](../individual/2A202603534_LeSongThao.md).
 
@@ -14,11 +14,11 @@ Trong bản card cá nhân, tôi từng nghiêng về Workflow để soạn nhá
 
 ## 6.3. Một thay đổi có trong tài liệu
 
-Bảng phản biện CP2 của tôi đã ghi việc tách “gom số liệu” khỏi “viết nhận định”. Bước copy bảng khoảng 15 phút thuộc thao tác có thể tự động hóa bằng Rule, trong khi bước viết nhận định khoảng 25 phút cần người phân tích và đối chiếu mẫu sai. Card ESP32 cũng được sửa theo hướng checklist và chuẩn hóa log trước. Ví dụ này có trong tài liệu CP2; nó không thay thế bằng chứng một lần nhận phản biện trực tiếp từ thành viên khác ở CP3.
+Biên bản CP3 ghi Giang hỏi nếu script đã xuất metrics và mẫu sai thì có nhất thiết cần AI không. Bản card cập nhật ưu tiên Rule cùng template trước, sau đó mới cân nhắc Workflow nếu phần nhận định vẫn còn nghẽn. Câu hỏi của Phát về mục tiêu OCR cũng giúp làm rõ: chỉ giảm 30 phút đối chiếu trong tổng 55 phút thì vẫn còn 25 phút, chưa đủ để tuyên bố đạt dưới 15 phút. Đây là các điểm có thể đối chiếu giữa biên bản và bản card, còn cảm nhận về quá trình đổi ý cần chính tôi tự kể.
 
 ## 6.4. Điều rút ra từ bằng chứng hiện có
 
-Tại lần rà soát, báo cáo nhóm trên main chưa có snapshot hoặc kết quả survey, nên tôi chưa có cơ sở kể một điều bất ngờ từ phỏng vấn. Điều đáng chú ý trong card Phát là khoảng dao động 38–71 phút khá lớn, và baseline số câu giảng viên hỏi lại vẫn để trống. Các điểm này cho thấy cần tìm hiểu vì sao các kỳ khác nhau và bổ sung chỉ số chất lượng trước khi kết luận giải pháp tốt hơn.
+Báo cáo nhóm tổng hợp 8 phản hồi khảo sát, 7 hợp lệ; 4/7 người mất trên 30 phút nhưng 2/7 người đã thấy task board đủ dùng. Tín hiệu phản bác này phù hợp với hướng thử bảng chung trước khi thêm AI. Tôi cần phân biệt số liệu do nhóm tổng hợp với điều mình trực tiếp quan sát; tài liệu hiện chưa kèm phản hồi gốc để đối chiếu từng người. Baseline số câu giảng viên hỏi lại còn thiếu, nên tốc độ tổng hợp chưa đủ để kết luận chất lượng đã cải thiện.
 
 ## 6.5. Khó khăn khi làm rõ Problem Statement
 
@@ -37,4 +37,4 @@ Bài của nhóm xuất phát từ việc Phát cần gom công việc hai tuầ
 - [Báo cáo cá nhân Thao](../individual/2A202603534_LeSongThao.md), mục 3 và bảng phản biện CP2.
 - [Card của Phát tại mốc main được đọc](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md).
 - [Phân công tại TEAM.md](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/TEAM.md).
-- [Báo cáo nhóm tại mốc main được đọc](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/team/group_report.md): còn là mẫu chưa điền khi rà soát.
+- [Biên bản CP3 và tổng hợp CP4 từ nhánh chung](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/492b7f7e35330605948cfc580506892cbf1cdd63/report/team/group_report.md), đã được gộp cùng [phần CP5](../team/group_report.md#4-quy-trình-trướcsau-cp5).
