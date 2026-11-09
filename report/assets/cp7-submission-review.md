@@ -22,7 +22,7 @@ Phần thiết kế đã đủ các mục để tiếp tục kiểm chứng. Ch�
 | **Lê Sông Thao** | 10 scan, 3 card/quy trình, nhật ký phản biện dẫn biên bản, AI log, sản phẩm CP5 và hỗ trợ CP6; đã hoàn tất reflection | Đã tự hoàn thiện mục 6 (6.1–6.6 đạt trên 200 từ) và chuỗi 6 mắt xích logic 6.7; sẵn sàng vấn đáp trực tiếp với Coach |
 | **Trần Hoàng Phát** | CP1–CP2 đã điền; TEAM đã tổng hợp đóng góp theo Git/biên bản; mục 4–6 cá nhân còn trống | Kiểm tra ghi nhận TEAM, tự bổ sung điều học được; hoàn tất C3, nhật ký AI và reflection; cung cấp nguồn khảo sát/kênh/ngày thu; làm rõ baseline câu hỏi lại. Card CP2 có thể giữ đề xuất ban đầu, nhật ký giải thích quá trình chốt Rule |
 | **Nguyễn Huy Giang** | 5 scan, 3 card; TEAM đã tổng hợp đóng góp theo Git/biên bản; mục 4–6 cá nhân còn trống | Card #2: bảng ghi 2+3+15+20+5 = 45 phút nhưng sơ đồ ghi 2+3+15+25+10 = 55. Tự xác nhận phạm vi đúng rồi đồng bộ; bổ sung cách đo tỷ lệ sót 15% ở card #1; hoàn tất nhật ký/reflection, kiểm tra TEAM và tự ghi điều học được |
-| **Nguyễn Tuấn Dũng** | 10 scan, 3 card; TEAM đã tổng hợp đóng góp và commit tài liệu chung; mục 4–6 cá nhân còn trống; tiêu đề vẫn `MSSV_HoTen` | Đổi tiêu đề theo tên thật. Card #1 phân biệt hơn 30 phút với tổng bước 30; card #2 tách ba ngày lịch và giờ thực học; card #3 đối chiếu scan 10 phút/form với tổng sơ đồ 45 phút và bottleneck 30. Bổ sung dấu hiệu scan #9, target/cách đo card #3 và nhật ký/reflection; kiểm tra TEAM và tự ghi điều học được |
+| **Nguyễn Tuấn Dũng** | 10 scan, 3 card; đã sửa tiêu đề, điền nhật ký tham gia C3 và bảng dùng AI; Card #3 đã đồng bộ baseline hồi tưởng 10 phút/form; mục 6 còn trống | Tự viết Reflection 6.1–6.6 tối thiểu 200 từ và 6.7 bằng 5–8 câu; bổ sung số đo thật cho scan #9 nếu có; kiểm tra nội dung được tổng hợp trong mục 4–5 và tự ghi “Điều mình học được” ở `TEAM.md` trước khi nộp |
 
 Những mâu thuẫn trong báo cáo của người khác được ghi để tác giả xác nhận, không tự chọn một con số thay trải nghiệm của họ. Các mục cá nhân chưa có nội dung không thể suy ra chỉ từ số commit.
 
@@ -32,11 +32,12 @@ Những mâu thuẫn trong báo cáo của người khác được ghi để tá
 2. **Mỗi người — CP7/TEAM:** tự ghi đóng góp có đường dẫn sản phẩm; trả lời 6.1–6.6 ít nhất 200 từ, 6.7 bằng 5–8 câu và tự giải thích được. Đọc lại nhật ký AI theo việc thực sự đã dùng.
 3. **Dũng — đồng bộ:** giữ đủ bốn báo cáo trên main; kiểm tra các thay đổi mới trước khi merge. Nhánh Phát có commit `26348f9` xóa báo cáo Giang; không áp dụng việc xóa này lên bản nộp chung.
 4. **Từng người — LMS:** nộp cùng link repo nhóm bằng tài khoản của mình, kiểm tra deadline/gia hạn trong LMS. Trạng thái GitHub không xác nhận việc đã nộp LMS.
+5. **Dũng — tên repo:** `git remote -v` ngày 09/11/2026 đang trỏ tới `K5-L3-Day02-Nhom4AE-DiscoveryProblemFraming`, không khớp mẫu `K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming` được ghi trong báo cáo. Cần kiểm tra repo thực tế trên GitHub và đổi tên trước hạn nếu đây không chỉ là remote cũ; sai tên repo bị trừ 5 điểm theo rubric.
 
 ## 4. Bonus và cấu trúc
 
 - B1: Thao/Phát/Dũng có 10 dòng scan; chỉ số lượng chưa đủ, từng dòng cần dấu hiệu thật thuộc đủ bốn lăng kính. Giang hiện có 5 dòng.
 - B2: số lượng khảo sát đang ghi là 8, chưa đạt mốc 20 survey; không khai đủ bonus từ bảng hiện tại.
 - B3: mười ca của giải pháp Rule hỗ trợ kiểm tra thiết kế, không phải eval cho bước AI.
-- Có đủ bốn file cá nhân, `TEAM.md`, `report/team/group_report.md`; template cá nhân rỗng đã được bỏ. Tên repo và tên bốn file phù hợp mẫu.
+- Có đủ bốn file cá nhân, `TEAM.md`, `report/team/group_report.md`; template cá nhân rỗng đã được bỏ. Tên bốn file cá nhân phù hợp mẫu; tên repo ở remote hiện chưa khớp mẫu và cần xử lý theo mục 3.5.
 - Đề bài, rubric và tài liệu hướng dẫn được giữ nguyên. Không sửa yêu cầu chấm để làm báo cáo trông như đã đủ.
