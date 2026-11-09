@@ -14,8 +14,7 @@
 ## Tài liệu tham khảo thiết kế
 
 - [10 ca Rule](cp6-rule-evaluation-cases.md): đầu vào/đầu ra mong đợi do AI soạn; chưa chạy trên triển khai.
-- [Ví dụ quy trình](cp5-simulated-progress-report.md) và hai CSV đi kèm: dữ liệu tổng hợp do AI tạo, giữ nguồn gốc trong tài liệu; không dùng làm bằng chứng khảo sát hoặc pilot.
-- [Bản nháp reflection](cp7-lesongthao-reflection-draft.md): do AI soạn, không phải reflection tự viết.
+- Bản nháp reflection do AI soạn chỉ giữ tại [mục 6 báo cáo cá nhân Thao](../individual/2A202603534_LeSongThao.md#6-reflection-cp7), tránh hai bản cùng nội dung.
 
 ## Quy ước lưu file
 

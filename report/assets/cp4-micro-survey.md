@@ -68,6 +68,16 @@ Xuất bảng phản hồi từ công cụ khảo sát, bỏ mọi cột nhận 
 
 ## Nguồn cần bổ sung để đối chiếu bảng tổng hợp
 
+### Nguồn hiện tìm thấy trong Git
+
+| Tài liệu | Nguồn truy vết | Chứng minh được gì? |
+|---|---|---|
+| Bộ câu hỏi và bảng tổng hợp CP4 | [Commit 492b7f7](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/492b7f7e35330605948cfc580506892cbf1cdd63), tác giả Git NTD, ngày 09/11/2026 | Bảng tổng hợp đã được đưa vào tài liệu; chưa chứng minh thời điểm khảo sát, danh tính theo vai trò hoặc câu trả lời từng người |
+| Baseline 38/71/55 phút | [Card Phát](../individual/2A202603536_TranHoangPhat.md), mục 2 và Card #1; [commit ca52d1b](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/ca52d1b479cc842e567e5815691d8b2331f9e226) | Ba mốc tự báo cáo của người trong nhóm; không tính vào mẫu khảo sát người ngoài nhóm |
+| Phản hồi gốc và thông tin thu thập | Chưa tìm thấy trên main hoặc các nhánh đã fetch ngày 09/11/2026 | Chưa thể tái tính tỷ lệ hoặc xác nhận ai trực tiếp thu thập |
+
+### Cách hoàn tất nguồn
+
 Hiện repo có bộ câu hỏi và bảng tổng hợp trong báo cáo nhóm. Chưa có phản hồi gốc đã ẩn danh, thời điểm và kênh thực hiện thực tế; thời điểm commit không thay thế thời điểm khảo sát.
 
 Người thực hiện khảo sát cần bổ sung:
@@ -77,3 +87,14 @@ Người thực hiện khảo sát cần bổ sung:
 - Mã người trả lời ẩn danh, vai trò và xác nhận thuộc nhóm khác; câu trả lời câu 1–7, kèm lý do loại phản hồi không hợp lệ.
 
 Đối chiếu từ dữ liệu gốc: 8 phản hồi, 7 hợp lệ; 4/7 mất trên 30 phút; 5/7 từng thiếu việc/hỏi lại; các tỷ lệ nguồn và tín hiệu phản bác. Nếu bản gốc khác bảng hiện tại thì sửa bảng theo bản gốc. Không tạo tám dòng phản hồi từ các tỷ lệ đã có hoặc xem các ô thiếu là 0.
+
+Mỗi phản hồi cần có các trường sau; chỉ nhập từ bản ghi có thật:
+
+| Nhóm trường | Nội dung |
+|---|---|
+| Nguồn | Mã phản hồi ẩn danh, vai trò, thuộc nhóm khác, thời điểm, kênh thu thập và mã ghi chép/bản xuất |
+| Hành vi | Câu trả lời nguyên ý Q1–Q7; không tự bổ sung lựa chọn còn thiếu |
+| Hợp lệ | Có từng làm báo cáo trong ba tháng gần nhất; lý do loại nếu không hợp lệ |
+| Đối chiếu | Người tổng hợp kiểm đếm và ngày đối chiếu; giữ riêng bản phản hồi với bảng tỷ lệ |
+
+Nếu không còn bản gốc, cần thực hiện lượt khảo sát mới và ghi đúng ngày/kênh mới; thay bảng tổng hợp bằng kết quả của lượt đó. Không đặt ngày thu thập bằng ngày commit hoặc điền câu trả lời cho đủ tỷ lệ cũ.
