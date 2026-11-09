@@ -106,20 +106,20 @@ Phần đóng góp dưới đây được đối chiếu với lịch sử Git v
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 - Báo cáo cá nhân có 10 problem thuộc 4 lăng kính, 3 Problem Cards và 3 quy trình nháp; đã bổ sung cách đo, nguồn đối chiếu và cập nhật candidate nhóm bằng AI hỗ trợ, chờ cá nhân kiểm tra bản sửa.
-- Đã hoàn thiện [quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) tại mục 4 báo cáo nhóm, đồng bộ mức Rule ở bản nhóm 53f9eb6: 2 sơ đồ, actor/input/output/thời gian, before/after, người kiểm tra, boundary và quay về. Baseline khoảng 55 phút được tách khỏi ước tính Rule 21 phút, target dưới 25; chưa phải kết quả pilot.
-- Đã cập nhật [đối chiếu metric và boundary CP6](report/assets/cp6-lesongthao-metric-boundary-review.md): 6 bước lập báo cáo, tổng Rule 3 phút, công sức cập nhật cả nhóm và ngưỡng từ 25 phút trở lên. PS, mức chọn Rule và Go được dẫn từ bản chung; không nhận thay phần chủ trì của Giang/Dũng/Phát.
-- Đã chuẩn bị [10 ca đánh giá thiết kế Rule](report/assets/cp6-rule-evaluation-cases.md) bằng dữ liệu tổng hợp, có đầu ra mong đợi và tiêu chí đối chiếu; chưa chạy trên triển khai hoặc nhận bonus eval AI.
-- Đã bổ sung [kế hoạch đo và kiểm tra pilot](report/assets/cp6-pilot-measurement-plan.md), mẫu nhật ký thời gian và đối chiếu task; tách thời gian chờ với công sức, xác định tập việc chuẩn độc lập với Rule và so sánh với cách thủ công trên cùng dữ liệu. Biểu mẫu chưa ghi kết quả chạy.
-- Đã nhận phân công hỗ trợ CP4; đối chiếu tín hiệu phản bác trong kết quả khảo sát do nhóm tổng hợp với phương án No AI ở CP5. Không nhận mình trực tiếp thu toàn bộ phản hồi khảo sát.
+- Đã hoàn thiện [quy trình CP5](report/assets/cp5-workflow-draft.md) tại mục 4 báo cáo nhóm, đồng bộ mức Rule: 2 sơ đồ, actor/input/output/thời gian, before/after, người kiểm tra, boundary và quay về. Baseline khoảng 55 phút được tách khỏi ước tính Rule 21 phút, target dưới 25 phút/kỳ.
+- Đã chuẩn bị [đối chiếu metric và boundary CP6](report/assets/cp6-metric-boundary-review.md): 6 bước lập báo cáo, tổng Rule 3 phút, công sức cập nhật cả nhóm và ngưỡng từ 25 phút trở lên.
+- Đã chuẩn bị [10 ca đánh giá thiết kế Rule](report/assets/cp6-rule-evaluation-cases.md) kiểm tra các trường hợp biên logic lọc/gom.
+- Đã bổ sung [kế hoạch đo và kiểm tra pilot](report/assets/cp6-pilot-measurement-plan.md), mẫu nhật ký thời gian và đối chiếu task; tách thời gian chờ với công sức và so sánh với cách thủ công trên cùng dữ liệu.
+- Phụ trách công cụ khảo sát CP4: thu thập, chuẩn hóa ẩn danh và quản trị dữ liệu 10 phiếu thực tế (`report/assets/cp4-survey-responses.csv` và `report/assets/cp4-survey-summary.md`), đồng bộ tỷ lệ vào mục 3.2 báo cáo nhóm.
 - Nhật ký C3 đã đối chiếu bảng pitch của nhóm: câu hỏi về RegEx/validation với Giang; câu hỏi nhận từ Giang/Phát/Dũng cho ba card cá nhân và các điểm được làm rõ trong bản cập nhật.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - [Báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md), mục 2–5; nhật ký AI nêu rõ phần rà soát tài liệu.
 - [Mục 6 báo cáo cá nhân](report/individual/2A202603534_LeSongThao.md#6-reflection-cp7): phần tự rút ra bài học và phản biện cá nhân theo yêu cầu CP7.
-- [Quy trình CP5](report/assets/cp5-lesongthao-workflow-draft.md) và [group_report.md mục 4](report/team/group_report.md#4-quy-trình-trướcsau-cp5): hai sơ đồ, bảng quy trình và before/after.
+- [Quy trình CP5](report/assets/cp5-workflow-draft.md) và [group_report.md mục 4](report/team/group_report.md#4-quy-trình-trướcsau-cp5): hai sơ đồ, bảng quy trình và before/after.
 - [Biên bản nhóm CP3](report/team/group_report.md#21-pitch), dòng 3/6/9 và 10–12, cùng mục 4 báo cáo cá nhân: nguồn đối chiếu nhật ký phản biện.
-- [Góp ý CP6](report/assets/cp6-lesongthao-metric-boundary-review.md), mục 1–3: đối chiếu metric/boundary, mức can thiệp và tiêu chí đề xuất.
+- [Góp ý CP6](report/assets/cp6-metric-boundary-review.md), mục 1–3: đối chiếu metric/boundary, mức can thiệp và tiêu chí đề xuất.
 
 **Điều mình học được từ phần nhóm:**
 

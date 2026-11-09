@@ -33,6 +33,6 @@
 4. Tiêu chí thời gian số 4 phải đo riêng trên triển khai: hai pha Rule tổng không quá 3 phút và toàn bộ việc của người tổng hợp dưới 25 phút. Không suy thời gian từ các ví dụ tổng hợp này.
 5. Tiêu chí thành công bốn kỳ liên tiếp vẫn cần time log pilot thật; 10 ca kiểm tra thiết kế không thay thế pilot.
 
-Tham chiếu: [5 tiêu chí của nhóm](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6), [quy trình và boundary](cp5-lesongthao-workflow-draft.md), [đối chiếu metric](cp6-lesongthao-metric-boundary-review.md).
+Tham chiếu: [5 tiêu chí của nhóm](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6), [quy trình và boundary](cp5-workflow-draft.md), [đối chiếu metric](cp6-metric-boundary-review.md).
 
 Khi có triển khai, ghi nhận bằng [kế hoạch đo pilot và biểu mẫu](cp6-pilot-measurement-plan.md); kết quả thực tế được lưu riêng với đầu ra mong đợi ở bảng trên.
