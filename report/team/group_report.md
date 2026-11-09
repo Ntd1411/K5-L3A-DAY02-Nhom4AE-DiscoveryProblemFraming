@@ -5,9 +5,9 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Nhom4AE
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): Khi tới hạn gửi báo cáo tiến độ cho giảng viên, người phụ trách muốn gom việc cả nhóm đã làm trong hai tuần qua vào một chỗ để gửi đúng hạn mà không phải lục lại commit và tin nhắn.
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -18,57 +18,81 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Nguyễn Tuấn Dũng | Điều chỉnh CV theo JD | Sinh viên CNTT năm cuối đang ứng tuyển | Đối chiếu JD và viết lại CV, khoảng 15 phút | **Trần Hoàng Phát:** Trong lần ứng tuyển gần nhất, 15 phút viết lại CV có tạo thay đổi đo được về phản hồi, hay một CV gốc theo nhóm vị trí đã đủ? |
+| 2 | Nguyễn Tuấn Dũng | Chuẩn bị phỏng vấn kỹ thuật | Sinh viên chuẩn bị phỏng vấn thực tập/fresher | Xác định phạm vi, tìm tài liệu và ôn tập; ít nhất 3 ngày | **Nguyễn Huy Giang:** “Ba ngày” là thời gian lịch hay số giờ thực học; bước nào thực sự chiếm nhiều giờ nhất? |
+| 3 | Nguyễn Tuấn Dũng | Nhập lại thông tin vào biểu mẫu | Sinh viên năm cuối làm thủ tục và ứng tuyển | Tìm và nhập lại thông tin ở nhiều định dạng, khoảng 30 phút | **Lê Sông Thao:** Lần gần nhất bạn điền form nào, bao nhiêu trường bị lặp và từng có lỗi không nhất quán gây hậu quả gì? |
+| 4 | Trần Hoàng Phát | Gom việc hai tuần để viết báo cáo tiến độ | Người phụ trách báo cáo của nhóm bốn người | Đọc lại Zalo để tìm việc đã làm, khoảng 15 phút; toàn quy trình trung bình 55 phút | **Nguyễn Tuấn Dũng:** Nếu cả nhóm cập nhật một bảng chung ngay khi xong việc, thời gian 55 phút có giảm đủ để không cần AI không? |
+| 5 | Trần Hoàng Phát | Tìm yêu cầu cuối cùng của giảng viên | Thành viên nhóm đồ án | Xác định yêu cầu còn hiệu lực; từng mất một ngày sửa do làm sai | **Nguyễn Huy Giang:** Vì sao nhóm chưa thống nhất một nguồn chính thức; nếu làm được thì pain còn lại là gì? |
+| 6 | Trần Hoàng Phát | Thành viên không chạy được repository | Thành viên nhóm phát triển phần mềm | Tìm khác biệt môi trường, khoảng 45 phút | **Lê Sông Thao:** Sau khi có lockfile, hướng dẫn và môi trường container thống nhất, sự cố còn xảy ra bao nhiêu lần? |
+| 7 | Nguyễn Huy Giang | Trích xuất action item sau họp | Nhóm trưởng và thành viên nhóm sinh viên | Tua file ghi âm để tìm nội dung giao việc, khoảng 20 phút | **Trần Hoàng Phát:** Nếu có thư ký ghi trực tiếp và dành năm phút cuối xác nhận task, 45 phút nghe lại có còn phát sinh không? |
+| 8 | Nguyễn Huy Giang | Tra cứu công thức trong nhiều PDF | Sinh viên tự ôn thi cuối kỳ | Đọc và đối chiếu ngữ cảnh trong nhiều PDF, khoảng 20–30 phút/dạng bài | **Nguyễn Tuấn Dũng:** Người học cần tìm đúng đoạn tài liệu hay cần câu trả lời tổng hợp; kiểu sai nào gây hại hơn khi ôn thi? |
+| 9 | Nguyễn Huy Giang | Kiểm tra tên file và bài nộp thiếu | Nhóm trưởng/lớp trưởng phụ trách thu bài | Đối chiếu từng tên file với danh sách, khoảng 20–25 phút | **Lê Sông Thao:** Vì tên file có cú pháp cố định, RegEx hoặc validation lúc nộp giải quyết được bao nhiêu phần trăm trường hợp? |
+| 10 | Lê Sông Thao | Tổng hợp kết quả thực nghiệm và viết nhận định | Sinh viên thực hiện thực nghiệm ML/CV/NLP | Viết nhận định và phân tích lỗi, khoảng 25 phút; toàn quy trình khoảng 80 phút | **Nguyễn Huy Giang:** Nếu script đã xuất metrics và mẫu sai, phần nhận định còn mất bao lâu và có nhất thiết cần AI không? |
+| 11 | Lê Sông Thao | Đối chiếu ảnh và lỗi OCR | Người phát triển pipeline nhận diện biển số | Mở biến thể ảnh và đối chiếu OCR thủ công, khoảng 30 phút | **Trần Hoàng Phát:** Visual error sheet và thống kê cặp ký tự nhầm có đủ giảm thời gian từ 55 xuống 15 phút không? |
+| 12 | Lê Sông Thao | Đối chiếu log khi debug ESP32 | Sinh viên/kỹ sư nhúng và IoT | Đọc log và dò GPIO giữa code với sơ đồ, khoảng 7 phút/vòng | **Nguyễn Tuấn Dũng:** Nếu chuẩn hóa log và dùng checklist, vấn đề nào còn lại buộc phải dùng mức cao hơn Rule? |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A — Tìm việc và thủ tục cá nhân | 1. Điều chỉnh CV; 2. Chuẩn bị phỏng vấn; 3. Nhập biểu mẫu | Phải đọc, đối chiếu và nhập lại thông tin cá nhân theo từng ngữ cảnh mới. |
+| B — Điều phối và truy xuất thông tin nhóm | 4. Báo cáo tiến độ; 5. Yêu cầu cuối của giảng viên; 7. Action item sau họp | Thông tin công việc và quyết định nằm rải rác, khiến nhóm phải tìm lại, xác nhận và tổng hợp thủ công. |
+| C — Kiểm tra và tổng hợp đầu ra kỹ thuật/học tập | 6. Môi trường repository; 8. Tra cứu PDF; 9. Kiểm tra bài nộp; 10. Báo cáo thực nghiệm; 11. Lỗi OCR; 12. Debug ESP32 | Phải đối chiếu nhiều nguồn hoặc nhiều đầu ra kỹ thuật để tìm sai lệch và tạo kết quả đúng. |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
-Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
-
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian và số lần bỏ sót khi sinh viên tổng hợp thông tin
+         cho các công việc lặp lại trong học tập, đồ án và tìm việc
+├── Opportunity A: Thông tin cá nhân và yêu cầu tuyển dụng thay đổi theo từng ngữ cảnh
+├── Opportunity B: Công việc, quyết định và yêu cầu của nhóm nằm rải rác ở nhiều kênh
+└── Opportunity C: Kết quả kỹ thuật nằm ở nhiều file/đầu ra và phải đối chiếu thủ công
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
--
+- Chatbot tổng hợp báo cáo.
+- Agent tự đọc GitHub và Zalo.
+- Dashboard theo dõi tiến độ.
+- RAG tra cứu tài liệu.
+- Script tự động kiểm tra tên file.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
+Shortlist ba candidate được nhóm chấm điểm:
+
+1. Gom việc hai tuần để viết báo cáo tiến độ.
+2. Trích xuất action item sau họp nhóm.
+3. Tổng hợp kết quả thực nghiệm và viết nhận định phân tích lỗi.
+
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Báo cáo tiến độ hai tuần | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 35 |
+| Action item sau họp | 5 | 5 | 4 | 5 | 4 | 5 | 5 | 33 |
+| Báo cáo kết quả thực nghiệm | 4 | 5 | 4 | 5 | 4 | 5 | 4 | 31 |
 
 **Candidate được chọn:**
 
+Khi tới hạn gửi báo cáo tiến độ cho giảng viên, người phụ trách muốn gom việc cả nhóm đã làm trong hai tuần qua vào một chỗ để gửi đúng hạn mà không phải lục lại commit và tin nhắn.
+
 **Vì sao chọn:**
+
+- Actor và chu kỳ sử dụng rõ: một người phụ trách báo cáo cho nhóm bốn người, lặp lại mỗi hai tuần.
+- Có baseline từ ba lần bấm giờ: 38, 71 và 55 phút, trung bình khoảng 55 phút.
+- Bottleneck cụ thể: phải đọc lại Zalo và đối chiếu commit, ghi chú họp để xác định ai đã làm gì.
+- Cả nhóm hiểu domain và có thể kiểm chứng với những nhóm sinh viên khác ngay trong lớp.
+- Có thể so sánh công bằng giữa bảng chung/checklist, Rule lấy dữ liệu có cấu trúc và Workflow hỗ trợ soạn nháp.
+- Có pilot nhỏ, metric thời gian và tiêu chí không bỏ sót công việc tương đối dễ đo.
 
 **Vì sao loại các candidate còn lại:**
 
+Action item sau họp: pain có thật và lặp lại, nhưng giải pháp No AI là chỉ định thư ký ghi trực tiếp cùng năm phút xác nhận cuối buổi có thể loại bỏ phần lớn 45 phút nghe lại. Chất lượng file ghi âm, quyền riêng tư và phát biểu chưa được chốt cũng làm tăng rủi ro nếu tự động trích task.
+
+Báo cáo kết quả thực nghiệm: quy trình và baseline rõ, nhưng pain hiện có bằng chứng tập trung ở một thành viên và một số bài toán ML/CV cụ thể. Nhóm khó tìm mẫu kiểm chứng rộng bằng candidate báo cáo tiến độ; script xuất metrics cùng template nhận định cũng có thể giải phần lớn bottleneck trước khi cần AI.
+
 **Xử lý bất đồng (nếu có):**
+
+Nhóm không dùng tổng điểm như quyết định tự động. Nhóm đối chiếu bằng chứng và thống nhất chọn candidate có actor dễ tiếp cận, baseline rõ và khả năng kiểm chứng trong thời gian lab.
 
 ---
 
