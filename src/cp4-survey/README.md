@@ -4,6 +4,8 @@ Mở `index.html` bằng Microsoft Edge, Chrome hoặc Firefox: chuột phải f
 
 1. Nhập mã phiếu, vai trò, ngày/kênh khảo sát và nguồn ghi chép đã ẩn danh.
 2. Điền Q1–Q7 theo [bộ câu hỏi](../../report/assets/cp4-micro-survey.md); bấm **Lưu phiếu & nhập tiếp**. Ngày/kênh được giữ cho phiếu kế tiếp; đổi nếu khác đợt.
+
+   Mỗi câu có mục **Gợi ý hỏi tiếp** bấm mở được, kèm cách ghi và ví dụ tham khảo. Ô vai trò có danh sách gợi ý khi gõ; ô nguồn ghi chép có hướng dẫn riêng. Hỏi để người trả lời kể trước rồi chọn phương án tương ứng; các ví dụ không tự điền vào dữ liệu và không được xuất như phản hồi.
 3. Dùng **Sửa** hoặc **Xóa** trong danh sách để đối chiếu. Phiếu chưa đủ dữ liệu vẫn lưu được và ghi lý do chưa tính.
 4. Bấm **Xuất bản sao JSON** để sao lưu hoặc chuyển máy. **Nhập bản sao JSON** thay toàn bộ danh sách sau khi xác nhận.
 5. **Xuất CSV** tạo `cp4-survey-responses.csv`; **Xuất bảng CP4** tạo `cp4-survey-summary.md`. Chuyển hai file từ Downloads vào `report/assets/`, đọc lại câu trả lời mở rồi cập nhật mục 3.2 báo cáo nhóm theo số liệu mới.
