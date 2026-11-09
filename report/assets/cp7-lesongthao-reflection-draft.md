@@ -22,7 +22,7 @@ Báo cáo nhóm tổng hợp 8 phản hồi khảo sát, 7 hợp lệ; 4/7 ngư�
 
 ## 6.5. Khó khăn khi làm rõ Problem Statement
 
-Khó khăn tôi cần xử lý trong phần quy trình là giữ cùng phạm vi đo giữa hiện tại và tương lai. Mục tiêu dưới 40 phút áp dụng cho thử nghiệm bảng chung không dùng AI; dưới 25 phút thuộc giả thuyết Workflow nếu có căn cứ cần thêm AI. Tổng thời gian phải tính cả kiểm tra và sửa nội dung. Số commit không đủ để kết luận một nhiệm vụ đã hoàn thành, nên trạng thái công việc vẫn cần người phụ trách xác nhận.
+Khó khăn trong phần quy trình là giữ cùng phạm vi đo khi nhóm cập nhật quyết định. Card Phát ban đầu có phương án No AI khoảng 36 phút, nhưng CP6 đã chọn Rule dự kiến 21 phút với mục tiêu dưới 25. Sáu bước lập báo cáo cần được tách khỏi hoạt động cập nhật task trong kỳ. Tổng thời gian phải tính cả kiểm tra và sửa; hai pha Rule là 2 cộng 1 bằng 3 phút. Số commit không đủ để xác nhận một công việc đã hoàn thành.
 
 ## 6.6. Nếu làm lại
 
@@ -30,7 +30,7 @@ Tôi sẽ ghi thời gian từng bước ngay khi làm thay vì chỉ nhớ tổ
 
 ## 6.7. Khung giải thích hiểu bài — bản nháp 7 câu
 
-Bài của nhóm xuất phát từ việc Phát cần gom công việc hai tuần của nhóm bốn người để viết báo cáo cho giảng viên. Quy trình hiện tại có bảy bước, khoảng 55 phút, trong đó đọc lại Zalo khoảng 15 phút là điểm nghẽn được nêu trong card. Baseline tự báo cáo gồm 38, 71 và 55 phút; mục tiêu thử bảng chung không dùng AI là dưới 40 phút, còn mục tiêu dưới 25 phút chỉ áp dụng nếu thử Workflow sau đó. Cách đo cần tính cả thời gian kiểm tra và theo dõi chất lượng, trong khi số câu giảng viên hỏi lại hiện còn thiếu baseline. Nếu dùng AI, ranh giới cần bảo đảm mọi nhận định có nguồn, không tự coi commit là hoàn thành công việc và con người kiểm tra trước khi gửi. Nhóm cần so sánh No AI, Rule, Workflow và Agent rồi chọn mức đơn giản nhất đủ dùng; card Phát hiện ưu tiên No AI trước. TEAM.md ghi Go, nhưng cần hoàn thiện đánh giá bốn rủi ro, phạm vi pilot và ngưỡng dừng trong báo cáo nhóm để giải thích được quyết định đó.
+Bài của nhóm là giúp Phát tổng hợp công việc hai tuần của nhóm bốn người để gửi báo cáo cho giảng viên. Baseline gồm 38, 71 và 55 phút, trung bình khoảng 55 phút; bước đọc Zalo khoảng 15 phút là nghẽn hiện tại. Nhóm chọn Rule lọc và gom dữ liệu, còn con người bổ sung, viết, kiểm tra và gửi, với ước tính 21 phút và target dưới 25 phút/kỳ. Metric yêu cầu bốn kỳ liên tiếp đạt thời gian, không bỏ sót task hợp lệ, có nguồn đối chiếu và cập nhật không quá 10 phút/người/kỳ. Boundary là chỉ đọc nguồn được phép, không suy Done từ commit, không sửa dữ liệu hoặc tự gửi, và luôn kiểm tra lại sau bổ sung. Nhóm giữ No AI làm phương án quay về, chưa chọn Workflow/Agent vì chưa có bằng chứng cần AI. Quyết định là Go pilot hai kỳ với Rule, sau đó tiếp tục đủ bốn kỳ nếu đạt; dừng nếu hai kỳ đều từ 25 phút trở lên, có task hợp lệ bị bỏ sót hoặc có người tốn quá 10 phút/kỳ để cập nhật.
 
 ## Nguồn để tự đối chiếu
 
@@ -38,3 +38,4 @@ Bài của nhóm xuất phát từ việc Phát cần gom công việc hai tuầ
 - [Card của Phát tại mốc main được đọc](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md).
 - [Phân công tại TEAM.md](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/TEAM.md).
 - [Biên bản CP3 và tổng hợp CP4 từ nhánh chung](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/492b7f7e35330605948cfc580506892cbf1cdd63/report/team/group_report.md), đã được gộp cùng [phần CP5](../team/group_report.md#4-quy-trình-trướcsau-cp5).
+- [Bản nhóm chốt Rule tại 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md), nguồn đồng bộ PS và quyết định CP6.

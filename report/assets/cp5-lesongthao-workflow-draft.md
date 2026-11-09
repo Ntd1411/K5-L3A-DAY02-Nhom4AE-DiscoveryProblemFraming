@@ -1,17 +1,18 @@
-# CP5 — Thiết kế quy trình cho Card #1 của Phát
+# CP5 — Quy trình theo quyết định Rule của nhóm
 
-- Phần việc của Lê Sông Thao theo TEAM.md: chủ trì quy trình trước/sau, before/after và assets; Phát hỗ trợ.
-- Được Codex hỗ trợ tổng hợp, chuyển sang Mermaid và rà soát ngày 09/11/2026. Nội dung quy trình đã được tích hợp vào mục 4 của báo cáo nhóm.
-- Phạm vi: tổng hợp một báo cáo tiến độ hai tuần của nhóm bốn người cho giảng viên. Đây là thiết kế quy trình, chưa phải kết quả pilot hay quyết định CP6 của nhóm.
+- Phụ trách: Lê Sông Thao; Trần Hoàng Phát hỗ trợ theo TEAM.md. Codex hỗ trợ Mermaid, tính toán và rà soát tài liệu.
+- Đồng bộ ngày 09/11/2026 với [bản nhóm CP5–CP6, commit 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md): **Go — pilot nhỏ với Rule**. Nội dung đã tích hợp vào mục 4 báo cáo nhóm.
+- Phạm vi: một báo cáo tiến độ hai tuần của nhóm bốn người; thời gian tương lai là ước tính thiết kế, không phải kết quả thử nghiệm.
 
-## 1. Nguồn và mức chắc chắn
+## 1. Nguồn và các phương án
 
-| Nội dung | Nguồn / trạng thái |
+| Nội dung | Căn cứ / trạng thái |
 |---|---|
-| Phát tự bấm giờ 3 báo cáo: 38, 71, 55 phút | [Card #1 của Phát](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md). Trung bình 54,67 phút, làm tròn khoảng 55. Chưa kèm ngày hoặc log gốc của từng lần. |
-| Thời gian từng bước hiện tại 10/15/5/10/8/4/3 phút | Sơ đồ hiện tại trong card Phát; tổng 55 phút. Không tự coi đây là bảy thời gian đã được đo riêng ở cả ba kỳ. |
-| No AI giảm khoảng 19 phút | Giả thuyết trong card: lấy commit giảm 4 phút; đọc Zalo giảm 12 phút; hỏi phần thiếu giảm 3 phút. Tổng tương lai 36 phút là tính toán từ giả thuyết, chưa đo. |
-| Vai trò Thao/Phát | [TEAM.md trên main](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/TEAM.md). |
+| Baseline 38, 71, 55 phút | [Card Phát tại mốc main](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md): tự báo cáo 3 lần bấm giờ, trung bình 54,67 phút, làm tròn khoảng 55. Chưa có log gốc từng kỳ. |
+| Thời gian hiện tại từng bước 10/15/5/10/8/4/3 | Sơ đồ trong card Phát và bản nhóm. Chưa chứng minh các bước đã được bấm giờ riêng ở cả 3 kỳ. |
+| No AI khoảng 36 phút, mục tiêu dưới 40 | Phương án tham chiếu từ card gốc: giảm bước lấy commit 4 phút, đọc lại thông tin 12 phút, hỏi thiếu 3 phút; `55 - 19 = 36`. Là ước tính, dùng đối chiếu và quay về thủ công; không phải phương án cuối ở CP6. |
+| Rule khoảng 21 phút, target dưới 25 | Quyết định trong bản nhóm tại 53f9eb6: lọc/gom theo quy tắc; con người bổ sung, viết, kiểm tra và gửi. Chưa có kết quả pilot. |
+| Workflow/Agent | Chưa chọn. Chỉ xem xét AI sau khi pilot chứng minh Rule không đủ và xác định phần nghẽn còn lại. |
 
 ## 2. Quy trình hiện tại — khoảng 55 phút
 
@@ -23,7 +24,7 @@ flowchart TD
     D["4. Phát tổng hợp vào Docs — 10 phút"]
     E["5. Phát viết nhận định và kế hoạch — 8 phút"]
     F["6. Phát hỏi thành viên phần thiếu — 4 phút"]
-    G["7. Phát gửi giảng viên — 3 phút"]
+    G["7. Phát kiểm tra và gửi giảng viên — 3 phút"]
     A --> B --> C --> D --> E --> F --> G
 ```
 
@@ -35,77 +36,72 @@ flowchart TD
 | 4 | Phát | Thông tin bước 1–3 | Bản tổng hợp trong Docs | 10 phút |
 | 5 | Phát | Bản tổng hợp, kết quả và blocker | Nhận định, kế hoạch kỳ tới | 8 phút |
 | 6 | Phát và thành viên liên quan | Nội dung thiếu hoặc chưa rõ | Thông tin được bổ sung/xác nhận | 4 phút |
-| 7 | Phát | Bản báo cáo hoàn thiện | Báo cáo được gửi giảng viên | 3 phút |
+| 7 | Phát | Bản báo cáo hoàn thiện | Báo cáo được kiểm tra và gửi giảng viên | 3 phút |
 
 **Bottleneck:** bước 2, phải tìm công việc trong tin nhắn lẫn nhiều nội dung khác. Commit là nguồn chứng cứ thay đổi mã, không tự xác nhận công việc đã hoàn thành hoặc bao phủ phần việc ngoài code.
 
-## 3. Quy trình tương lai A — bảng chung, No AI
+## 3. Quy trình tương lai được chọn — Rule, khoảng 21 phút
 
-Điều kiện đầu vào: mỗi thành viên cập nhật bảng chung khi có tiến triển. Trường tối thiểu đề xuất: kỳ báo cáo, mã/tên việc, người phụ trách, trạng thái được người đó xác nhận, nguồn chứng cứ, blocker và bước tiếp theo. Chi phí cập nhật của từng người chưa được đo và phải được ghi riêng.
+**Đầu vào trong kỳ:** bốn thành viên cập nhật task có người phụ trách, hạng mục, kết quả, trạng thái được xác nhận, ngày hoàn thành và liên kết bằng chứng. Nhóm trưởng đề xuất khoảng 1–2 phút/task và giới hạn 10 phút/người/kỳ; đây là giả thuyết cần đo. Thời gian cập nhật này nằm ngoài 21 phút lập báo cáo và vẫn phải tính vào công sức cả nhóm.
 
 ```mermaid
 flowchart TD
-    P["Các thành viên cập nhật bảng chung; đo riêng thời gian cập nhật"]
-    A["1. Phát đối chiếu link thay đổi trong bảng — dự kiến 6 phút"]
-    B["2. Phát đọc bảng cập nhật thay cho lục lại toàn bộ Zalo — dự kiến 3 phút"]
-    C["3. Phát đối chiếu ghi chú họp — dự kiến 5 phút"]
-    D["4. Phát tổng hợp theo template và kiểm nguồn — dự kiến 10 phút"]
-    F["5. Phát hỏi phần thiếu, thành viên xác nhận — dự kiến 1 phút"]
-    E["6. Phát viết nhận định, kế hoạch và kiểm tra cuối — dự kiến 8 phút"]
-    H{"Báo cáo đã kiểm tra và đủ thông tin để gửi?"}
-    G["7. Phát tự gửi báo cáo — dự kiến 3 phút"]
-    R["Nếu bảng thiếu/không đáng tin: trở lại đối chiếu commit, chat và ghi chú; ghi thời gian thực tế"]
-    P --> A --> B --> C --> D --> F --> E --> H
-    H -->|"Đạt"| G
-    H -->|"Thiếu nguồn hoặc mâu thuẫn"| R
+    P["Trong kỳ: thành viên cập nhật, xác nhận Done và nguồn chứng cứ"]
+    A["1. Rule lấy và lọc mục Done trong kỳ — dự kiến 2 phút"]
+    B["2. Phát bổ sung việc ngoài GitHub, loại trùng và hỏi xác nhận — dự kiến 5 phút"]
+    C["3. Rule gom theo thành viên và hạng mục — dự kiến 1 phút"]
+    D["4. Phát viết nhận định và kế hoạch theo template — dự kiến 8 phút"]
+    E["5. Phát kiểm tra nguồn và thông tin mới — dự kiến 3 phút"]
+    H{"Đủ, đúng và có nguồn?"}
+    F["6. Phát duyệt và tự gửi — dự kiến 2 phút"]
+    R["Quay về: export, lọc, gom và xác nhận thủ công; ghi thời gian phát sinh"]
+    P --> A --> B --> C --> D --> E --> H
+    H -->|"Đạt"| F
+    H -->|"Thiếu hoặc mâu thuẫn"| B
+    A -->|"Rule lỗi hoặc thiếu đầu vào"| R
+    C -->|"Rule lỗi"| R
     R --> D
 ```
 
-| Bước | Actor / mức xử lý | Input → output | Thời gian dự kiến | Kiểm tra / giới hạn |
-|---:|---|---|---:|---|
-| 1 | Phát, con người | Bảng và link commit → thay đổi trong kỳ | 6 phút | Chọn đúng kỳ; không suy trạng thái Done từ số commit. |
-| 2 | Phát, con người | Bảng cập nhật → danh sách việc và blocker | 3 phút | Giữ việc ngoài code; không bỏ qua thông tin còn thiếu. |
-| 3 | Phát, con người | Ghi chú họp → quyết định/kế hoạch | 5 phút | Đối chiếu bản đã thống nhất, chưa biến đề xuất thành cam kết. |
-| 4 | Phát, con người | Nguồn đã gom → bản tổng hợp theo template | 10 phút | Kiểm nguồn trong lúc tổng hợp; mọi thời gian sửa đều phải được tính. |
-| 5 | Phát và thành viên liên quan, con người | Điểm thiếu → thông tin được bổ sung hoặc ghi rõ chưa xác nhận | 1 phút | Đưa hỏi/xác nhận lên trước kiểm tra cuối; mốc 1 phút là giả thuyết cho kỳ ít thiếu dữ liệu. |
-| 6 | Phát, con người | Bản tổng hợp đã bổ sung → nhận định/kế hoạch và bản đã kiểm tra | 8 phút | Kiểm tra lại sau mọi thông tin mới. Nếu không đủ thời gian hoặc cần sửa, ghi tăng thực tế. |
-| 7 | Phát, con người | Bản đã kiểm → báo cáo gửi giảng viên | 3 phút | Phát chịu trách nhiệm gửi; không tự động gửi bản chưa kiểm tra. |
+| Bước khi lập báo cáo | Loại | Actor | Input → output | Thời gian kỳ vọng | Kiểm tra / boundary |
+|---:|---|---|---|---:|---|
+| 1 | Rule | Bộ lọc theo quy tắc | Task board, issue/PR và kỳ báo cáo → danh sách mục hợp lệ | 2 phút | Chỉ đọc nguồn được phép; lấy theo ngày hoàn thành trong kỳ; không suy Done từ commit hoặc việc PR đã merge. |
+| 2 | Con người | Phát và thành viên liên quan | Danh sách, ghi chú họp và xác nhận → việc ngoài GitHub, mục đã loại trùng và thông tin còn thiếu | 5 phút | Dùng mã task để tránh một việc bị đếm nhiều lần theo các PR; thiếu hoặc mâu thuẫn thì hỏi người phụ trách. |
+| 3 | Rule | Bộ gom dữ liệu | Danh sách đã đối chiếu → bảng theo owner/hạng mục | 1 phút | Chỉ sắp xếp/định dạng, không tự thay đổi trạng thái, deadline hoặc mức ưu tiên. |
+| 4 | Con người | Phát | Bảng và nguồn → nhận định/kế hoạch theo template | 8 phút | Giữ quyền diễn giải ở con người; không tạo cam kết chưa xác nhận. |
+| 5 | Con người | Phát | Bản báo cáo và nguồn → bản đã kiểm tra | 3 phút | Kiểm tra đủ thành viên, đúng kỳ, trạng thái, nguồn và blocker; mọi bổ sung mới phải qua bước này trước khi gửi. |
+| 6 | Con người | Phát | Bản đạt kiểm tra → báo cáo được gửi giảng viên | 2 phút | Chỉ Phát duyệt và gửi; Rule không có quyền gửi. |
 
-**Tổng dự kiến khi có hỏi bổ sung ở bước 5 và không quay về:** `6 + 3 + 5 + 10 + 1 + 8 + 3 = 36 phút`. Đây là ước tính cho thời gian của người tổng hợp. Bước hỏi thiếu đã được đưa lên trước viết/kiểm tra cuối; cập nhật từ thành viên không được đi thẳng tới bước gửi khi chưa kiểm tra lại. Nếu không cần hỏi thì ghi 0 phút cho bước 5; nếu chờ lâu, sửa hoặc quay về, ghi đúng phần phát sinh.
+**Tổng:** `2 + 5 + 1 + 8 + 3 + 2 = 21 phút`, gồm **6 bước ở thời điểm lập báo cáo: 2 Rule + 4 con người**. Cộng thêm hoạt động cập nhật task trong kỳ thành 7 hoạt động của thiết kế mới. Tất cả số phút tương lai là ước tính; thời gian hỏi, sửa, chờ hoặc quay về phát sinh phải ghi đủ, không giữ cứng 21 phút.
 
-**Boundary:** không tự gán Done, đổi người phụ trách/deadline hoặc tạo cam kết chưa được nhóm xác nhận; không sao chép thông tin riêng tư lên repo công khai. Phát kiểm nguồn, nhận định và người nhận trước khi gửi. Phương án A không có bước AI.
+**Phương án quay về:** Rule lỗi, thiếu trường hoặc không lấy được dữ liệu thì người phụ trách export task board, lọc/gom thủ công, bổ sung việc ngoài GitHub và đối chiếu nguồn. Sau đó vẫn tự viết nhận định, kiểm tra và gửi; không bỏ qua kiểm tra để giữ target. Bản gốc chỉ được đọc, không bị sửa/xóa.
 
-**Phương án quay về:** nếu bảng không được cập nhật, dữ liệu mâu thuẫn hoặc không truy được nguồn, Phát đối chiếu lại commit/chat/ghi chú, hỏi thành viên và viết theo template thủ công. Ghi phần chưa xác nhận thay vì tự điền cho đủ; thời gian phát sinh vẫn nằm trong kết quả đo.
+**Boundary chung:** không đọc lịch sử chat riêng tư; không suy hoàn thành từ số commit, Closed hay Merged; không tự đổi owner/deadline, bịa task hoặc gửi báo cáo. Trạng thái và ngày hoàn thành phải do người phụ trách việc xác nhận. Dữ liệu chưa xác nhận được ghi rõ và được xử lý trước khi gửi.
 
-## 4. Before / after và cách đo
 
-| Chỉ số | Hiện tại | Phương án A, kỳ vọng | Giới hạn cần theo dõi |
+## 4. Before / after và kế hoạch đo
+
+| Chỉ số | Hiện tại | Rule, kỳ vọng | Phạm vi / giới hạn |
 |---|---|---|---|
-| Bước của người tổng hợp | 7 | 7, có nhánh kiểm tra/quay về | Ngoài ra có cập nhật bảng của từng thành viên; chưa đếm vào 7 bước. |
-| Thời gian người tổng hợp | Khoảng 55 phút, 3 kỳ tự báo cáo 38/71/55 | Khoảng 36 phút; target dưới 40 | Chưa có pilot. Không loại thời gian sửa/kiểm tra để đạt target. |
-| Bước chính do con người làm | 7 | 7 | Lợi ích đến từ cấu trúc thông tin, chưa phải tự động hóa. |
-| Đọc/tìm thông tin chat | Khoảng 15 phút | Khoảng 3 phút đọc bảng | Nếu vẫn phải lục Zalo, ghi đúng thời gian thay vì giữ 3 phút. |
-| Tổng công sức cả nhóm | Chưa có baseline | Chưa xác định | Đo cập nhật bảng của cả 4 người, gồm Phát, và thời gian trả lời bổ sung của các thành viên khác; không đếm trùng thời gian Phát đã tính trong tổng hợp. |
-| Chất lượng báo cáo | Số câu giảng viên hỏi lại trong 3 kỳ trước còn thiếu | Số câu hỏi lại do thiếu/sai thông tin không tăng | Cần phân biệt hỏi làm rõ lỗi báo cáo với câu hỏi chuyên môn mới. |
-| Rủi ro mới | Nguồn phân tán, dễ bỏ sót | Bảng chậm cập nhật hoặc trạng thái sai | Thành viên xác nhận trạng thái, Phát kiểm nguồn, có cách quay về. |
+| Bước tại thời điểm lập báo cáo | 7 | 6 | Có thêm hoạt động cập nhật task trong kỳ; không tính nó thành thao tác lập báo cáo. |
+| Thao tác thủ công tại thời điểm lập báo cáo | 7 | 4 | Hai bước còn lại là lọc và gom bằng Rule. |
+| Thời gian người tổng hợp | Khoảng 55 phút; mẫu 38/71/55 | Khoảng 21 phút; target dưới 25 phút/kỳ | Chưa có pilot; tính cả kiểm tra, sửa và quay về. |
+| Tổng thời gian Rule | Không có | Khoảng 3 phút: lọc 2 + gom 1 | Tiêu chí CP6 cần nhất quán với cả hai bước, không nhầm tổng Rule thành dưới 2 phút. |
+| Bottleneck | Đọc Zalo khoảng 15 phút | Viết nhận định khoảng 8 phút | Judgment do Phát giữ. |
+| Cập nhật của mỗi thành viên trong kỳ | Chưa có baseline | Mục tiêu không quá 10 phút/người/kỳ | Ghi cho cả 4 người, gồm Phát; không đếm trùng phần tổng hợp. |
+| Chất lượng | Baseline câu giảng viên hỏi lại còn thiếu | Không bỏ sót mục hợp lệ, đúng owner/kỳ và 100% có nguồn | Báo số mục thiếu/sai, không chỉ đếm câu hỏi của giảng viên. |
+| Rủi ro mới | Thông tin phân tán | Task thiếu trường, sai trạng thái hoặc Rule lọc sai | Bắt buộc xác nhận, đối chiếu, và có export/template thủ công. |
 
-Đề xuất ghi log mỗi kỳ: thời điểm bắt đầu/kết thúc từng bước; thời gian kiểm tra/sửa; có quay về không; tổng phút của Phát; tổng phút cập nhật bảng của cả 4 người và trả lời bổ sung của các thành viên khác; thông tin bị thiếu/sai; câu giảng viên hỏi lại và nguyên nhân. Dùng cùng quy ước tính thời gian với baseline; ghi riêng thời gian chờ bị gián đoạn nếu có. Thu thập số câu hỏi lại của 3 kỳ cũ trước khi so chất lượng; giá trị còn thiếu ghi “chưa có dữ liệu”, không thay bằng 0.
+Đo từng bước mỗi kỳ; ghi thời gian sửa/quay về, thời gian cập nhật task của cả 4 người, mục bị bỏ sót/sai và nguồn đối chiếu. Dùng cùng quy ước tính thời gian với baseline; ghi riêng thời gian chờ nếu có. Dữ liệu chất lượng chưa có ghi “chưa có dữ liệu”, không thay bằng 0.
 
-Card Phát đề xuất thử bảng chung 2 kỳ trước khi cân nhắc AI, và theo dõi 4 kỳ báo cáo. Với chu kỳ hai tuần, đây là kế hoạch dài khoảng 4 và 8 tuần, không phải việc đã chạy xong trong lab. Ngưỡng dừng và quyết định pilot cần Phát cùng nhóm tự chốt ở CP6.
+Pilot theo quyết định nhóm: thử 2 kỳ, nếu đạt tiếp tục tới đủ 4 kỳ liên tiếp. Với chu kỳ hai tuần, tương ứng khoảng 4 và 8 tuần; đây là kế hoạch, chưa chạy xong trong lab. Ngưỡng dừng và tiêu chí chính thức xem mục 7–8 báo cáo nhóm.
 
-## 5. Điều kiện cân nhắc phương án B — Workflow có AI
 
-Chỉ phân tích tiếp nếu dữ liệu pilot cho thấy bảng chung chưa đủ và xác định được phần nghẽn còn lại. Nếu tổng vẫn trên 40 phút nhưng chủ yếu do thành viên không cập nhật, AI soạn nháp không giải được nguyên nhân đó.
+## 5. Các điểm đã rà soát và còn cần dữ liệu
 
-Nếu chọn thử Workflow sau kiểm chứng, phạm vi đề xuất là input đã gom và được phép dùng → AI soạn nháp nội dung tổng hợp/nhận định → Phát hỏi xác nhận phần thiếu → Phát đối chiếu/sửa và kiểm tra cuối → Phát gửi. Đó là phần việc tương ứng bước 4–5 của quy trình hiện tại; không nhầm với số thứ tự của quy trình tương lai đã đổi thứ tự hỏi/kiểm tra. Mục tiêu dưới 25 phút trong card là giả thuyết; cần tính cả chuẩn bị input, chạy AI, kiểm tra và sửa. Chưa có số phút tương lai để điền như kết quả đo.
-
-Boundary cần giữ: AI không tự xác nhận hoàn thành, đổi owner/deadline, tạo cam kết, suy nhận định thiếu nguồn hoặc tự gửi báo cáo. Khi đầu ra thiếu nguồn/sai trạng thái, bỏ bản nháp AI và quay về template cùng dữ liệu đã xác nhận. Giang chủ trì đánh giá mức can thiệp, tiêu chí đầu ra và PS v1; Phát chủ trì rủi ro và quyết định.
-
-## 6. Các điểm cần tiếp tục kiểm chứng
-
-- [ ] Thời gian từng bước hiện tại là đo riêng hay ước lượng phân bổ; bổ sung log nếu có.
-- [ ] Bảng chung thực sự có các trường nhóm dùng và không phát sinh nhập lại không cần thiết.
-- [x] Trong thiết kế, kiểm tra/sửa nằm trong tổng; dữ liệu thiếu có nhánh quay về; kiểm tra cuối đặt sau bước hỏi bổ sung.
-- [ ] Đo cả công sức cập nhật của thành viên để tránh chuyển gánh nặng.
-- [ ] Bổ sung baseline chất lượng; thống nhất với Giang/Dũng về metric và boundary.
-- [x] Đã tích hợp thiết kế CP5 vào mục 4 của group_report.md; thời gian tương lai vẫn ghi là ước tính, chưa phải kết quả pilot hoặc PS đã chốt.
+- [x] Phương án chính là Rule theo CP6; No AI 36 phút được tách thành đối chiếu.
+- [x] Tổng tương lai 21 phút gồm 2 bước Rule và 4 bước con người; cập nhật trong kỳ được đo riêng.
+- [x] Mọi nội dung bổ sung đều đi qua kiểm tra cuối; có nhánh quay về.
+- [x] Mốc dưới 25 phút là target; tổng Rule dự kiến 3 phút được phân biệt với thời gian lọc 2 phút.
+- [ ] Bổ sung log baseline gốc, thời gian chờ và baseline chất lượng nếu có.
+- [ ] Thu log pilot và chi phí cập nhật thực tế trước khi kết luận đạt.

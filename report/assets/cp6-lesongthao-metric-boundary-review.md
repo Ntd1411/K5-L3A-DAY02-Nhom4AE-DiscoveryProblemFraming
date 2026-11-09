@@ -1,44 +1,43 @@
-# CP6 — Đối chiếu metric và boundary từ phần quy trình
+# CP6 — Đối chiếu metric và boundary theo mức Rule
 
-- Người phụ trách phần hỗ trợ: Lê Sông Thao, theo TEAM.md; Codex hỗ trợ rà soát tài liệu ngày 09/11/2026.
-- Mục đích: cung cấp các điểm cần Giang/Dũng/Phát đối chiếu khi viết PS v0/v1, mức can thiệp và quyết định. Đây là nhận xét từ quy trình, chưa thay thế bản PS hoặc quyết định do nhóm tự chốt.
-- Nguồn: [Card #1 của Phát](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/report/individual/2A202603536_TranHoangPhat.md), [TEAM.md tại mốc main đã đọc](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/627065150a8fb412411752b9f4530cc04e861232/TEAM.md), [quy trình CP5](../team/group_report.md#4-quy-trình-trướcsau-cp5).
+- Phần hỗ trợ của Lê Sông Thao theo TEAM.md; Codex hỗ trợ rà soát ngày 09/11/2026.
+- Nguồn quyết định: [CP5–CP6 của nhóm tại 53f9eb6](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/blob/53f9eb6/report/team/group_report.md). Nhóm đã chọn **Go — pilot phạm vi nhỏ với Rule**.
+- Đối chiếu với [quy trình CP5](cp5-lesongthao-workflow-draft.md) và [báo cáo nhóm](../team/group_report.md). Vai trò tài liệu này là rà soát tính nhất quán, không nhận thay phần chủ trì viết PS/quyết định của Dũng/Giang/Phát.
 
-## 1. Các điểm cần giữ nhất quán
+## 1. Metric và cách chấm đạt
 
-| Điểm kiểm tra | Căn cứ hiện có | Góp ý cho người chủ trì |
+| Điểm kiểm tra | Nội dung thống nhất | Giới hạn / cách đo |
 |---|---|---|
-| Baseline thời gian | Phát tự báo cáo 38/71/55 phút; trung bình 54,67 phút | Ghi khoảng 55 phút với mẫu 3 kỳ, không mô tả mọi kỳ đều mất đúng 55 phút. Cần log gốc để xác định cách đo có tính thời gian chờ không. |
-| Target No AI | Dưới 40 phút/kỳ; ước tính phương án bảng chung là 36 phút | Phân biệt target với ước tính và kết quả thực đo. Chốt target áp dụng cho từng kỳ hay trung bình 4 kỳ; vẫn báo từng kỳ để thấy dao động. |
-| Target Workflow | Dưới 25 phút, nếu có lý do thử AI | Không ghi đây là target của phương án No AI. Thời gian phải tính chuẩn bị input, kiểm tra, sửa và nhánh quay về. |
-| Ngưỡng xét AI | Card Phát đề xuất thử bảng chung 2 kỳ trước | Làm rõ trường hợp đúng 40 phút vì target là dưới 40; chốt tổng thời gian hay phần tổng hợp/viết còn nghẽn. Nếu chậm do bảng thiếu dữ liệu, AI soạn nháp không tự giải được nguyên nhân đó. |
-| Chất lượng | Số câu giảng viên hỏi lại trong 3 kỳ trước còn thiếu | Giữ trạng thái chưa có dữ liệu, không điền 0. Xác định câu hỏi nào do thiếu/sai báo cáo, câu nào là hỏi chuyên môn mới. |
-| Công sức cả nhóm | Chưa có baseline | Ghi cả cập nhật bảng của 4 người và thời gian trả lời bổ sung của các thành viên khác. Không đếm trùng thời gian Phát đã tính trong tổng hợp. |
-| Thứ tự kiểm tra | Bản thiết kế đặt hỏi bổ sung trước kiểm tra cuối | Giữ quy tắc: nội dung mới phải được kiểm tra trước khi gửi. Không có nhánh hỏi xong rồi đi thẳng tới gửi. |
+| Baseline | 38/71/55 phút; trung bình 54,67, làm tròn khoảng 55 | Ba kỳ tự báo cáo của Phát, chưa có log gốc từng bước. |
+| Phương án chính | Rule dự kiến 21 phút: 2 + 5 + 1 + 8 + 3 + 2 | 6 bước lập báo cáo: 2 Rule, 4 con người; cập nhật trong kỳ là hoạt động riêng. |
+| Target thời gian | Dưới 25 phút/kỳ trong 4 kỳ liên tiếp | Một kỳ đúng 25 phút vẫn chưa đạt; không chỉ dùng trung bình để che kỳ vượt ngưỡng. |
+| Hai pha Rule | Lọc 2 phút + gom 1 phút = tổng dự kiến 3 phút | Đã sửa tiêu chí tổng Rule dưới 2 phút vì không khớp sơ đồ; tính cả hai pha. |
+| Công sức cập nhật | Không quá 10 phút/người/kỳ | Ghi riêng cho cả 4 người; không đếm trùng phần tổng hợp của Phát. |
+| Đầy đủ / đúng nguồn | 0 mục hợp lệ bị bỏ sót; 100% có link nguồn | Đối chiếu tập task đủ điều kiện với kết quả sau loại trùng; không suy Done từ Closed/Merged/commit. |
+| Chất lượng bổ sung | Ghi mục sai, bỏ sót, phải hỏi/sửa và câu hỏi lại của giảng viên | Baseline số câu hỏi lại còn thiếu; không điền 0 thay dữ liệu chưa có. |
 
-## 2. Góp ý về mức can thiệp
+## 2. Phân biệt ba phương án
 
-- **No AI:** bảng chung, template, trách nhiệm cập nhật và đối chiếu thủ công. Đây là phương án CP5 thử trước theo card, còn cần kiểm chứng việc người dùng có cập nhật đều không.
-- **Rule:** có thể lọc đúng kỳ hoặc kiểm trường bắt buộc bằng logic cố định; chưa có bằng chứng cần xây công cụ mới trong lab.
-- **Workflow:** chỉ cân nhắc khi phần tổng hợp/viết còn là điểm nghẽn sau cải tiến quy trình. AI nhận dữ liệu đã gom, soạn nháp; Phát xác nhận và kiểm tra.
-- **Agent:** chưa có bằng chứng cần AI tự chọn nguồn, công cụ hoặc bước tiếp theo; Giang cần giải thích nếu đề xuất mức này.
+- **No AI:** phương án card gốc ước tính khoảng 36 phút, target dưới 40; giữ làm đối chiếu và phương án quay về thủ công. Chưa có pilot chứng minh mọi cách No AI đều không thể đạt 25 phút.
+- **Rule:** mức nhóm đã chọn; lọc/gom theo logic, giữ judgment và hành động gửi ở Phát. 21 phút là ước tính, target dưới 25 cần pilot kiểm chứng.
+- **Workflow/Agent:** chưa chọn. Nếu Rule không đạt, phải xem time log để biết nguyên nhân nằm ở dữ liệu thiếu hay viết narrative; AI không tự giải việc thành viên không cập nhật.
 
-## 3. Năm tiêu chí đề xuất cho phương án No AI
+AI intervention point của PS v1 là **Không có**. Các ô AI Canvas/PAIR được ghi không áp dụng theo rubric cho giải pháp Rule; vẫn có tiêu chí đầu ra và đủ bốn rủi ro.
 
-Đây là đầu vào để Giang và nhóm tự chốt tiêu chí CP6, chưa phải kết quả đánh giá đã chạy.
+## 3. Rà soát 5 tiêu chí của nhóm với CP5
 
-| # | Tiêu chí | Đạt khi | Không đạt khi |
-|---:|---|---|---|
-| 1 | Truy được nguồn | Mọi trạng thái và nhận định trong báo cáo có link/ghi chú nguồn được người phụ trách xác nhận | Có nhận định không có nguồn, hoặc tự suy Done từ commit |
-| 2 | Đúng kỳ, đúng người | Việc được đưa vào đúng kỳ hai tuần, owner khớp nguồn | Lẫn kỳ hoặc nhầm người phụ trách |
-| 3 | Đủ việc và blocker | Toàn bộ việc/blocker đã được xác nhận trong bảng nguồn đều được đối chiếu, không bỏ sót khi tổng hợp | Bỏ sót việc/blocker đã có trong nguồn xác nhận |
-| 4 | Kiểm tra trước gửi | Sau lần bổ sung/sửa cuối có bước Phát kiểm tra; dữ liệu chưa xác nhận được ghi rõ hoặc xử lý bằng nhánh quay về | Nội dung mới được gửi khi chưa kiểm tra; tự điền để làm báo cáo có vẻ đầy đủ |
-| 5 | Hiệu quả và chất lượng | Khi đủ kỳ đo theo kế hoạch, thời gian đạt target No AI theo cách tổng hợp nhóm đã thống nhất; câu hỏi lại do thiếu/sai không tăng so baseline đã bổ sung | Chưa đủ dữ liệu thì ghi chưa đánh giá; khi có dữ liệu, không đạt thời gian hoặc chất lượng theo ngưỡng đã chốt |
+| Tiêu chí | Điểm cần giữ trong kiểm tra |
+|---|---|
+| Đầy đủ | So tập mục hợp lệ trong kỳ sau khi loại trùng theo mã task; không lấy tổng số PR làm số việc hoàn thành. |
+| Chính xác | Đúng owner, trạng thái được xác nhận, hạng mục và ngày hoàn thành; nội dung ngoài GitHub cần người liên quan xác nhận. |
+| Truy vết | Mỗi mục có nguồn đối chiếu; ghi rõ điểm chưa xác nhận thay vì tự hoàn thiện bằng suy đoán. |
+| Hiệu quả | Dưới 25 phút gồm bổ sung, viết, kiểm tra và gửi; Rule tổng không quá 3 phút theo thiết kế. |
+| An toàn | Chỉ đọc nguồn được phép; không sửa dữ liệu, đọc chat riêng tư hoặc tự gửi. Khi lỗi dùng export/template thủ công và vẫn kiểm tra. |
 
-## 4. Điểm còn thiếu để giải thích quyết định
+## 4. Pilot, ngưỡng dừng và dữ liệu còn thiếu
 
-- Dũng/Giang: xác nhận phạm vi thời gian, cách tính target và thay đổi v0 → v1 dựa trên kết quả kiểm chứng.
-- Phát: bổ sung dữ liệu kiểm chứng và baseline chất lượng; đánh giá đủ Value/Usability/Feasibility/Viability, phạm vi Go và ngưỡng dừng.
-- Thao: đối chiếu các trường vừa chốt với sơ đồ và bảng before/after, cập nhật nếu kiểm chứng cho thấy bước hoặc thời gian khác.
+Nhóm chọn thử 2 kỳ, tiếp tục đủ 4 kỳ liên tiếp nếu đạt. Hai và bốn kỳ tương ứng khoảng 4 và 8 tuần với nhịp báo cáo hai tuần; chưa phải kết quả đã thực hiện trong lab.
 
-TEAM.md trên main hiện ghi Go, còn mục 8 báo cáo nhóm tại commit 6270651 chưa có đánh giá rủi ro. Vì vậy tài liệu này chỉ góp ý các điểm cần hoàn thiện, không tự suy nhóm đã chốt Go cho Workflow hoặc Agent.
+Ngưỡng dừng trong báo cáo nhóm đã được làm rõ: sau hai kỳ, nếu cả hai đều từ 25 phút trở lên, có ít nhất một task hợp lệ bị bỏ sót hoặc có thành viên cập nhật quá 10 phút/kỳ, dừng Rule và quay về task board + template thủ công. Ghi nguyên nhân trước khi tăng mức can thiệp.
+
+Cần tiếp tục bổ sung: log baseline gốc, phản hồi khảo sát đã ẩn danh/thời điểm thu thập, log chạy pilot và tổng công sức cả nhóm. Tài liệu tổng hợp khảo sát hiện có không thay thế việc đối chiếu dữ liệu gốc.

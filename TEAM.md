@@ -6,7 +6,7 @@
 
 - Tên nhóm: Nhom4AE
 - Candidate problem nhóm chọn (1 câu): Khi tới hạn gửi báo cáo tiến độ cho giảng viên, tôi muốn gom việc cả nhóm đã làm trong 2 tuần qua vào một chỗ, để gửi đúng hạn mà không phải lục lại commit và tin nhắn.
-- Quyết định cuối (Go / Not Yet / No-Go): Go
+- Quyết định cuối (Go / Not Yet / No-Go): Go — pilot phạm vi nhỏ với Rule
 
 ## Thành viên
 
@@ -92,8 +92,8 @@ Mỗi thành viên tự cập nhật đóng góp thực tế, bằng chứng và
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 - Báo cáo cá nhân có 10 problem thuộc 4 lăng kính, 3 Problem Cards và 3 quy trình nháp; đã bổ sung cách đo, nguồn đối chiếu và cập nhật candidate nhóm bằng AI hỗ trợ, chờ cá nhân kiểm tra bản sửa.
-- Đã soạn [thiết kế quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) và tích hợp vào mục 4 báo cáo nhóm: 2 sơ đồ Mermaid, bảng actor/input/output/thời gian, before/after, người kiểm tra, boundary và phương án quay về. Baseline khoảng 55 phút được tách khỏi ước tính No AI 36 phút; chưa phải kết quả pilot.
-- Đã chuẩn bị [góp ý metric và boundary CP6](report/assets/cp6-lesongthao-metric-boundary-review.md): phân biệt target No AI/Workflow, theo dõi công sức cả nhóm, baseline chất lượng còn thiếu và 5 tiêu chí đề xuất. Giang/Dũng/Phát chủ trì chốt PS, mức can thiệp và quyết định.
+- Đã hoàn thiện [quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) tại mục 4 báo cáo nhóm, đồng bộ mức Rule ở bản nhóm 53f9eb6: 2 sơ đồ, actor/input/output/thời gian, before/after, người kiểm tra, boundary và quay về. Baseline khoảng 55 phút được tách khỏi ước tính Rule 21 phút, target dưới 25; chưa phải kết quả pilot.
+- Đã cập nhật [đối chiếu metric và boundary CP6](report/assets/cp6-lesongthao-metric-boundary-review.md): 6 bước lập báo cáo, tổng Rule 3 phút, công sức cập nhật cả nhóm và ngưỡng từ 25 phút trở lên. PS, mức chọn Rule và Go được dẫn từ bản chung; không nhận thay phần chủ trì của Giang/Dũng/Phát.
 - Đã nhận phân công hỗ trợ CP4; đối chiếu tín hiệu phản bác trong kết quả khảo sát do nhóm tổng hợp với phương án No AI ở CP5. Không nhận mình trực tiếp thu toàn bộ phản hồi khảo sát.
 - Nhật ký C3 đã đối chiếu bảng pitch của nhóm: câu hỏi về RegEx/validation với Giang; câu hỏi nhận từ Giang/Phát/Dũng cho ba card cá nhân và các điểm được làm rõ trong bản cập nhật.
 
