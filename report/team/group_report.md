@@ -180,37 +180,65 @@ Baseline nội bộ trung bình khoảng **55 phút/kỳ**, lặp lại mỗi ha
 
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
-```text
-
+```mermaid
+flowchart LR
+    A[1. Lấy commit GitHub<br/>10 phút] --> B[2. Đọc lại Zalo<br/>15 phút]
+    B --> C[3. Xem ghi chú họp<br/>5 phút]
+    C --> D[4. Tổng hợp vào Google Docs<br/>10 phút]
+    D --> E[5. Viết nhận định và kế hoạch<br/>8 phút]
+    E --> F[6. Hỏi thành viên phần còn thiếu<br/>4 phút]
+    F --> G[7. Kiểm tra và gửi giảng viên<br/>3 phút]
+    B:::bottleneck
+    classDef bottleneck fill:#ffd6d6,stroke:#c62828,stroke-width:2px
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Người phụ trách báo cáo | Repository và lịch sử commit của bốn thành viên | Danh sách commit trong hai tuần | 10 phút / mỗi hai tuần | Commit chưa phản ánh đầy đủ công việc không liên quan đến code |
+| 2 | Người phụ trách báo cáo | Lịch sử tin nhắn Zalo trong hai tuần | Danh sách công việc, thay đổi và trao đổi liên quan | 15 phút / mỗi hai tuần | Thông tin lẫn với tin nhắn khác; đây là bước nghẽn chính |
+| 3 | Người phụ trách báo cáo | Ghi chú các buổi họp | Quyết định, task và deadline đã ghi nhận | 5 phút / mỗi hai tuần | Có thể trùng hoặc mâu thuẫn với nội dung chat |
+| 4 | Người phụ trách báo cáo | Commit, nội dung chat và ghi chú họp | Bản tổng hợp tiến độ trong Google Docs | 10 phút / mỗi hai tuần | Phải loại trùng và nhóm công việc theo thành viên/hạng mục |
+| 5 | Người phụ trách báo cáo | Bản tổng hợp tiến độ | Nhận định kỳ vừa qua và kế hoạch kỳ tiếp theo | 8 phút / mỗi hai tuần | Cần hiểu bối cảnh, không thể chỉ liệt kê commit |
+| 6 | Người phụ trách và ba thành viên còn lại | Danh sách thông tin còn thiếu hoặc chưa rõ | Nội dung đã được thành viên xác nhận | 4 phút / mỗi hai tuần | Phụ thuộc tốc độ phản hồi của thành viên |
+| 7 | Người phụ trách báo cáo | Báo cáo đã tổng hợp và xác nhận | Báo cáo được gửi cho giảng viên | 3 phút / mỗi hai tuần | Người phụ trách tự kiểm tra lần cuối trước khi gửi |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Bước 2 — đọc lại lịch sử Zalo trong hai tuần, mất khoảng 15 phút. Dữ liệu công việc nằm lẫn trong hội thoại và không có trạng thái rõ ràng, dẫn đến việc phải đối chiếu thêm GitHub, ghi chú họp và hỏi lại thành viên.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
-```text
-
+```mermaid
+flowchart LR
+    A[Thành viên cập nhật task khi hoàn thành<br/>Con người] --> B[Rule lấy issue, PR và task đã Done<br/>2 phút]
+    B --> C[Người phụ trách bổ sung việc ngoài GitHub<br/>5 phút]
+    C --> D[Rule gom theo thành viên và hạng mục<br/>1 phút]
+    D --> E[AI soạn bản nháp nhận định và kế hoạch<br/>2 phút]
+    E --> F[Người phụ trách đối chiếu nguồn và sửa<br/>10 phút]
+    F --> G[Người phụ trách tự gửi báo cáo<br/>2 phút]
 ```
+
+| Bước | Loại xử lý | Actor / hệ thống | Thời gian kỳ vọng | Boundary và kiểm soát |
+|---:|---|---|---:|---|
+| 1 | Con người | Mỗi thành viên cập nhật task, kết quả và liên kết bằng chứng khi hoàn thành | 1–2 phút/task, thực hiện trong kỳ | Chỉ người thực hiện xác nhận trạng thái hoàn thành; không suy diễn từ commit |
+| 2 | Rule | Lấy issue, pull request và task có trạng thái Done trong khoảng ngày báo cáo | 2 phút | Chỉ đọc nguồn được nhóm cho phép; không đọc lịch sử chat riêng tư |
+| 3 | Con người | Người phụ trách bổ sung việc ngoài GitHub và xử lý mục trùng/thiếu | 5 phút | Mọi mục không có bằng chứng phải được thành viên liên quan xác nhận |
+| 4 | Rule | Gom dữ liệu theo thành viên, hạng mục, kết quả và kế hoạch | 1 phút | Rule chỉ sắp xếp dữ liệu, không tự kết luận mức độ hoàn thành |
+| 5 | AI | Soạn bản nháp nhận định và kế hoạch từ dữ liệu đã được gom | 2 phút | Không được bịa task, số liệu, deadline hoặc trạng thái; không tự gửi báo cáo |
+| 6 | Con người | Người phụ trách đối chiếu từng nhận định với task board/GitHub và chỉnh sửa | 10 phút | Bắt buộc human-in-the-loop; người phụ trách chịu trách nhiệm nội dung cuối |
+| 7 | Con người | Người phụ trách duyệt và gửi báo cáo cho giảng viên | 2 phút | Chỉ con người có quyền gửi |
+
+**Phương án quay về:** nếu AI không hoạt động hoặc bản nháp sai nhiều, người phụ trách bỏ qua bước 5 và viết phần nhận định bằng template từ bảng dữ liệu đã được Rule tổng hợp. Nếu Rule lấy dữ liệu lỗi, nhóm dùng bản export task board và template Google Docs; dữ liệu gốc không bị sửa hoặc xóa.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 7 | 7 | Số bước không giảm nhiều, nhưng dữ liệu được ghi có cấu trúc trước kỳ báo cáo |
+| Tổng thời gian của người phụ trách tại thời điểm lập báo cáo | Khoảng 55 phút, dao động 38–71 phút | Khoảng 22 phút | Chưa tính 1–2 phút/task mà các thành viên cập nhật phân tán trong hai tuần |
+| Số bước thủ công tại thời điểm lập báo cáo | 7 | 3 | Bổ sung dữ liệu ngoài GitHub, kiểm tra/sửa bản nháp và gửi báo cáo |
+| Bottleneck chính | Đọc lại Zalo: 15 phút | Đối chiếu và sửa bản nháp: khoảng 10 phút | Bước kiểm tra của con người được giữ lại có chủ đích |
+| Rủi ro mới phát sinh | Bỏ sót việc, dùng thông tin cũ, mất thời gian hỏi lại | Thành viên không cập nhật task; Rule lấy thiếu dữ liệu; AI bịa hoặc diễn giải sai | Giảm rủi ro bằng nguồn có cấu trúc, boundary, checklist và phương án quay về |
 
 ---
 
@@ -218,16 +246,20 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Người phụ trách tổng hợp và gửi báo cáo tiến độ định kỳ cho giảng viên của một nhóm bốn sinh viên. |
+| **Quy trình** | Mỗi hai tuần, actor phải thu thập phần việc từ GitHub, lịch sử chat và ghi chú họp; đối chiếu thông tin; hỏi thành viên về mục còn thiếu; viết nhận định, kế hoạch rồi kiểm tra và gửi báo cáo. |
+| **Bottleneck** | Dữ liệu tiến độ nằm rải rác và không có cấu trúc, khiến actor mất khoảng 15 phút đọc lại Zalo và phải tiếp tục đối chiếu các nguồn khác trước khi viết báo cáo. |
+| **Impact** | Toàn quy trình mất trung bình khoảng 55 phút mỗi kỳ, dao động 38–71 phút; báo cáo có nguy cơ thiếu phần việc, dùng sai trạng thái hoặc phát sinh trao đổi hỏi lại sát hạn. |
+| **Success Metric** (baseline → target, cách đo) | Giảm thời gian của người phụ trách từ trung bình 55 phút xuống dưới 25 phút/kỳ trong bốn kỳ liên tiếp; không có mục công việc đã được xác nhận trên task board nhưng bị bỏ sót; 100% nhận định và kế hoạch có nguồn đối chiếu. Đo bằng time log, checklist nguồn và số mục phải sửa/hỏi lại sau khi tạo bản nháp. Ghi riêng tổng thời gian các thành viên cập nhật task để tránh chuyển chi phí sang người khác. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI không được tự đọc kênh chat riêng tư, tự suy diễn công việc từ commit, bịa task/số liệu/deadline, thay đổi dữ liệu gốc hoặc tự gửi báo cáo. Người phụ trách phải đối chiếu mọi nội dung với task board, GitHub hoặc xác nhận của thành viên và duyệt bản cuối trước khi gửi. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+- **Baseline mới có ba lần đo và dao động 38–71 phút:** đồng ý. Nhóm dùng baseline 55 phút như điểm bắt đầu và tiếp tục bấm giờ trong bốn kỳ pilot thay vì coi đây là giá trị cố định.
+- **Target dưới 25 phút có thể chỉ chuyển thời gian sang cho ba thành viên cập nhật task:** đồng ý. Nhóm đo riêng thời gian lập báo cáo và tổng thời gian cập nhật task của cả nhóm.
+- **Problem Statement có thể lẫn giải pháp nếu mô tả task board, Rule hoặc AI trong phần problem:** đồng ý. Sáu trường v0 chỉ mô tả actor, quy trình, bottleneck, impact, metric và boundary; chi tiết giải pháp nằm ở quy trình tương lai.
+- **Tự động đọc Zalo tạo rủi ro riêng tư và khó xác định thông tin nào đã được chốt:** đồng ý. Quy trình tương lai không tự động đọc Zalo; dữ liệu đầu vào phải đến từ task board, GitHub hoặc xác nhận trực tiếp.
+- **AI có thể viết trôi chảy nhưng bỏ sót hoặc thêm nhận định không có nguồn:** đồng ý. Mọi nhận định phải có nguồn đối chiếu và người phụ trách bắt buộc duyệt trước khi gửi.
 
 ---
 
