@@ -66,3 +66,5 @@ Tổng hợp từ 10 phiếu thu thập; tỷ lệ tính trên 9 phiếu hợp l
 - **Xác thực bottleneck thời gian:** 6/9 (66.7%) mất trên 30 phút, trong đó 2 người mất trên 60 phút do phải chờ đợi và nhắn hỏi lại nhiều lần.
 - **Impact về thiếu việc/hỏi lại:** 8/9 (88.9%) từng gặp tình trạng này trong 3 kỳ gần nhất; Q5 không tự xác định nguyên nhân. Thông tin phân tán được đối chiếu riêng với Q3 và câu trả lời mở Q7.
 - **Nhóm đã điều chỉnh gì:** Tập trung giải quyết cho trường hợp các nhóm làm việc phân tán qua chat và code mà thiếu quy ước cập nhật định kỳ; không áp dụng giải pháp cồng kềnh cho các nhóm nhỏ đã vận hành tốt theo mô hình họp chốt nhanh như P05.
+
+**Lưu ý đối chiếu P05:** Q2 ghi “dưới 15 phút”, còn Q6 mô tả cuộc họp 15 phút có chốt báo cáo. Hai mốc chưa được xác nhận có cùng phạm vi đo; giữ nguyên câu trả lời gốc và tỷ lệ theo Q2, không diễn giải thời lượng cuộc họp thành thời gian lập báo cáo. Cần hỏi lại người trả lời trước khi sửa phân loại hoặc tỷ lệ.

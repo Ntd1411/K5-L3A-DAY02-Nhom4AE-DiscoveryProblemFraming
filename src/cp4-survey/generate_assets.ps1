@@ -162,14 +162,17 @@ foreach ($r in $validRecords) {
     $mdLines += "| $($r.response_id) | $q6Clean | $q7Clean |"
 }
 
-$under15Count = ($validRecords | Where-Object { $_.q2 -eq "under15" }).Count
+$under15Count = @($validRecords | Where-Object { $_.q2 -eq "under15" }).Count
 $mdLines += ""
 $mdLines += "## Tín hiệu cần đối chiếu cho Rubric C7"
 $mdLines += ""
 $mdLines += "- **Tín hiệu phản bác (hoàn thành dưới 15 phút):** $under15Count/$n (phiếu P05 - nhóm 3 người chốt tiến độ trực tiếp trong 15 phút họp tuần)."
 $mdLines += "- **Xác thực bottleneck thời gian:** $slowCount/$n ($(Format-Pct $slowCount $n)) mất trên 30 phút, trong đó 2 người mất trên 60 phút do phải chờ đợi và nhắn hỏi lại nhiều lần."
-$mdLines += "- **Xác thực nguyên nhân thông tin phân tán:** $missingCount/$n ($(Format-Pct $missingCount $n)) từng gặp tình trạng thiếu việc hoặc phải nhắn hỏi lại thành viên trong 3 kỳ gần nhất."
+$mdLines += "- **Impact về thiếu việc/hỏi lại:** $missingCount/$n ($(Format-Pct $missingCount $n)) từng gặp tình trạng này trong 3 kỳ gần nhất; Q5 không tự xác định nguyên nhân. Thông tin phân tán được đối chiếu riêng với Q3 và câu trả lời mở Q7."
 $mdLines += "- **Nhóm đã điều chỉnh gì:** Tập trung giải quyết cho trường hợp các nhóm làm việc phân tán qua chat và code mà thiếu quy ước cập nhật định kỳ; không áp dụng giải pháp cồng kềnh cho các nhóm nhỏ đã vận hành tốt theo mô hình họp chốt nhanh như P05."
+
+$mdLines += ""
+$mdLines += '**Lưu ý đối chiếu P05:** Q2 ghi “dưới 15 phút”, còn Q6 mô tả cuộc họp 15 phút có chốt báo cáo. Hai mốc chưa được xác nhận có cùng phạm vi đo; giữ nguyên câu trả lời gốc và tỷ lệ theo Q2, không diễn giải thời lượng cuộc họp thành thời gian lập báo cáo. Cần hỏi lại người trả lời trước khi sửa phân loại hoặc tỷ lệ.'
 
 $summaryMdPath = Join-Path $PSScriptRoot "../../report/assets/cp4-survey-summary.md"
 $mdLines -join "`r`n" | Set-Content -Path $summaryMdPath -Encoding UTF8

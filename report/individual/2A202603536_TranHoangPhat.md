@@ -123,7 +123,7 @@ HIỆN TẠI — khoảng 120 phút / sự cố (điển hình)
  
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| Card #1: baseline 3 lần bấm giờ là mẫu nhỏ và dao động lớn (38–71 phút), chưa biết giảng viên có đọc kỹ báo cáo không | Đồng ý | Lên kế hoạch bấm giờ thêm 1–2 kỳ; đưa "giảng viên có đọc kỹ không" vào danh sách giả định kiểm chứng ở CP4 |
+| Card #1: baseline 3 lần bấm giờ là mẫu nhỏ và dao động lớn (38–71 phút), chưa biết giảng viên có đọc kỹ báo cáo không | Đồng ý | Lên kế hoạch bấm giờ thêm 1–2 kỳ; giữ "giảng viên có đọc kỹ phần tổng hợp không" là giả định còn chờ kiểm chứng. Assumption Map CP4 hiện ghi việc giảng viên chấp nhận báo cáo, chưa xác nhận mức độ đọc/sử dụng phần tổng hợp |
 | Card #1: metric chỉ đo tốc độ, báo cáo nhanh hơn nhưng thiếu việc thì sao | Đồng ý | Thêm mục tiêu chất lượng dự kiến: tối đa 1 câu hỏi lại do thông tin thiếu hoặc chưa rõ/kỳ; lên kế hoạch thống kê baseline từ phản hồi của 3 kỳ trước |
 | Card #2: có thể chỉ cần nhóm thống nhất một kênh, chưa cần công cụ | Đồng ý | Đổi cảm nhận nhanh sang No AI, thêm phương án trang ghim |
 | Card #3: gợi ý dùng agent tự chẩn đoán lỗi môi trường | Không đồng ý | Giữ No AI: chuẩn hóa môi trường giải gốc vấn đề, không cần AI đoán |

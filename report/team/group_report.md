@@ -187,7 +187,9 @@ Dữ liệu gốc đã ẩn danh được lưu tại [cp4-survey-responses.csv](
 
 Những điều chỉnh trên được đối chiếu với câu trả lời Q1–Q7 trong CSV. P05 là tín hiệu phản bác về sự cần thiết của công cụ mới; P02/P07 đã dùng task board nhưng vẫn gặp vấn đề cập nhật hoặc đối chiếu. Không giữ kết luận cũ rằng hai người dùng task board đều thấy cách hiện tại đủ dùng. Khảo sát cho thấy có pain và workaround, chưa chứng minh Rule sẽ đạt target.
 
-**Giới hạn suy luận:** Q3 cho phép nhiều lựa chọn nên tổng tỷ lệ nguồn có thể vượt 100%. Task board được P02/P07 chọn (2/9), nhưng cả hai vẫn nêu khó khăn; P05 hoàn thành dưới 15 phút bằng cách họp chốt trực tiếp, không phải bằng chứng task board đã giải quyết đủ cho hai người. Q5 gộp thiếu việc và hỏi lại nên 8/9 không phải tỷ lệ báo cáo sai hoặc bằng chứng riêng về nguyên nhân phân tán. Q4 cho thấy tìm dữ liệu là lựa chọn nhiều nhất (3/9), tiếp theo hỏi lại và kiểm tra đúng/đủ (mỗi lựa chọn 2/9); không suy rộng mẫu nhỏ ra mọi nhóm.
+**Lưu ý đối chiếu P05:** Q2 ghi “dưới 15 phút”, còn Q6 mô tả cuộc họp 15 phút có chốt báo cáo. Hai mốc chưa được xác nhận có cùng phạm vi đo; giữ nguyên câu trả lời gốc và tỷ lệ theo Q2, không diễn giải thời lượng cuộc họp thành thời gian lập báo cáo. Cần hỏi lại người trả lời trước khi sửa phân loại hoặc tỷ lệ.
+
+**Giới hạn suy luận:** Q3 cho phép nhiều lựa chọn nên tổng tỷ lệ nguồn có thể vượt 100%. Task board được P02/P07 chọn (2/9), nhưng cả hai vẫn nêu khó khăn; P05 chọn mức dưới 15 phút ở Q2 và mô tả họp chốt trực tiếp ở Q6, không phải bằng chứng task board đã giải quyết đủ cho hai người. Q5 gộp thiếu việc và hỏi lại nên 8/9 không phải tỷ lệ báo cáo sai hoặc bằng chứng riêng về nguyên nhân phân tán. Q4 cho thấy tìm dữ liệu là lựa chọn nhiều nhất (3/9), tiếp theo hỏi lại và kiểm tra đúng/đủ (mỗi lựa chọn 2/9); không suy rộng mẫu nhỏ ra mọi nhóm.
 
 | Giả định cần theo dõi sau CP4 | Bằng chứng hiện có | Việc còn cần xác minh |
 |---|---|---|

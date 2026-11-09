@@ -46,4 +46,4 @@ Ngưỡng dừng trong báo cáo nhóm đã được làm rõ: sau hai kỳ, n�
 
 Vi phạm quyền đọc, sửa dữ liệu gốc hoặc tự gửi thì dừng ngay. Hai kỳ đầu đều đạt đủ tiêu chí mới tiếp tục tới bốn kỳ; một kỳ trượt vẫn là chưa đạt, cần sửa nguyên nhân trước vòng tiếp theo. Thay đổi đáng kể thiết kế/cách đo thì bắt đầu lại chuỗi đo. Trước pilot phải chốt quyền dữ liệu, yêu cầu người nhận và khả năng đọc/export; việc chuẩn bị này chưa được đánh dấu hoàn thành.
 
-Cần tiếp tục bổ sung: log baseline gốc, phản hồi khảo sát đã ẩn danh/thời điểm thu thập, log chạy pilot và tổng công sức cả nhóm. Tài liệu tổng hợp khảo sát hiện có không thay thế việc đối chiếu dữ liệu gốc.
+Đã có [CSV phản hồi đã ẩn danh](cp4-survey-responses.csv) và [bảng tổng hợp](cp4-survey-summary.md), gồm ngày, kênh và nguồn ghi chép theo từng phiếu. Cần tiếp tục bổ sung log baseline gốc nếu còn lưu, log chạy pilot và tổng công sức cả nhóm; giữ nguồn ghi chép khảo sát để đối chiếu khi cần. CSV ghi nhận dữ liệu không thay thế việc xác nhận nguồn thực tế.

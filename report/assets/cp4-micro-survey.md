@@ -70,7 +70,7 @@ Xuất bảng phản hồi từ công cụ khảo sát, bỏ mọi cột nhận 
 - Hai đến bốn workaround phổ biến.
 - Ít nhất một tín hiệu phản bác.
 
-## Nguồn cần bổ sung để đối chiếu bảng tổng hợp
+## Nguồn hiện có để đối chiếu bảng tổng hợp
 
 ### Nguồn dữ liệu khảo sát thực tế (Cập nhật ngày 09/11/2026)
 
