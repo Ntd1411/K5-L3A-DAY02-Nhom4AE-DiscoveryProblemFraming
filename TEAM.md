@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Nguyễn Tuấn Dũng | 2A202603559 | Điều phối tiến độ; phụ trách CP3 và Problem Statement | https://github.com/Ntd1411 |
-| 2 | Trần Hoàng Phát | 2A202603536 | Phụ trách kiểm chứng người dùng và đánh giá 4 rủi ro | https://github.com/phattoohigh |
+| 2 | Trần Hoàng Phát | 2A202603536 | Chủ trì kiểm chứng CP4 và đánh giá 4 rủi ro/quyết định CP6; hỗ trợ quy trình CP5 | https://github.com/phattoohigh |
 | 3 | Nguyễn Huy Giang | 2A202603543 | Phụ trách research và phân tích mức can thiệp AI | https://github.com/Huy-Giangg |
 | 4 | Lê Sông Thao | 2A202603534 | Ghi chép; phụ trách quy trình trước/sau và assets | https://github.com/lesongthao |
 
@@ -26,12 +26,12 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
 | CP3 — Hội tụ nhóm | Nguyễn Tuấn Dũng | Cả nhóm | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | Trần Hoàng Phát | Lê Sông Thao | Assumption map, snapshot hoặc survey |
+| CP4 — Kiểm chứng | Trần Hoàng Phát | Lê Sông Thao | [Assumption map và kiểm chứng khảo sát](report/team/group_report.md#31-assumption-map); Phát chủ trì, Thao hỗ trợ công cụ nhập và quản trị dữ liệu |
 | CP4 — Research | Nguyễn Huy Giang | Nguyễn Tuấn Dũng | Bảng research có link |
-| CP5 — Quy trình trước/sau | Lê Sông Thao | Trần Hoàng Phát | Quy trình + bảng before/after |
+| CP5 — Quy trình trước/sau | Lê Sông Thao | Trần Hoàng Phát | [Quy trình + bảng before/after](report/team/group_report.md#4-quy-trình-trướcsau-cp5); Phát cung cấp baseline từ card cá nhân và hỗ trợ đối chiếu bước, thời gian, boundary |
 | CP5 — Problem Statement v0 | Nguyễn Tuấn Dũng | Nguyễn Huy Giang | Problem Statement v0 |
 | CP6 — Mức can thiệp + Problem Statement v1 | Nguyễn Huy Giang | Lê Sông Thao | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | Trần Hoàng Phát | Nguyễn Tuấn Dũng | 4 rủi ro + Go/Not Yet/No-Go |
+| CP6 — Quyết định | Trần Hoàng Phát | Nguyễn Tuấn Dũng | [4 rủi ro + Go/Not Yet/No-Go](report/team/group_report.md#8-quyết-định-cp6); Phát phụ trách đánh giá và đề xuất Go pilot nhỏ cùng ngưỡng dừng |
 
 ## Cá nhân
 

@@ -33,6 +33,8 @@
 | 11 | Lê Sông Thao | Đối chiếu ảnh và lỗi OCR | Người phát triển pipeline nhận diện biển số | Mở biến thể ảnh và đối chiếu OCR thủ công, khoảng 30 phút | **Trần Hoàng Phát:** Visual error sheet và thống kê cặp ký tự nhầm có đủ giảm thời gian từ 55 xuống 15 phút không? |
 | 12 | Lê Sông Thao | Đối chiếu log khi debug ESP32 | Sinh viên/kỹ sư nhúng và IoT | Đọc log và dò GPIO giữa code với sơ đồ, khoảng 7 phút/vòng | **Nguyễn Tuấn Dũng:** Nếu chuẩn hóa log và dùng checklist, vấn đề nào còn lại buộc phải dùng mức cao hơn Rule? |
 
+**Đóng góp của Trần Hoàng Phát tại CP3:** đưa ra ba candidate ở dòng 4–6 và đặt câu hỏi phản biện ở dòng 1, 7, 11 trong bảng pitch. Baseline của candidate báo cáo tiến độ xuất phát từ card cá nhân của Phát. Đối chiếu [báo cáo cá nhân Phát, mục 3–4](../individual/2A202603536_TranHoangPhat.md).
+
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
@@ -108,6 +110,8 @@ Nhóm chọn khảo sát nhanh với sinh viên các nhóm khác để kiểm tr
 
 ### 3.1. Assumption Map
 
+**Phụ trách kiểm chứng CP4:** Trần Hoàng Phát chủ trì assumption map và khảo sát tại mục 3.1–3.2; Lê Sông Thao hỗ trợ công cụ nhập và quản trị dữ liệu. Phân công tại [TEAM.md](../../TEAM.md#phân-công-theo-checkpoint), nội dung tham gia tại [báo cáo cá nhân Phát, mục 4](../individual/2A202603536_TranHoangPhat.md).
+
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
 | 1 | Người phụ trách báo cáo của các nhóm sinh viên khác cũng mất ít nhất 30 phút cho mỗi kỳ tổng hợp tiến độ. | Value | 5 | 1 | Có |
@@ -140,6 +144,8 @@ Giả định nhóm ưu tiên kiểm chứng: (1) việc tổng hợp báo cáo 
 **Quy tắc phân tích:** chỉ tính câu 2–7 của người chọn từ một lần trở lên ở câu 1. Vấn đề được xem là có tín hiệu xác nhận khi ít nhất một nửa số người hợp lệ mất trên 30 phút hoặc từng thiếu việc/phải hỏi lại. Tín hiệu phản bác được ghi nhận khi người trả lời hoàn thành dưới 15 phút, chỉ dùng một nguồn hoặc cho biết bảng quản lý công việc hiện tại đã đủ.
 
 #### Baseline nội bộ để đối chiếu
+
+**Nguồn baseline:** Trần Hoàng Phát cung cấp ba kỳ tự báo cáo từ [Problem Card #1 trong báo cáo cá nhân](../individual/2A202603536_TranHoangPhat.md); bảng này được dùng để đối chiếu với khảo sát ngoài nhóm.
 
 | Kỳ báo cáo | Thời gian | Nguồn phải kiểm tra |
 |---:|---:|---|
@@ -204,7 +210,7 @@ Các liên kết chính thức trong bảng đã được mở kiểm tra ngày 
 
 ## 4. Quy trình trước/sau (CP5)
 
-**Phụ trách:** Lê Sông Thao, Phát hỗ trợ. [Tài liệu chi tiết CP5 và nguồn](../assets/cp5-workflow-draft.md).
+**Phụ trách:** Lê Sông Thao, Trần Hoàng Phát hỗ trợ cung cấp baseline từ card cá nhân và đối chiếu bước, thời gian, boundary của quy trình. Phần hỗ trợ được ghi tại [báo cáo cá nhân Phát, mục 4](../individual/2A202603536_TranHoangPhat.md). [Tài liệu chi tiết CP5 và nguồn](../assets/cp5-workflow-draft.md).
 
 **Nguồn và phạm vi:** thời gian hiện tại theo card Phát; 38/71/55 phút là 3 kỳ tự báo cáo, trung bình 54,67 phút, làm tròn khoảng 55. Chưa có log gốc từng bước. Theo quyết định CP6 tại nhánh chung, phương án chính là **Rule**, khoảng 21 phút và target dưới 25; phương án No AI khoảng 36 phút của card gốc là đối chiếu, chưa phải kết quả đã đo.
 
@@ -398,6 +404,8 @@ Vì sao: báo cáo phải tổng hợp từ ít nhất ba nguồn, có hơn ba b
 ---
 
 ## 8. Quyết định (CP6)
+
+**Phụ trách:** Trần Hoàng Phát đánh giá bốn rủi ro tại mục 8.1 và đề xuất Go pilot nhỏ, điều kiện bắt đầu cùng ngưỡng dừng tại mục 8.2; Nguyễn Tuấn Dũng hỗ trợ. Đối chiếu [phân công CP6](../../TEAM.md#phân-công-theo-checkpoint) và [báo cáo cá nhân Phát, mục 4](../individual/2A202603536_TranHoangPhat.md).
 
 ### 8.1. Bốn rủi ro
 
