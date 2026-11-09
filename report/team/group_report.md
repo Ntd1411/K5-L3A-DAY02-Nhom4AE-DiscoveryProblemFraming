@@ -123,9 +123,9 @@ Giả định nhóm ưu tiên kiểm chứng: (1) việc tổng hợp báo cáo 
 
 **Đối tượng:** 5–10 sinh viên thuộc các nhóm khác, ưu tiên người từng trực tiếp viết hoặc gom báo cáo tiến độ trong ba tháng gần nhất. Không thu họ tên, email hoặc thông tin nhận dạng.
 
-**Nguồn khảo sát:** [bộ câu hỏi](../assets/cp4-micro-survey.md) và bảng tổng hợp dưới đây. Người phụ trách CP4 là Phát; kênh đã dùng và thời điểm thu thập chưa được ghi cụ thể trong repo.
+**Nguồn khảo sát:** [bộ câu hỏi](../assets/cp4-micro-survey.md), [10 phiếu đã ẩn danh](../assets/cp4-survey-responses.csv) và [bảng tổng hợp](../assets/cp4-survey-summary.md). Theo các trường collected_at/channel/source_ref, dữ liệu được ghi nhận ngày 09/11/2026 qua trao đổi trực tiếp, nhắn tin Zalo/Messenger và cuộc gọi Discord; người trả lời thuộc nhóm khác, được ghi theo vai trò và mã P01–P10. Phát chủ trì kiểm chứng; Thao hỗ trợ công cụ nhập và quản trị dữ liệu.
 
-**Trạng thái:** nhóm đã điền bảng tổng hợp 8 phản hồi, 7 hợp lệ bên dưới; bộ câu hỏi và quy tắc phân tích có trong assets. Repo chưa kèm bản phản hồi gốc đã ẩn danh hoặc thời điểm khảo sát, nên các số liệu được dẫn theo bảng tổng hợp của nhóm, chưa đối chiếu từng dòng phản hồi.
+**Trạng thái:** đã đối chiếu 10 dòng trong CSV, có 9 phản hồi hợp lệ; loại P03 vì chưa từng trực tiếp gom/viết báo cáo trong ba tháng. Các tỷ lệ dưới đây tính trên 9 phiếu hợp lệ. Dữ liệu khảo sát và baseline ba kỳ của Phát là hai nguồn riêng; pilot Rule chưa được thực hiện.
 
 | # | Câu hỏi | Dạng trả lời | Mục đích |
 |---:|---|---|---|
@@ -151,7 +151,7 @@ Baseline nội bộ trung bình khoảng **55 phút/kỳ**, lặp lại mỗi ha
 
 #### Bảng tổng hợp khảo sát
 
-Dữ liệu gốc đã ẩn danh được lưu tại [cp4-survey-responses.csv](../assets/cp4-survey-responses.csv) và [cp4-survey-summary.md](../assets/cp4-survey-summary.md) (thu thập ngày 09/11/2026 qua giao diện [cp4-survey](../../src/cp4-survey/index.html)).
+Dữ liệu gốc đã ẩn danh được lưu tại [cp4-survey-responses.csv](../assets/cp4-survey-responses.csv) và [cp4-survey-summary.md](../assets/cp4-survey-summary.md) (ngày ghi nhận 09/11/2026 theo CSV). Giao diện [cp4-survey](../../src/cp4-survey/index.html) dùng nhập và xuất dữ liệu; kênh trao đổi thực tế được ghi riêng trong từng phiếu.
 
 | Chỉ số | Kết quả sau khi kết thúc khảo sát |
 |---|---|
@@ -177,16 +177,16 @@ Dữ liệu gốc đã ẩn danh được lưu tại [cp4-survey-responses.csv](
 |---|---|---|
 | Thu hẹp đối tượng | 6/9 người mất trên 30 phút, nhưng 1/9 người (P05) đã làm tốt với quy trình họp trực tiếp | Tập trung vào người tổng hợp của nhóm có thông tin phân tán (chat, git, docs) và thành viên cập nhật không đồng bộ; không áp đặt giải pháp cho nhóm nhỏ đã có thói quen chốt việc trực tiếp trong họp. |
 | Sửa cách thu dữ liệu trước khi tăng mức can thiệp | 8/9 phản hồi phản ánh việc thiếu đầu việc hoặc phải nhắn hỏi lại | Yêu cầu chuẩn hóa việc cập nhật có cấu trúc (gắn tag Done, link minh chứng) trước khi tính đến việc gom tự động; giải pháp Rule lọc/gom là phù hợp, không cần AI phức tạp. |
-| Đo cả chất lượng và phần việc chuyển sang thành viên | 8/9 từng thiếu việc hoặc phải hỏi lại; thời gian tìm dữ liệu và hỏi lại chiếm đa số bottleneck | Giữ quy định kiểm tra nguồn minh chứng, không bỏ sót và tính thời gian cập nhật của cả nhóm. Target dưới 25 phút là mục tiêu thiết kế của nhóm. |
+| Đo cả chất lượng và phần việc chuyển sang thành viên | 8/9 từng thiếu việc hoặc phải hỏi lại; tìm dữ liệu và hỏi lại là 5/9 lựa chọn bottleneck | Giữ quy định kiểm tra nguồn minh chứng, không bỏ sót và tính thời gian cập nhật của cả nhóm. Target dưới 25 phút là mục tiêu thiết kế của nhóm. |
 
-Những điều chỉnh trên dựa trên số liệu do nhóm đã tổng hợp; cần phản hồi gốc đã ẩn danh và thời điểm thu thập để xác minh từng kết luận. Không tạo lại các phiếu riêng lẻ từ tỷ lệ tổng hợp.
+Những điều chỉnh trên được đối chiếu với câu trả lời Q1–Q7 trong CSV. P05 là tín hiệu phản bác về sự cần thiết của công cụ mới; P02/P07 đã dùng task board nhưng vẫn gặp vấn đề cập nhật hoặc đối chiếu. Không giữ kết luận cũ rằng hai người dùng task board đều thấy cách hiện tại đủ dùng. Khảo sát cho thấy có pain và workaround, chưa chứng minh Rule sẽ đạt target.
 
-**Giới hạn suy luận:** câu hỏi 3 cho phép nhiều lựa chọn nên tổng tỷ lệ nguồn có thể vượt 100%. Nhóm 2/7 dùng task board và nhóm 1/7 hoàn thành dưới 15 phút có thể trùng người; không cộng thành 3 người. Q5 gộp thiếu việc và hỏi lại nên 5/7 không phải tỷ lệ báo cáo sai. Với Q4, 3/7 là kết quả được nêu cho bước tìm dữ liệu, chưa đủ để kiểm tra đây là lựa chọn cao nhất nếu không có phân bố các đáp án còn lại.
+**Giới hạn suy luận:** Q3 cho phép nhiều lựa chọn nên tổng tỷ lệ nguồn có thể vượt 100%. Task board được P02/P07 chọn (2/9), nhưng cả hai vẫn nêu khó khăn; P05 hoàn thành dưới 15 phút bằng cách họp chốt trực tiếp, không phải bằng chứng task board đã giải quyết đủ cho hai người. Q5 gộp thiếu việc và hỏi lại nên 8/9 không phải tỷ lệ báo cáo sai hoặc bằng chứng riêng về nguyên nhân phân tán. Q4 cho thấy tìm dữ liệu là lựa chọn nhiều nhất (3/9), tiếp theo hỏi lại và kiểm tra đúng/đủ (mỗi lựa chọn 2/9); không suy rộng mẫu nhỏ ra mọi nhóm.
 
 | Giả định cần theo dõi sau CP4 | Bằng chứng hiện có | Việc còn cần xác minh |
 |---|---|---|
-| Value: mất thời gian và thông tin phân tán | Baseline trong card; bảng tổng hợp 4/7 và 5/7 | Đối chiếu phản hồi gốc, vai trò ngoài nhóm, lý do loại một phản hồi; không suy rộng từ 7 người ra mọi nhóm |
-| Usability: duy trì cập nhật có cấu trúc | Tín hiệu 3/7 cập nhật không đều; chưa có log tuân thủ của nhóm | Pilot đo thời gian cập nhật và số task thiếu trường của cả bốn người |
+| Value: mất thời gian và thông tin phân tán | Baseline trong card; CSV có 6/9 mất trên 30 phút, 8/9 từng thiếu việc/hỏi lại | Giữ giới hạn mẫu 9 người; cần pilot để xác định giá trị tăng thêm của Rule so với No AI |
+| Usability: duy trì cập nhật có cấu trúc | Q7 của P02/P08/P09 nêu cập nhật thiếu hoặc chưa đều; chưa có log tuân thủ của nhóm | Pilot đo thời gian cập nhật và số task thiếu trường của cả bốn người |
 | Feasibility: dữ liệu đủ để lọc/gom | Research và thiết kế trường dữ liệu | Thử export/đọc nguồn được phép, kiểm tra việc ngoài GitHub và lỗi thiếu dữ liệu |
 | Viability: người nhận chấp nhận báo cáo | Chưa có ghi nhận xác nhận từ giảng viên | Phát đối chiếu yêu cầu định dạng/nội dung của báo cáo trước pilot |
 
@@ -403,7 +403,7 @@ Vì sao: báo cáo phải tổng hợp từ ít nhất ba nguồn, có hơn ba b
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Baseline nội bộ là 55 phút/kỳ và khảo sát cho thấy có pain, nhưng mẫu còn nhỏ; task board thủ công có thể đã đủ với một số nhóm |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Baseline tự báo cáo khoảng 55 phút/kỳ; CSV có 6/9 người mất trên 30 phút, 8/9 từng thiếu việc hoặc hỏi lại. Mẫu nhỏ và P05 đã làm tốt với cách họp chốt đơn giản; giá trị tăng thêm của Rule cần pilot so với No AI |
 | **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra không? | Trung bình | Template và Rule dễ kiểm tra, nhưng giá trị phụ thuộc cả bốn thành viên cập nhật task đầy đủ và đúng trường |
 | **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Logic lọc/gom rõ và có tài liệu công cụ, nhưng chưa chạy Rule hoặc xác nhận đủ trường/export trên dữ liệu của nhóm; Giang cần kiểm tra trước pilot |
 | **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Trung bình | Không dùng AI hoặc đọc chat riêng tư làm giảm phạm vi truy cập; vẫn chưa xác nhận yêu cầu người nhận, quyền dữ liệu và công sức thiết lập/bảo trì; Phát phụ trách đối chiếu trước pilot |

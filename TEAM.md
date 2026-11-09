@@ -68,16 +68,21 @@ Phần đóng góp dưới đây được đối chiếu với lịch sử Git v
 - Đã cập nhật báo cáo cá nhân CP1–CP2 gồm 10 problem và 3 card tại commit `ca52d1b`.
 - Card #1 về tổng hợp báo cáo tiến độ là candidate nhóm chọn. Card cung cấp quy trình bảy bước và baseline tự báo cáo 38/71/55 phút để nhóm đào sâu CP4–CP6.
 - Biên bản CP3 ghi câu hỏi của Phát về CV của Dũng, thư ký ghi task trong họp của Giang và khả năng đạt target OCR của Thao.
-- Được phân công chủ trì CP4 và quyết định CP6. Chưa có nguồn phản hồi khảo sát trong repo để xác nhận phần thu thập trực tiếp.
+- Chủ trì kiểm chứng CP4 theo phân công, Thao hỗ trợ nhập và quản trị dữ liệu. Đối chiếu 10 phiếu trong CSV ngày 09/11/2026: 9 hợp lệ, loại P03; 6/9 mất trên 30 phút, 8/9 từng thiếu việc/hỏi lại. Giữ phản bác P05 đã có quy trình họp chốt đủ dùng; P02/P07 dùng task board nhưng vẫn gặp khó khăn.
+- Phụ trách đánh giá bốn rủi ro và quyết định CP6: giữ cả bốn ở mức Trung bình theo bản nhóm hiện tại, Go pilot nhỏ có điều kiện; chưa coi khả năng đọc/export và quyền dữ liệu là đã xác nhận.
+- Hỗ trợ Thao đối chiếu quy trình CP5: baseline khoảng 55 phút; Rule dự kiến 21 phút, gồm 6 bước lập báo cáo và hoạt động cập nhật trong kỳ được tính riêng.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - [Báo cáo cá nhân Phát](report/individual/2A202603536_TranHoangPhat.md), mục 2–3; [commit cập nhật CP1–CP2](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/ca52d1b479cc842e567e5815691d8b2331f9e226).
 - [Biên bản CP3](report/team/group_report.md#21-pitch), dòng 1, 7 và 11; [báo cáo nhóm](report/team/group_report.md), mục 2.4 và 4.1 đối chiếu candidate và quy trình.
 
+- [CSV khảo sát](report/assets/cp4-survey-responses.csv) và [bảng tổng hợp](report/assets/cp4-survey-summary.md): nguồn đối chiếu 10 phiếu, 9 hợp lệ.
+- [Báo cáo nhóm mục 8](report/team/group_report.md#8-quyết-định-cp6): bốn rủi ro, điều kiện pilot và ngưỡng dừng.
+
 **Điều mình học được từ phần nhóm:**
 
-- Chưa có phần tự ghi của Phát trong repo; cần bổ sung từ trải nghiệm của mình.
+- Từ đối chiếu kết quả, cần giữ cả tín hiệu phản bác và phân biệt số liệu khảo sát với mục tiêu pilot; dữ liệu có cấu trúc chưa tự chứng minh Rule hiệu quả hơn thủ công.
 
 ### NguyenHuyGiang-2A202603543
 
