@@ -4,7 +4,9 @@
 
 | File | Vai trò |
 |---|---|
-| [Khảo sát CP4](cp4-micro-survey.md) | Bộ câu hỏi và hướng dẫn bổ sung nguồn phản hồi |
+| [Dữ liệu khảo sát CP4](cp4-survey-responses.csv) | Bảng dữ liệu 10 phiếu khảo sát thực tế (P01–P10) đã ẩn danh, kèm kênh và nguồn ghi chép |
+| [Tổng hợp khảo sát CP4](cp4-survey-summary.md) | Bảng tỷ lệ, phân bố nguồn/bottleneck và câu trả lời mở trích từ dữ liệu gốc |
+| [Bộ câu hỏi CP4](cp4-micro-survey.md) | Bộ câu hỏi khảo sát hành vi và thuyết minh nguồn truy vết |
 | [Giao diện nhập CP4](../../src/cp4-survey/README.md) | Nhập từng phiếu ngoại tuyến, tự tổng hợp, xuất CSV/Markdown và sao lưu JSON |
 | [Quy trình CP5](cp5-lesongthao-workflow-draft.md) | Bản chi tiết đã tích hợp trong báo cáo nhóm |
 | [Đối chiếu CP6](cp6-lesongthao-metric-boundary-review.md) | Metric, boundary, tiêu chí và ngưỡng dừng |

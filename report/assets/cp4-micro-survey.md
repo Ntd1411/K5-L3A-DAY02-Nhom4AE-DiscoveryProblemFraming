@@ -72,13 +72,14 @@ Xuất bảng phản hồi từ công cụ khảo sát, bỏ mọi cột nhận 
 
 ## Nguồn cần bổ sung để đối chiếu bảng tổng hợp
 
-### Nguồn hiện tìm thấy trong Git
+### Nguồn dữ liệu khảo sát thực tế (Cập nhật ngày 09/11/2026)
 
-| Tài liệu | Nguồn truy vết | Chứng minh được gì? |
+| Tài liệu | Vị trí lưu | Chứng minh được gì? |
 |---|---|---|
-| Bộ câu hỏi và bảng tổng hợp CP4 | [Commit 492b7f7](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/492b7f7e35330605948cfc580506892cbf1cdd63), tác giả Git NTD, ngày 09/11/2026 | Bảng tổng hợp đã được đưa vào tài liệu; chưa chứng minh thời điểm khảo sát, danh tính theo vai trò hoặc câu trả lời từng người |
-| Baseline 38/71/55 phút | [Card Phát](../individual/2A202603536_TranHoangPhat.md), mục 2 và Card #1; [commit ca52d1b](https://github.com/Ntd1411/K5-L3A-DAY02-Nhom4AE-DiscoveryProblemFraming/commit/ca52d1b479cc842e567e5815691d8b2331f9e226) | Ba mốc tự báo cáo của người trong nhóm; không tính vào mẫu khảo sát người ngoài nhóm |
-| Phản hồi gốc và thông tin thu thập | Chưa tìm thấy trên main hoặc các nhánh đã fetch ngày 09/11/2026 | Chưa thể tái tính tỷ lệ hoặc xác nhận ai trực tiếp thu thập |
+| Dữ liệu phản hồi gốc đã ẩn danh | [`cp4-survey-responses.csv`](cp4-survey-responses.csv) | 10 phiếu chi tiết (P01–P10) gồm vai trò ngoài nhóm, ngày (09/11/2026), kênh (Trực tiếp, Zalo, Messenger, Discord), nguồn ghi chép và câu trả lời nguyên văn Q1–Q7. |
+| Bảng tổng hợp tự động | [`cp4-survey-summary.md`](cp4-survey-summary.md) | Thống kê tự động: 9/10 hợp lệ, 1/10 loại hợp lệ (P03 do chưa từng làm báo cáo trong 3 tháng); tỷ lệ mất trên 30 phút (66,7%), tỷ lệ thiếu việc/hỏi lại (88,9%), phân bố nguồn và bước bottleneck. |
+| Bản sao lưu và công cụ nhập liệu | [`src/cp4-survey/`](../../src/cp4-survey/) | Bản sao lưu [`cp4-survey-backup.json`](../../src/cp4-survey/cp4-survey-backup.json) và giao diện [`index.html`](../../src/cp4-survey/index.html) để nạp, kiểm tra và xuất dữ liệu ngoại tuyến. |
+| Baseline nội bộ | [Card Phát](../individual/2A202603536_TranHoangPhat.md), mục 2 | 3 kỳ tự báo cáo của người trong nhóm (38–71 phút, TB 55 phút); được tách riêng khỏi mẫu khảo sát người ngoài nhóm. |
 
 ### Cách hoàn tất nguồn
 

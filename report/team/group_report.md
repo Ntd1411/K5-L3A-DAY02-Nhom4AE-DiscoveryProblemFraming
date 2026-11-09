@@ -151,30 +151,33 @@ Baseline nội bộ trung bình khoảng **55 phút/kỳ**, lặp lại mỗi ha
 
 #### Bảng tổng hợp khảo sát
 
+Dữ liệu gốc đã ẩn danh được lưu tại [cp4-survey-responses.csv](../assets/cp4-survey-responses.csv) và [cp4-survey-summary.md](../assets/cp4-survey-summary.md) (thu thập ngày 09/11/2026 qua giao diện [cp4-survey](../../src/cp4-survey/index.html)).
+
 | Chỉ số | Kết quả sau khi kết thúc khảo sát |
 |---|---|
-| Tổng số phản hồi | 8 |
-| Số phản hồi hợp lệ | 7 |
-| Tỷ lệ mất trên 30 phút | 57,1% (4/7) |
-| Ba nguồn được mở nhiều nhất | Chat 100%; GitHub 85,7%; tài liệu chung 71,4% |
-| Bước tốn thời gian nhất | Tìm dữ liệu từ nhiều nguồn, 42,9% (3/7) |
-| Tỷ lệ từng thiếu việc hoặc phải hỏi lại | 71,4% (5/7) |
-| Cách xử lý phổ biến | Xem lại chat và tự tổng hợp vào Google Docs |
-| Tín hiệu phản bác | 2/7 người dùng task board đều cho biết quy trình hiện tại đã đủ dùng; 1/7 người hoàn thành dưới 15 phút |
+| Tổng số phản hồi | 10 |
+| Số phản hồi hợp lệ | 9 |
+| Phiếu bị loại hợp lệ | 1 (P03: thành viên chuyên code frontend, chưa từng trực tiếp gom/viết báo cáo trong 3 tháng) |
+| Tỷ lệ mất trên 30 phút | 66,7% (6/9) (trong đó 2 người mất trên 60 phút) |
+| Ba nguồn được mở nhiều nhất | Chat 88,9% (8/9); Tài liệu chung 66,7% (6/9); GitHub 44,4% (4/9) |
+| Bước tốn thời gian nhất | Tìm dữ liệu từ nhiều nguồn: 33,3% (3/9); Hỏi lại thành viên: 22,2% (2/9); Kiểm tra đúng và đủ: 22,2% (2/9) |
+| Tỷ lệ từng thiếu việc hoặc phải hỏi lại | 88,9% (8/9) |
+| Cách xử lý phổ biến | Xem lại chat và commit để tự tổng hợp; dùng Docs/Sheets hoặc Trello nhưng vẫn phải nhắn riêng để xác nhận |
+| Tín hiệu phản bác | 1/9 người hoàn thành dưới 15 phút (P05: nhóm 3 người chốt trực tiếp trong cuộc họp 15 phút bằng Google Docs chiếu màn hình) |
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Khảo sát nhanh sinh viên nhóm khác | 8 phản hồi, trong đó 7 hợp lệ | 4/7 người mất trên 30 phút; 5/7 người từng thiếu việc hoặc phải hỏi lại; các nguồn được mở nhiều nhất là chat, GitHub và tài liệu chung | 2/7 người dùng task board đều cho biết cách hiện tại đã đủ; 1/7 người hoàn thành dưới 15 phút |
+| Khảo sát nhanh sinh viên nhóm khác | 10 phản hồi, trong đó 9 hợp lệ | 6/9 người mất trên 30 phút; 8/9 người từng thiếu việc hoặc phải hỏi lại; các nguồn được mở nhiều nhất là chat (8/9), tài liệu chung (6/9) và GitHub (4/9) | 1/9 người hoàn thành dưới 15 phút (P05); các nhóm có họp cố định và nhóm quy mô nhỏ (3 người) có thể chốt nhanh không cần phần mềm |
 | Baseline tự báo cáo trong card Phát | 3 kỳ báo cáo của 1 người phụ trách; chưa kèm log gốc | Card ghi thời gian 38–71 phút, trung bình khoảng 55 phút; quy trình dùng GitHub, Zalo, ghi chú họp và Google Docs | Tần suất chỉ hai tuần/lần; kỳ nhanh nhất mất 38 phút nên giải pháp phức tạp có thể không tương xứng |
-| Câu trả lời mở về cách xử lý hiện tại | 7 phản hồi hợp lệ | 3/7 người vẫn xem lại chat và tự tổng hợp; 3/7 cho biết thành viên không cập nhật đều; 3/7 gặp vấn đề vì thông tin nằm ở nhiều kênh | 2/7 người đã dùng task board hoặc bảng chung và đánh giá quy trình hiện tại tương đối hiệu quả |
+| Câu trả lời mở về cách xử lý hiện tại | 9 phản hồi hợp lệ | Đa số các bạn dùng Zalo + GitHub hoặc Google Sheets nhưng thành viên cập nhật không đều, commit ghi sơ sài nên người gom phải hỏi lại hoặc lội tin nhắn | P05 cho thấy nếu nhóm có kỷ luật họp và chốt trực tiếp tại chỗ thì quy trình đơn giản đã đủ tốt |
 
 **Nhóm đã điều chỉnh bài toán thế nào theo kết quả được tổng hợp:**
 
 | Điểm điều chỉnh | Căn cứ trong bảng tổng hợp | Hệ quả đối với bài làm |
 |---|---|---|
-| Thu hẹp đối tượng | 4/7 người mất trên 30 phút, nhưng 2/7 người đã thấy task board đủ dùng | Tập trung vào người tổng hợp của nhóm có thông tin phân tán và còn phải hỏi lại; không khẳng định mọi nhóm sinh viên đều cần giải pháp mới. |
-| Sửa cách thu dữ liệu trước khi tăng mức can thiệp | 3/7 cho biết thành viên không cập nhật đều; 3/7 gặp thông tin ở nhiều kênh | Yêu cầu cập nhật có cấu trúc và xác nhận trạng thái; Rule lọc/gom, không tự đọc Zalo hoặc suy tiến độ từ commit. |
-| Đo cả chất lượng và phần việc chuyển sang thành viên | 5/7 từng thiếu việc hoặc phải hỏi lại; bảng chung đã đủ với một số người | Giữ kiểm tra nguồn, không bỏ sót và đo cập nhật của cả nhóm. Target dưới 25 phút và giới hạn 10 phút/người/kỳ là mục tiêu thiết kế do nhóm chọn, chưa phải kết quả khảo sát chứng minh đạt. |
+| Thu hẹp đối tượng | 6/9 người mất trên 30 phút, nhưng 1/9 người (P05) đã làm tốt với quy trình họp trực tiếp | Tập trung vào người tổng hợp của nhóm có thông tin phân tán (chat, git, docs) và thành viên cập nhật không đồng bộ; không áp đặt giải pháp cho nhóm nhỏ đã có thói quen chốt việc trực tiếp trong họp. |
+| Sửa cách thu dữ liệu trước khi tăng mức can thiệp | 8/9 phản hồi phản ánh việc thiếu đầu việc hoặc phải nhắn hỏi lại | Yêu cầu chuẩn hóa việc cập nhật có cấu trúc (gắn tag Done, link minh chứng) trước khi tính đến việc gom tự động; giải pháp Rule lọc/gom là phù hợp, không cần AI phức tạp. |
+| Đo cả chất lượng và phần việc chuyển sang thành viên | 8/9 từng thiếu việc hoặc phải hỏi lại; thời gian tìm dữ liệu và hỏi lại chiếm đa số bottleneck | Giữ quy định kiểm tra nguồn minh chứng, không bỏ sót và tính thời gian cập nhật của cả nhóm. Target dưới 25 phút là mục tiêu thiết kế của nhóm. |
 
 Những điều chỉnh trên dựa trên số liệu do nhóm đã tổng hợp; cần phản hồi gốc đã ẩn danh và thời điểm thu thập để xác minh từng kết luận. Không tạo lại các phiếu riêng lẻ từ tỷ lệ tổng hợp.
 

@@ -7,7 +7,7 @@
 | Tiêu chí | Nội dung hiện có | Sửa trong đợt rà soát / việc còn lại |
 |---|---|---|
 | C6 — Hội tụ, 8 điểm | 12 candidate, 3 cluster, OST, shortlist 35/33/31, lý do loại hai card | Làm rõ điểm là so sánh CP3, không phải mức xác thực; nối nhánh đã chọn với outcome đo được |
-| C7 — Kiểm chứng/research, 10 điểm | Assumption map, câu hỏi hành vi, bảng tổng hợp 8 phản hồi/7 hợp lệ, tín hiệu phản bác và ba nhóm nguồn research | Chưa có nguồn phản hồi gốc/thời điểm/kênh thu thập để đối chiếu. Phát cần bổ sung từ khảo sát thực tế. Đã làm rõ Q3 nhiều lựa chọn, Q5 gộp hai hành vi và các nhóm phản bác có thể trùng nhau |
+| C7 — Kiểm chứng/research, 10 điểm | Assumption map, câu hỏi hành vi, 10 phiếu thực tế (9 hợp lệ, 1 loại P03), tín hiệu phản bác P05 và ba nhóm nguồn research | Đã bổ sung dữ liệu gốc ẩn danh tại `report/assets/cp4-survey-responses.csv` và bảng tổng hợp `cp4-survey-summary.md` qua công cụ ngoại tuyến; đối chiếu đầy đủ tỷ lệ mất thời gian (66,7%) và tín hiệu phản bác (11,1%) |
 | C8 — Quy trình, 12 điểm | Hai sơ đồ, actor/input/output, số phút, before/after, bước duyệt và quay về | Bổ sung quy ước kỳ, xử lý mục thiếu sau bổ sung, cách tính chờ và công sức cả nhóm; tách ví dụ thiết kế khỏi bằng chứng CP5 |
 | C9 — PS/tiêu chí, 15 điểm | v0 sáu trường, v1 chín trường, delta và năm tiêu chí Rule | Tách quy trình tương lai khỏi mô tả vấn đề; thêm tập việc đối chiếu độc lập, cách ghi lỗi trước sửa và hai mẫu ghi nhận |
 | C10 — Mức can thiệp, 8 điểm | Ma trận, so sánh bốn mức, chọn Rule, AI intervention point = Không có | Chưa có phép đo chứng minh No AI không đủ. Đã thêm so sánh cùng dữ liệu và điều kiện ưu tiên No AI nếu đủ tốt |
@@ -28,7 +28,7 @@ Những mâu thuẫn trong báo cáo của người khác được ghi để tá
 
 ## 3. Các điểm cần chốt trước khi nộp
 
-1. **Phát — CP4:** phản hồi đã ẩn danh, vai trò ngoài nhóm, thời điểm/kênh, lý do loại một phản hồi; đối chiếu lại mọi tỷ lệ và insight. Có thể dùng bản xuất, ảnh đã che nhận dạng hoặc ghi chép nguồn thực tế. Bộ câu hỏi và dữ liệu ví dụ không thay thế phản hồi.
+1. **Phát — CP4:** Đã có 10 phản hồi ẩn danh (P01–P10) tại `cp4-survey-responses.csv` và `cp4-survey-summary.md` với đầy đủ vai trò ngoài nhóm, thời điểm/kênh, lý do loại P03 và tín hiệu phản bác P05; nhóm đã đối chiếu tỷ lệ và cập nhật mục 3.2 báo cáo nhóm.
 2. **Mỗi người — CP7/TEAM:** tự ghi đóng góp có đường dẫn sản phẩm; trả lời 6.1–6.6 ít nhất 200 từ, 6.7 bằng 5–8 câu và tự giải thích được. Đọc lại nhật ký AI theo việc thực sự đã dùng.
 3. **Dũng — đồng bộ:** giữ đủ bốn báo cáo trên main; kiểm tra các thay đổi mới trước khi merge. Nhánh Phát có commit `26348f9` xóa báo cáo Giang; không áp dụng việc xóa này lên bản nộp chung.
 4. **Từng người — LMS:** nộp cùng link repo nhóm bằng tài khoản của mình, kiểm tra deadline/gia hạn trong LMS. Trạng thái GitHub không xác nhận việc đã nộp LMS.

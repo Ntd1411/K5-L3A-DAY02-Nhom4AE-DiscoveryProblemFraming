@@ -1,0 +1,218 @@
+﻿{
+    "version":  1,
+    "records":  [
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "Thành viên nhắn cập nhật rải rác trên Zalo và đẩy code lên GitHub. Đến tối trước hạn nộp, nhóm trưởng mở từng branch và lướt tin nhắn Zalo gom vào Google Docs.",
+                        "source_ref":  "Phiếu ghi chép phỏng vấn trực tiếp tại thư viện ngày 09/11/2026, mã P01",
+                        "q5":  "2",
+                        "q1":  "3-5",
+                        "response_id":  "P01",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "31-60",
+                        "q7":  "Tin nhắn Zalo bị trôi giữa các cuộc bàn luận; commit nhiều bạn đặt tên chung chung như \u0027update\u0027, \u0027fix bug\u0027 nên phải đọc code diff mới biết làm tính năng gì, mất nhiều thời gian lội lại.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Nhóm trưởng đồ án Công nghệ phần mềm, gom báo cáo 2 tuần/lần",
+                        "q4":  "collect",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "github",
+                                   "chat",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Nhắn tin",
+                        "q6":  "Nhóm tạo bảng Trello để chia task theo tuần. Thành viên làm xong kéo thẻ sang Done, người tổng hợp lấy thông tin từ cột Done để điền vào form báo cáo của trường.",
+                        "source_ref":  "Ghi chép trao đổi Zalo ngày 09/11/2026, mã P02",
+                        "q5":  "3",
+                        "q1":  "5+",
+                        "response_id":  "P02",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "over60",
+                        "q7":  "Các bạn làm xong nhưng không chịu kéo thẻ Trello, hoặc chỉ kéo mà không ghi kết quả/link minh chứng. Đến hạn phải nhắn riêng từng người giục gửi tóm tắt, có bạn đến khuya mới trả lời.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Thành viên phụ trách tổng hợp báo cáo tuần môn Hệ quản trị CSDL",
+                        "q4":  "ask",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "chat",
+                                   "board"
+                               ]
+                    },
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "",
+                        "source_ref":  "Phiếu ghi chép phỏng vấn nhanh tại hành lang giảng đường ngày 09/11/2026, mã P03",
+                        "q5":  "",
+                        "q1":  "0",
+                        "response_id":  "P03",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "",
+                        "q7":  "",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Thành viên nhóm môn Lập trình web, chỉ code phần frontend",
+                        "q4":  "",
+                        "outside_group":  "yes",
+                        "q3":  [
+
+                               ]
+                    },
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "Nhóm dùng chung 1 file Google Sheets, mỗi người có 1 cột để tự điền tiến độ trước 18h thứ Bảy. Sau 18h nhóm trưởng vào copy sang bản báo cáo gửi thầy.",
+                        "source_ref":  "Phiếu ghi chép phỏng vấn tại căng tin ngày 09/11/2026, mã P04",
+                        "q5":  "1",
+                        "q1":  "5+",
+                        "response_id":  "P04",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "15-30",
+                        "q7":  "Điền vào Sheet thì nhanh nhưng một số bạn ghi rất sơ sài kiểu \u0027đã xong phần 1\u0027, nhóm trưởng vẫn phải mất công kiểm tra lại xem cấu hình mạng chạy thật chưa trước khi dám gửi báo cáo.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Nhóm trưởng đồ án Mạng máy tính, báo cáo hàng tuần",
+                        "q4":  "check",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "chat",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Nhắn tin",
+                        "q6":  "Nhóm họp online cố định tối thứ Sáu 15 phút. Trong lúc họp, nhóm trưởng mở sẵn Google Docs chiếu màn hình, từng người nói việc đã làm và nhóm trưởng gõ trực tiếp vào báo cáo, chốt luôn tại chỗ.",
+                        "source_ref":  "Ghi chép trao đổi Messenger ngày 09/11/2026, mã P05",
+                        "q5":  "0",
+                        "q1":  "3-5",
+                        "response_id":  "P05",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "under15",
+                        "q7":  "Quy trình hiện tại đã đủ tốt với nhóm nhỏ (3 người) thân thiết, vì ép cập nhật và chốt ngay trong cuộc họp nên không bao giờ phải đi gom tin nhắn hay giục hỏi lại.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Nhóm trưởng đồ án Phát triển ứng dụng di động (nhóm 3 người)",
+                        "q4":  "format",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "meeting",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "Thành viên báo cáo qua Google Docs cá nhân rồi gửi link lên nhóm Messenger; thư ký đọc các file đó rồi tổng hợp lại thành 1 file báo cáo tổng thể.",
+                        "source_ref":  "Phiếu ghi chép phỏng vấn tại phòng tự học ngày 09/11/2026, mã P06",
+                        "q5":  "2",
+                        "q1":  "1-2",
+                        "response_id":  "P06",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "31-60",
+                        "q7":  "Mỗi bạn viết một kiểu phong cách, người thì viết 3 trang dài dòng, người viết 2 dòng cụt ngủn; thư ký mất nhiều thời gian nhất để đọc hiểu, biên tập lại cho đồng nhất và viết phần phân tích kế hoạch tuần tới.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Thư ký nhóm môn Nhập môn Trí tuệ nhân tạo",
+                        "q4":  "write",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "github",
+                                   "chat",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Gọi điện / họp trực tuyến",
+                        "q6":  "Nhóm phân chia việc trên Notion, code trên GitHub repo riêng của từng nhánh. Khi đến hạn, nhóm phó đối chiếu pull requests trên GitHub với task trên Notion và hỏi thêm qua Zalo.",
+                        "source_ref":  "Ghi âm tóm tắt cuộc gọi Discord ngày 09/11/2026, mã P07",
+                        "q5":  "1",
+                        "q1":  "3-5",
+                        "response_id":  "P07",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "31-60",
+                        "q7":  "Dữ liệu phân tán ở 3 nơi khác nhau: code trên GitHub, ghi chú thí nghiệm trong Jupyter Notebook, task trên Notion. Phải nhảy qua nhảy lại nhiều tab để kiểm tra kết quả thực tế.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Nhóm phó phụ trách kỹ thuật và tiến độ đồ án Khoa học dữ liệu",
+                        "q4":  "collect",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "github",
+                                   "board",
+                                   "chat"
+                               ]
+                    },
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "Sau mỗi buổi họp nhóm thì có ghi âm và tóm tắt vào Messenger. Đến kỳ hạn báo cáo tiến độ giữa kỳ, nhóm trưởng nghe lại ghi âm họp và hỏi các thành viên để chốt số liệu.",
+                        "source_ref":  "Phiếu ghi chép phỏng vấn tại lab máy tính ngày 09/11/2026, mã P08",
+                        "q5":  "2",
+                        "q1":  "1-2",
+                        "response_id":  "P08",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "over60",
+                        "q7":  "Các bạn trong nhóm không chủ động báo cáo. Đến hạn nộp tiến độ giữa kỳ, có 2 bạn làm chưa xong phần việc nhưng không báo trước, làm nhóm trưởng phải gọi điện giục và chờ gửi kết quả đến sát nửa đêm.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Nhóm trưởng môn Kỹ nghệ phần mềm hướng đối tượng",
+                        "q4":  "ask",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "chat",
+                                   "meeting",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Nhắn tin",
+                        "q6":  "Trưởng nhóm giao từng việc trên Google Docs, ai làm xong thì ghi chú thích (comment) vào tài liệu. Người viết báo cáo chỉ cần mở Docs đọc comment và tóm tắt lại.",
+                        "source_ref":  "Ghi chép trao đổi Zalo ngày 09/11/2026, mã P09",
+                        "q5":  "1",
+                        "q1":  "3-5",
+                        "response_id":  "P09",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "15-30",
+                        "q7":  "Cách này khá tiện nhưng phụ thuộc vào việc thành viên nhớ để lại comment; thỉnh thoảng có bạn sửa trực tiếp trên file mà không gắn comment khiến người tổng hợp không biết đã cập nhật mục nào.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Thành viên được giao nhiệm vụ viết báo cáo tiến độ tuần môn Thiết kế web",
+                        "q4":  "collect",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "chat",
+                                   "docs"
+                               ]
+                    },
+                    {
+                        "channel":  "Trực tiếp",
+                        "q6":  "Các thành viên làm lab xong tự gửi ảnh chụp màn hình kết quả vào nhóm Zalo và đẩy script lên GitHub. Nhóm trưởng tải ảnh và kiểm tra code rồi đưa vào slide báo cáo.",
+                        "source_ref":  "Phiếu phỏng vấn trực tiếp tại sảnh tòa nhà học ngày 09/11/2026, mã P10",
+                        "q5":  "2",
+                        "q1":  "1-2",
+                        "response_id":  "P10",
+                        "manual_exclude":  false,
+                        "exclusion_reason":  "",
+                        "q3_other":  "",
+                        "q2":  "31-60",
+                        "q7":  "Ảnh chụp kết quả gửi lộn xộn trong Zalo, khó phân loại xem ảnh nào thuộc bài lab nào; phải mất công mở từng ảnh so với mô tả code trên GitHub mới chắc chắn là đã làm đúng đề bài.",
+                        "collected_at":  "2026-11-09",
+                        "role":  "Trưởng nhóm môn An toàn thông tin, tổng hợp báo cáo bài tập lớn",
+                        "q4":  "check",
+                        "outside_group":  "yes",
+                        "q3":  [
+                                   "chat",
+                                   "github"
+                               ]
+                    }
+                ]
+}
