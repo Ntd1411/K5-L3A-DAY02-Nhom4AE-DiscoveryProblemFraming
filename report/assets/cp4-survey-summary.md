@@ -1,4 +1,4 @@
-﻿# CP4 — Kết quả khảo sát thực tế
+# CP4 — Kết quả khảo sát thực tế
 
 Tổng hợp từ 10 phiếu thu thập; tỷ lệ tính trên 9 phiếu hợp lệ.
 
@@ -62,7 +62,7 @@ Tổng hợp từ 10 phiếu thu thập; tỷ lệ tính trên 9 phiếu hợp l
 
 ## Tín hiệu cần đối chiếu cho Rubric C7
 
-- **Tín hiệu phản bác (hoàn thành dưới 15 phút):** /9 (phiếu P05 - nhóm 3 người chốt tiến độ trực tiếp trong 15 phút họp tuần).
+- **Tín hiệu phản bác (hoàn thành dưới 15 phút):** 1/9 (phiếu P05 - nhóm 3 người chốt tiến độ trực tiếp trong 15 phút họp tuần).
 - **Xác thực bottleneck thời gian:** 6/9 (66.7%) mất trên 30 phút, trong đó 2 người mất trên 60 phút do phải chờ đợi và nhắn hỏi lại nhiều lần.
-- **Xác thực nguyên nhân thông tin phân tán:** 8/9 (88.9%) từng gặp tình trạng thiếu việc hoặc phải nhắn hỏi lại thành viên trong 3 kỳ gần nhất.
+- **Impact về thiếu việc/hỏi lại:** 8/9 (88.9%) từng gặp tình trạng này trong 3 kỳ gần nhất; Q5 không tự xác định nguyên nhân. Thông tin phân tán được đối chiếu riêng với Q3 và câu trả lời mở Q7.
 - **Nhóm đã điều chỉnh gì:** Tập trung giải quyết cho trường hợp các nhóm làm việc phân tán qua chat và code mà thiếu quy ước cập nhật định kỳ; không áp dụng giải pháp cồng kềnh cho các nhóm nhỏ đã vận hành tốt theo mô hình họp chốt nhanh như P05.

@@ -81,25 +81,12 @@ Xuất bảng phản hồi từ công cụ khảo sát, bỏ mọi cột nhận 
 | Bản sao lưu và công cụ nhập liệu | [`src/cp4-survey/`](../../src/cp4-survey/) | Bản sao lưu [`cp4-survey-backup.json`](../../src/cp4-survey/cp4-survey-backup.json) và giao diện [`index.html`](../../src/cp4-survey/index.html) để nạp, kiểm tra và xuất dữ liệu ngoại tuyến. |
 | Baseline nội bộ | [Card Phát](../individual/2A202603536_TranHoangPhat.md), mục 2 | 3 kỳ tự báo cáo của người trong nhóm (38–71 phút, TB 55 phút); được tách riêng khỏi mẫu khảo sát người ngoài nhóm. |
 
-### Cách hoàn tất nguồn
+### Quy tắc đối chiếu và bảo quản nguồn
 
-Hiện repo có bộ câu hỏi và bảng tổng hợp trong báo cáo nhóm. Chưa có phản hồi gốc đã ẩn danh, thời điểm và kênh thực hiện thực tế; thời điểm commit không thay thế thời điểm khảo sát.
+CSV hiện có 10 phiếu, trong đó 9 hợp lệ; P03 bị loại do Q1 = 0 lần. Khi cập nhật số liệu phải tính lại từ các dòng phản hồi, không khôi phục bộ tỷ lệ cũ 8/7 hoặc tự bổ sung câu trả lời còn thiếu.
 
-Người thực hiện khảo sát cần bổ sung:
-
-- Bản xuất phản hồi thật đã bỏ họ tên, email, số điện thoại; có thể đặt tại `report/assets/cp4-survey-responses.csv`.
-- Thời điểm hoặc khoảng thời gian thu thập và kênh đã dùng, ghi đúng thực tế thay vì để lựa chọn “trực tiếp hoặc Forms”.
-- Mã người trả lời ẩn danh, vai trò và xác nhận thuộc nhóm khác; câu trả lời câu 1–7, kèm lý do loại phản hồi không hợp lệ.
-
-Đối chiếu từ dữ liệu gốc: 8 phản hồi, 7 hợp lệ; 4/7 mất trên 30 phút; 5/7 từng thiếu việc/hỏi lại; các tỷ lệ nguồn và tín hiệu phản bác. Nếu bản gốc khác bảng hiện tại thì sửa bảng theo bản gốc. Không tạo tám dòng phản hồi từ các tỷ lệ đã có hoặc xem các ô thiếu là 0.
-
-Mỗi phản hồi cần có các trường sau; chỉ nhập từ bản ghi có thật:
-
-| Nhóm trường | Nội dung |
-|---|---|
-| Nguồn | Mã phản hồi ẩn danh, vai trò, thuộc nhóm khác, thời điểm, kênh thu thập và mã ghi chép/bản xuất |
-| Hành vi | Câu trả lời nguyên ý Q1–Q7; không tự bổ sung lựa chọn còn thiếu |
-| Hợp lệ | Có từng làm báo cáo trong ba tháng gần nhất; lý do loại nếu không hợp lệ |
-| Đối chiếu | Người tổng hợp kiểm đếm và ngày đối chiếu; giữ riêng bản phản hồi với bảng tỷ lệ |
-
-Nếu không còn bản gốc, cần thực hiện lượt khảo sát mới và ghi đúng ngày/kênh mới; thay bảng tổng hợp bằng kết quả của lượt đó. Không đặt ngày thu thập bằng ngày commit hoặc điền câu trả lời cho đủ tỷ lệ cũ.
+- Ngày, kênh và nguồn ghi chép lấy từ collected_at/channel/source_ref; giao diện ngoại tuyến là công cụ nhập dữ liệu, không thay thế kênh trao đổi với người trả lời.
+- Chỉ công bố mã và vai trò, không đưa thông tin nhận dạng vào repo.
+- Q3 cho phép nhiều lựa chọn; Q5 gộp thiếu việc và hỏi lại, không đồng nhất với tỷ lệ báo cáo sai.
+- Giữ tín hiệu phản bác P05; P02/P07 dùng task board nhưng vẫn nêu khó khăn. Không diễn giải hai phiếu này là đã thấy cách hiện tại đủ dùng.
+- Khi có sửa hoặc bổ sung phản hồi, giữ nguồn ghi chép và tính lại summary, báo cáo nhóm và phần cá nhân có dẫn số liệu. Không tạo lại câu trả lời từ tỷ lệ đã có.
