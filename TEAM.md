@@ -95,6 +95,7 @@ Mỗi thành viên tự cập nhật đóng góp thực tế, bằng chứng và
 - Đã hoàn thiện [quy trình CP5 có AI hỗ trợ](report/assets/cp5-lesongthao-workflow-draft.md) tại mục 4 báo cáo nhóm, đồng bộ mức Rule ở bản nhóm 53f9eb6: 2 sơ đồ, actor/input/output/thời gian, before/after, người kiểm tra, boundary và quay về. Baseline khoảng 55 phút được tách khỏi ước tính Rule 21 phút, target dưới 25; chưa phải kết quả pilot.
 - Đã cập nhật [đối chiếu metric và boundary CP6](report/assets/cp6-lesongthao-metric-boundary-review.md): 6 bước lập báo cáo, tổng Rule 3 phút, công sức cập nhật cả nhóm và ngưỡng từ 25 phút trở lên. PS, mức chọn Rule và Go được dẫn từ bản chung; không nhận thay phần chủ trì của Giang/Dũng/Phát.
 - Đã chuẩn bị [10 ca đánh giá thiết kế Rule](report/assets/cp6-rule-evaluation-cases.md) bằng dữ liệu tổng hợp, có đầu ra mong đợi và tiêu chí đối chiếu; chưa chạy trên triển khai hoặc nhận bonus eval AI.
+- Đã chuẩn bị [tình huống mô phỏng CP5](report/assets/cp5-simulated-progress-report.md), hai CSV chứa task giả định trước/sau đối chiếu và báo cáo mẫu. Ví dụ có 13 dòng thô, 11 task khác nhau, 7 việc hoàn thành sau xử lý; không dùng như dữ liệu khảo sát hoặc pilot thật.
 - Đã nhận phân công hỗ trợ CP4; đối chiếu tín hiệu phản bác trong kết quả khảo sát do nhóm tổng hợp với phương án No AI ở CP5. Không nhận mình trực tiếp thu toàn bộ phản hồi khảo sát.
 - Nhật ký C3 đã đối chiếu bảng pitch của nhóm: câu hỏi về RegEx/validation với Giang; câu hỏi nhận từ Giang/Phát/Dũng cho ba card cá nhân và các điểm được làm rõ trong bản cập nhật.
 

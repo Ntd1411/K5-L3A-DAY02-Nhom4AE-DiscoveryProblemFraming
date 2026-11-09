@@ -271,6 +271,8 @@ flowchart TD
 
 Pilot theo quyết định nhóm: thử 2 kỳ, nếu đạt tiếp tục tới đủ 4 kỳ liên tiếp. Với chu kỳ hai tuần, tương ứng khoảng 4 và 8 tuần; đây là kế hoạch, chưa chạy xong trong lab. Ngưỡng dừng và tiêu chí chính thức xem mục 7–8 báo cáo nhóm.
 
+**Minh họa toàn bộ quy trình:** [tình huống đồ án giả định và báo cáo mẫu](../assets/cp5-simulated-progress-report.md), kèm [13 dòng task thô](../assets/cp5-simulation-input.csv) và [dữ liệu sau đối chiếu trong kịch bản](../assets/cp5-simulation-confirmed.csv). Ví dụ xử lý task trùng, sai kỳ, chưa xác nhận, mâu thuẫn owner và thiếu bằng chứng; đầu ra mẫu có 7 việc hoàn thành. Toàn bộ trường hợp và thời gian trong ví dụ là mô phỏng, không thay thế phản hồi CP4 hoặc kết quả pilot.
+
 ---
 
 ## 5. Problem Statement v0 (CP5)

@@ -34,3 +34,5 @@
 5. Tiêu chí thành công bốn kỳ liên tiếp vẫn cần time log pilot thật; 10 ca kiểm tra thiết kế không thay thế pilot.
 
 Tham chiếu: [5 tiêu chí của nhóm](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6), [quy trình và boundary](cp5-lesongthao-workflow-draft.md), [đối chiếu metric](cp6-lesongthao-metric-boundary-review.md).
+
+Ví dụ đọc toàn quy trình: [tình huống mô phỏng có task thô, bước xác nhận và báo cáo mẫu](cp5-simulated-progress-report.md). Đây là dữ liệu tổng hợp minh họa kết hợp nhiều loại lỗi, không phải kết quả chạy 10 ca trên triển khai.
